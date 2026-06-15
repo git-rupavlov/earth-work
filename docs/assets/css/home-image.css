@@ -1,0 +1,35 @@
+/* Home page using the generated Earth Work dashboard image. */
+
+.md-content__inner:has(.ew-image-landing) > h1:first-child {
+  display: none;
+}
+
+.ew-image-landing {
+  margin: -1rem 0 1rem;
+  border-radius: 1.1rem;
+  overflow: hidden;
+  border: 1px solid rgba(143, 188, 90, 0.32);
+  background: #061109;
+  box-shadow: 0 1.4rem 4rem rgba(0, 0, 0, 0.34);
+}
+
+.ew-image-landing img {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 0;
+}
+
+.ew-home .ew-grid {
+  margin-top: 1.2rem;
+}
+
+.ew-home .ew-card {
+  min-height: 205px;
+}
+
+@media (min-width: 1220px) {
+  .md-content__inner:has(.ew-image-landing) {
+    max-width: 1220px;
+  }
+}
