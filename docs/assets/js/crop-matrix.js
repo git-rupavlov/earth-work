@@ -1,5 +1,10 @@
+function cropMatrixDataUrl() {
+  const script = document.currentScript || document.querySelector('script[src$="crop-matrix.js"]');
+  return new URL('../data/regenerative-cultures.json', script.src).toString();
+}
+
 async function loadCropMatrixData() {
-  const response = await fetch('../assets/data/regenerative-cultures.json');
+  const response = await fetch(cropMatrixDataUrl());
   if (!response.ok) throw new Error('Cannot load crop matrix data');
   return response.json();
 }
@@ -140,6 +145,15 @@ function renderFunctionMatrix(cultures) {
   table.innerHTML = `${header}<tbody>${body}</tbody>`;
 }
 
+function renderScoreComparison(data) {
+  const table = document.getElementById('crop-score-comparison');
+  if (!table) return;
+
+  const header = `<thead><tr><th>Crop</th>${data.kiviatMetrics.map(metric => `<th>${metric}</th>`).join('')}</tr></thead>`;
+  const body = data.cultures.map(culture => `<tr><th>${culture.name}</th>${culture.scores.map(score => `<td>${score}</td>`).join('')}</tr>`).join('');
+  table.innerHTML = `${header}<tbody>${body}</tbody>`;
+}
+
 function setupCropSelector(data) {
   const select = document.getElementById('crop-select');
   const chart = document.getElementById('crop-kiviat-chart');
@@ -159,14 +173,25 @@ function setupCropSelector(data) {
   update();
 }
 
-loadCropMatrixData()
-  .then(data => {
-    renderGroups(data.groups);
-    renderFunctionMatrix(data.cultures);
-    setupCropSelector(data);
-  })
-  .catch(error => {
-    console.error(error);
-    const chart = document.getElementById('crop-kiviat-chart');
-    if (chart) chart.textContent = 'Crop matrix data could not be loaded.';
-  });
+function initCropMatrix() {
+  if (!document.getElementById('crop-select') && !document.getElementById('crop-function-matrix')) return;
+
+  loadCropMatrixData()
+    .then(data => {
+      renderGroups(data.groups);
+      renderFunctionMatrix(data.cultures);
+      renderScoreComparison(data);
+      setupCropSelector(data);
+    })
+    .catch(error => {
+      console.error(error);
+      const chart = document.getElementById('crop-kiviat-chart');
+      if (chart) chart.textContent = 'Crop matrix data could not be loaded.';
+    });
+}
+
+if (document.readyState === 'loading') {
+  document.addEventListener('DOMContentLoaded', initCropMatrix);
+} else {
+  initCropMatrix();
+}
