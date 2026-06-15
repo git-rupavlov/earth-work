@@ -1,28 +1,8 @@
 # Earth Work
 
 <div class="ew-home">
-  <section class="ew-hero">
-    <div class="ew-hero-content">
-      <p class="ew-kicker">Growing systems. Deploying solutions.</p>
-      <h1>Earth Work</h1>
-      <p class="ew-tagline">Growing food.<br>Restoring soil.<br>Building resilient systems.</p>
-      <div class="ew-pill-row">
-        <span>🌿 Nature</span>
-        <span>⚙️ Engineering</span>
-        <span>📖 Documentation</span>
-      </div>
-      <p class="ew-summary">We combine regenerative agriculture, open-source technology and field observation to build a practical, documented, resilient growing system.</p>
-      <div class="ew-actions">
-        <a href="project/overview/">Explore project</a>
-        <a href="plants/crop-matrix/">Open crop matrix</a>
-      </div>
-    </div>
-    <div class="ew-hero-visual" aria-hidden="true">
-      <div class="ew-sun"></div>
-      <div class="ew-greenhouse">⌂</div>
-      <div class="ew-panel ew-panel-code">CI/CD<br><span>soil → data → action</span></div>
-      <div class="ew-field-lines"></div>
-    </div>
+  <section class="ew-image-landing">
+    <img src="assets/images/earth-work-home.webp" alt="Earth Work homepage dashboard: regenerative agriculture, infrastructure, monitoring, automation and project navigation" />
   </section>
 
   <section class="ew-grid" aria-label="Project sections">
@@ -36,7 +16,7 @@
     <a class="ew-card ew-plants" href="plants/plant-profiles/">
       <span class="ew-icon">🌿</span>
       <h2>Plants & Profiles</h2>
-      <p>Amaranth, yacon-like tubers, squash, beans, cover crops and support plants.</p>
+      <p>Amaranth, Jerusalem artichoke, squash, beans, cover crops and support plants.</p>
       <strong>Browse Plants →</strong>
     </a>
 
