@@ -1,35 +1,280 @@
-/* Home page using the generated Earth Work dashboard image. */
+/* Home page: one interactive dashboard, styled like the generated mockup. */
 
-.md-content__inner:has(.ew-image-landing) > h1:first-child {
+.md-content__inner:has(.ew-dashboard) > h1:first-child {
   display: none;
 }
 
-.ew-image-landing {
-  margin: -1rem 0 1rem;
-  border-radius: 1.1rem;
+.md-content__inner:has(.ew-dashboard) {
+  max-width: 1280px;
+}
+
+.ew-home-map {
+  margin-top: -1rem;
+}
+
+.ew-dashboard {
+  position: relative;
+  min-height: clamp(720px, 86vw, 980px);
   overflow: hidden;
-  border: 1px solid rgba(143, 188, 90, 0.32);
+  border-radius: 1.25rem;
+  border: 1px solid rgba(143, 188, 90, 0.34);
   background: #061109;
-  box-shadow: 0 1.4rem 4rem rgba(0, 0, 0, 0.34);
+  box-shadow: 0 1.6rem 4.5rem rgba(0, 0, 0, 0.42);
+  isolation: isolate;
 }
 
-.ew-image-landing img {
+.ew-dashboard-bg {
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(180deg, rgba(4, 12, 7, 0.15), rgba(4, 12, 7, 0.86)),
+    radial-gradient(circle at 28% 18%, rgba(143, 188, 90, 0.35), transparent 16rem),
+    radial-gradient(circle at 82% 24%, rgba(217, 164, 65, 0.28), transparent 13rem),
+    radial-gradient(circle at 76% 70%, rgba(78, 143, 184, 0.18), transparent 18rem),
+    linear-gradient(135deg, #061109 0%, #132b17 42%, #0a160d 100%);
+}
+
+.ew-dashboard-bg::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    repeating-linear-gradient(160deg, rgba(143, 188, 90, 0.14) 0 2px, transparent 2px 35px),
+    linear-gradient(90deg, rgba(6, 17, 9, 0.8), transparent 35%, rgba(6, 17, 9, 0.55));
+  opacity: 0.72;
+}
+
+.ew-dashboard-bg::after {
+  content: "";
+  position: absolute;
+  inset: auto 0 0;
+  height: 42%;
+  background:
+    linear-gradient(0deg, rgba(6, 17, 9, 0.95), transparent),
+    repeating-linear-gradient(172deg, rgba(143, 188, 90, 0.22) 0 4px, transparent 4px 42px);
+}
+
+.ew-orb {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(0.2px);
+}
+
+.ew-orb-a {
+  width: 9rem;
+  height: 9rem;
+  right: 21%;
+  top: 13%;
+  background: radial-gradient(circle, rgba(245, 212, 122, 0.92), rgba(217, 164, 65, 0.26) 55%, transparent 72%);
+  box-shadow: 0 0 6rem rgba(217, 164, 65, 0.42);
+}
+
+.ew-orb-b {
+  width: 13rem;
+  height: 13rem;
+  left: 58%;
+  top: 44%;
+  background: radial-gradient(circle, rgba(143, 188, 90, 0.34), transparent 70%);
+}
+
+.ew-dashboard-topline {
+  position: absolute;
+  left: 2rem;
+  right: 2rem;
+  top: 1.5rem;
+  height: 3rem;
+  border: 1px solid rgba(143, 188, 90, 0.28);
+  border-radius: 999px;
+  background: rgba(7, 18, 10, 0.56);
+  backdrop-filter: blur(8px);
+}
+
+.ew-hero-copy {
+  position: absolute;
+  left: 4.2rem;
+  top: 7.2rem;
+  width: min(45%, 34rem);
+  color: #f6efd8;
+}
+
+.ew-mini {
   display: block;
-  width: 100%;
-  height: auto;
-  margin: 0;
+  color: #a8cf6b;
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  font-size: 0.75rem;
+  font-weight: 800;
+  margin-bottom: 0.9rem;
 }
 
-.ew-home .ew-grid {
-  margin-top: 1.2rem;
+.ew-hero-copy strong {
+  display: block;
+  color: #f2ead3;
+  font-size: clamp(3.8rem, 8vw, 7.8rem);
+  line-height: 0.9;
+  letter-spacing: 0.04em;
+  text-shadow: 0 0.4rem 1.1rem rgba(0, 0, 0, 0.55);
 }
 
-.ew-home .ew-card {
-  min-height: 205px;
+.ew-hero-copy em {
+  display: block;
+  margin-top: 1rem;
+  color: #a8cf6b;
+  font-style: normal;
+  font-size: clamp(1.25rem, 2.5vw, 2.1rem);
+  font-weight: 900;
+  line-height: 1.18;
 }
 
-@media (min-width: 1220px) {
-  .md-content__inner:has(.ew-image-landing) {
-    max-width: 1220px;
+.ew-visual-farm {
+  position: absolute;
+  right: 7%;
+  bottom: 10%;
+  width: 39%;
+  height: 43%;
+  border-radius: 1.2rem;
+  background:
+    radial-gradient(circle at 50% 16%, rgba(245, 212, 122, 0.22), transparent 9rem),
+    linear-gradient(180deg, rgba(11, 34, 16, 0.6), rgba(6, 17, 9, 0.22));
+}
+
+.ew-greenhouse-shape {
+  position: absolute;
+  left: 13%;
+  bottom: 26%;
+  width: 38%;
+  height: 34%;
+  border: 2px solid rgba(168, 207, 107, 0.5);
+  border-radius: 1rem 1rem 0.35rem 0.35rem;
+  background: linear-gradient(180deg, rgba(168, 207, 107, 0.16), rgba(7, 18, 10, 0.5));
+  box-shadow: 0 1rem 2.5rem rgba(0, 0, 0, 0.32);
+}
+
+.ew-greenhouse-shape::before {
+  content: "";
+  position: absolute;
+  left: 16%;
+  right: 16%;
+  top: -35%;
+  height: 70%;
+  border-top: 2px solid rgba(168, 207, 107, 0.5);
+  border-left: 2px solid rgba(168, 207, 107, 0.5);
+  transform: rotate(45deg);
+  background: rgba(168, 207, 107, 0.05);
+}
+
+.ew-field-row {
+  position: absolute;
+  left: 4%;
+  right: 4%;
+  height: 0.45rem;
+  border-radius: 999px;
+  background: linear-gradient(90deg, transparent, rgba(168, 207, 107, 0.68), transparent);
+  transform: skewY(-10deg);
+}
+
+.row-1 { bottom: 8%; }
+.row-2 { bottom: 15%; }
+.row-3 { bottom: 22%; }
+.row-4 { bottom: 29%; }
+
+.ew-linkbox {
+  position: absolute;
+  z-index: 2;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-template-areas: "icon title" "icon text";
+  gap: 0.15rem 0.7rem;
+  width: clamp(12.5rem, 17vw, 18rem);
+  min-height: 5.5rem;
+  padding: 0.82rem 0.95rem;
+  color: #f6efd8;
+  text-decoration: none;
+  border: 1px solid rgba(143, 188, 90, 0.35);
+  border-radius: 1rem;
+  background:
+    linear-gradient(180deg, rgba(18, 43, 22, 0.82), rgba(7, 18, 10, 0.88)),
+    radial-gradient(circle at 100% 0%, rgba(143, 188, 90, 0.22), transparent 6rem);
+  box-shadow: 0 0.9rem 2.2rem rgba(0, 0, 0, 0.32);
+  backdrop-filter: blur(10px);
+  transition: transform 160ms ease, border-color 160ms ease, background 160ms ease;
+}
+
+.ew-linkbox:hover {
+  transform: translateY(-3px) scale(1.015);
+  border-color: rgba(217, 164, 65, 0.72);
+  background:
+    linear-gradient(180deg, rgba(36, 81, 42, 0.88), rgba(7, 18, 10, 0.9)),
+    radial-gradient(circle at 100% 0%, rgba(217, 164, 65, 0.26), transparent 6rem);
+}
+
+.ew-linkbox span {
+  grid-area: icon;
+  display: grid;
+  place-items: center;
+  width: 2.8rem;
+  height: 2.8rem;
+  border: 1px solid rgba(168, 207, 107, 0.45);
+  border-radius: 50%;
+  background: rgba(7, 18, 10, 0.72);
+  font-size: 1.35rem;
+}
+
+.ew-linkbox strong {
+  grid-area: title;
+  align-self: end;
+  color: #f2ead3;
+  font-size: 0.95rem;
+  line-height: 1.05;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.ew-linkbox small {
+  grid-area: text;
+  color: #a8cf6b;
+  font-size: 0.72rem;
+  line-height: 1.2;
+}
+
+.ew-soil-box { left: 6%; top: 35%; }
+.ew-plants-box { left: 6%; top: 50%; }
+.ew-matrix-box { left: 6%; top: 65%; }
+.ew-water-box { left: 38%; top: 28%; }
+.ew-experiments-box { left: 42%; top: 49%; }
+.ew-journal-box { left: 42%; top: 70%; }
+.ew-infra-box { right: 5%; top: 30%; }
+.ew-monitoring-box { right: 5%; top: 48%; }
+.ew-plan-box { right: 5%; top: 66%; }
+
+@media (max-width: 900px) {
+  .ew-dashboard {
+    min-height: auto;
+    padding: 1rem;
+  }
+
+  .ew-dashboard-bg,
+  .ew-dashboard-topline,
+  .ew-visual-farm,
+  .ew-orb {
+    position: absolute;
+  }
+
+  .ew-hero-copy {
+    position: relative;
+    left: auto;
+    top: auto;
+    width: auto;
+    padding: 5rem 1rem 1rem;
+    z-index: 2;
+  }
+
+  .ew-linkbox {
+    position: relative;
+    left: auto !important;
+    right: auto !important;
+    top: auto !important;
+    width: auto;
+    margin: 0.7rem 0;
   }
 }
