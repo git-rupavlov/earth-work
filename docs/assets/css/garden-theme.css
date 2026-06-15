@@ -1,0 +1,160 @@
+/*
+  RP Project visual direction:
+  gardening + infrastructure + automation.
+  Warm soil background, deep leaf greens, soft sky blue highlights,
+  and small engineering/devops accents without turning the site into a circus.
+*/
+
+:root {
+  --rp-soil-900: #2b1d12;
+  --rp-soil-700: #5a3a22;
+  --rp-soil-500: #8a5a32;
+  --rp-leaf-900: #142615;
+  --rp-leaf-700: #24512a;
+  --rp-leaf-500: #3f7d35;
+  --rp-leaf-300: #8fbc5a;
+  --rp-sky-500: #4e8fb8;
+  --rp-sun-500: #d9a441;
+  --rp-cream-100: #f6efd8;
+  --rp-cream-200: #efe3bf;
+}
+
+[data-md-color-scheme="default"] {
+  --md-primary-fg-color: var(--rp-leaf-700);
+  --md-primary-fg-color--light: var(--rp-leaf-500);
+  --md-primary-fg-color--dark: var(--rp-leaf-900);
+  --md-accent-fg-color: var(--rp-sun-500);
+  --md-default-bg-color: #fbf6e8;
+  --md-default-fg-color: #1f2a1f;
+  --md-code-bg-color: #f2ead3;
+  --md-code-fg-color: #243421;
+  --md-typeset-a-color: #2f6f32;
+}
+
+[data-md-color-scheme="slate"] {
+  --md-primary-fg-color: #18381f;
+  --md-primary-fg-color--light: #2f6f32;
+  --md-primary-fg-color--dark: #0f1f13;
+  --md-accent-fg-color: #d6a94f;
+  --md-default-bg-color: #10170f;
+  --md-default-fg-color: #e7efd8;
+  --md-code-bg-color: #182318;
+  --md-code-fg-color: #dce8cf;
+  --md-typeset-a-color: #a8cf6b;
+}
+
+body {
+  background:
+    radial-gradient(circle at top left, rgba(143, 188, 90, 0.18), transparent 32rem),
+    radial-gradient(circle at top right, rgba(78, 143, 184, 0.14), transparent 30rem),
+    var(--md-default-bg-color);
+}
+
+.md-header,
+.md-tabs {
+  background: linear-gradient(90deg, var(--rp-leaf-900), var(--rp-leaf-700) 55%, var(--rp-soil-700));
+}
+
+.md-header__title {
+  font-weight: 800;
+  letter-spacing: 0.02em;
+}
+
+.md-tabs__link {
+  opacity: 0.92;
+}
+
+.md-tabs__link--active,
+.md-tabs__link:hover {
+  color: #fff6ce;
+}
+
+.md-main__inner {
+  margin-top: 1.2rem;
+}
+
+.md-content__inner > h1:first-child {
+  padding: 1.4rem 1.5rem;
+  border-radius: 1rem;
+  color: #fff6d8;
+  background:
+    linear-gradient(135deg, rgba(20, 38, 21, 0.94), rgba(36, 81, 42, 0.92)),
+    radial-gradient(circle at top right, rgba(217, 164, 65, 0.36), transparent 16rem);
+  box-shadow: 0 1rem 2.4rem rgba(0, 0, 0, 0.18);
+}
+
+.md-typeset h2 {
+  color: var(--rp-leaf-700);
+  border-bottom: 2px solid rgba(143, 188, 90, 0.34);
+  padding-bottom: 0.25rem;
+}
+
+[data-md-color-scheme="slate"] .md-typeset h2 {
+  color: #a8cf6b;
+}
+
+.md-typeset h3 {
+  color: var(--rp-soil-700);
+}
+
+[data-md-color-scheme="slate"] .md-typeset h3 {
+  color: #e1b967;
+}
+
+.md-typeset table:not([class]) {
+  border-radius: 0.75rem;
+  overflow: hidden;
+  box-shadow: 0 0.6rem 1.6rem rgba(0, 0, 0, 0.08);
+}
+
+.md-typeset table:not([class]) th {
+  background: rgba(36, 81, 42, 0.14);
+  color: var(--rp-leaf-900);
+}
+
+[data-md-color-scheme="slate"] .md-typeset table:not([class]) th {
+  background: rgba(143, 188, 90, 0.14);
+  color: #eef7dd;
+}
+
+.md-typeset .admonition,
+.md-typeset details {
+  border-radius: 0.8rem;
+  box-shadow: 0 0.4rem 1.2rem rgba(0, 0, 0, 0.06);
+}
+
+.md-typeset code {
+  border-radius: 0.35rem;
+}
+
+.md-nav__link--active {
+  color: var(--rp-leaf-500);
+  font-weight: 700;
+}
+
+[data-md-color-scheme="slate"] .md-nav__link--active {
+  color: #a8cf6b;
+}
+
+.md-footer {
+  background: linear-gradient(90deg, var(--rp-soil-900), var(--rp-leaf-900));
+}
+
+.crop-card,
+.crop-group-card {
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.72), rgba(242, 234, 211, 0.68));
+  border-color: rgba(63, 125, 53, 0.28);
+}
+
+[data-md-color-scheme="slate"] .crop-card,
+[data-md-color-scheme="slate"] .crop-group-card {
+  background:
+    linear-gradient(180deg, rgba(24, 35, 24, 0.94), rgba(20, 38, 21, 0.9));
+  border-color: rgba(143, 188, 90, 0.24);
+}
+
+.crop-kiviat-shape,
+.crop-scatter-dot {
+  filter: drop-shadow(0 0.25rem 0.35rem rgba(20, 38, 21, 0.25));
+}
