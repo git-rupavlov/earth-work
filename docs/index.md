@@ -1,10 +1,10 @@
-# Earth Work
+# NoMad's Farm
 
 <div class="ew-landing">
   <section class="ew-landing-hero">
     <div class="ew-hero-copy">
-      <p class="ew-eyebrow">Growing systems. Deploying solutions.</p>
-      <h1>Earth Work</h1>
+      <p class="ew-eyebrow">Zen and the Art of Nomad Farming</p>
+      <h1>NoMad's Farm</h1>
       <p class="ew-hero-lead">Growing food. Restoring soil. Building resilient systems.</p>
       <p class="ew-hero-text">A practical documentation hub for regenerative agriculture, soil recovery, resilient infrastructure, sensors, experiments and long-term field work.</p>
       <div class="ew-hero-actions">
