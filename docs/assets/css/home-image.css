@@ -19,19 +19,20 @@
 
 .ew-landing-hero {
   position: relative;
-  display: grid;
-  grid-template-columns: minmax(0, 0.92fr) minmax(320px, 1.08fr);
-  gap: 2rem;
+  display: flex;
   align-items: center;
-  min-height: 560px;
-  padding: clamp(1.4rem, 4vw, 3rem);
+  min-height: clamp(560px, 78vh, 860px);
+  padding: clamp(1.6rem, 5vw, 4.5rem);
   overflow: hidden;
   border: 1px solid rgba(143, 188, 90, 0.28);
   border-radius: 1.5rem;
   background:
-    radial-gradient(circle at 20% 20%, rgba(143, 188, 90, 0.22), transparent 22rem),
-    radial-gradient(circle at 82% 10%, rgba(217, 164, 65, 0.18), transparent 18rem),
-    linear-gradient(135deg, #061109, #101d11 52%, #071008);
+    linear-gradient(90deg, rgba(6, 17, 9, 0.92) 0%, rgba(6, 17, 9, 0.62) 42%, rgba(6, 17, 9, 0.16) 78%),
+    linear-gradient(180deg, rgba(6, 17, 9, 0.08), rgba(6, 17, 9, 0.52)),
+    url('../images/hero.webp');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
   box-shadow: 0 1.6rem 4.8rem rgba(0, 0, 0, 0.42);
 }
 
@@ -39,14 +40,16 @@
   content: "";
   position: absolute;
   inset: 0;
-  background: linear-gradient(115deg, rgba(168, 207, 107, 0.08), transparent 40%, rgba(217, 164, 65, 0.06));
+  background:
+    radial-gradient(circle at 14% 24%, rgba(143, 188, 90, 0.18), transparent 20rem),
+    radial-gradient(circle at 72% 10%, rgba(217, 164, 65, 0.12), transparent 22rem);
   pointer-events: none;
 }
 
-.ew-hero-copy,
-.ew-hero-image {
+.ew-hero-copy {
   position: relative;
   z-index: 1;
+  max-width: 46rem;
 }
 
 .ew-eyebrow {
@@ -119,7 +122,6 @@
   background: rgba(20, 38, 21, 0.7);
 }
 
-.ew-hero-image,
 .ew-feature,
 .ew-principles-image {
   display: block;
@@ -131,7 +133,6 @@
   box-shadow: 0 1rem 2.8rem rgba(0, 0, 0, 0.32);
 }
 
-.ew-hero-image img,
 .ew-feature img,
 .ew-principles-image img {
   display: block;
@@ -142,11 +143,6 @@
   transition: transform 220ms ease, filter 220ms ease;
 }
 
-.ew-hero-image {
-  min-height: 440px;
-}
-
-.ew-hero-image:hover img,
 .ew-feature:hover img,
 .ew-principles-image:hover img {
   transform: scale(1.035);
@@ -173,8 +169,7 @@
 }
 
 .ew-feature::after,
-.ew-principles-image::after,
-.ew-hero-image::after {
+.ew-principles-image::after {
   content: "";
   position: absolute;
   inset: 0;
@@ -262,7 +257,6 @@
 }
 
 @media (max-width: 980px) {
-  .ew-landing-hero,
   .ew-principles-panel {
     grid-template-columns: 1fr;
   }
@@ -271,15 +265,17 @@
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
-  .ew-hero-image {
-    min-height: 320px;
+  .ew-landing-hero {
+    min-height: 620px;
+    background-position: center center;
   }
 }
 
 @media (max-width: 640px) {
   .ew-landing-hero {
+    min-height: 560px;
     padding: 1rem;
-    min-height: auto;
+    background-position: 58% center;
   }
 
   .ew-feature-grid {
@@ -289,9 +285,5 @@
   .ew-feature,
   .ew-feature-large {
     min-height: 280px;
-  }
-
-  .ew-hero-image {
-    min-height: 260px;
   }
 }
