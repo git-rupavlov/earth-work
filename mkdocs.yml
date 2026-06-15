@@ -61,6 +61,7 @@ extra_css:
 
 extra_javascript:
   - assets/js/crop-matrix.js
+  - assets/js/page-heroes.js
 
 markdown_extensions:
   - admonition
