@@ -36,6 +36,8 @@ nav:
       - Overview: project/overview.md
       - 3-Year Development Plan: project/three-year-plan.md
       - Site Assessment: project/site-assessment.md
+  - Knowledge Base:
+      - Source Hierarchy: knowledge/index.md
   - Soil:
       - Ecological Processes: soil/ecological-processes.md
       - Soil Improvement Strategy: soil/soil-improvement-strategy.md
@@ -43,19 +45,27 @@ nav:
       - Plant Profiles: plants/plant-profiles.md
       - Functional Groups: plants/functional-groups.md
       - Crop Matrix: plants/crop-matrix.md
+  - Systems:
+      - Water Systems: water/index.md
+      - Infrastructure: infrastructure/index.md
+      - Monitoring & Automation: automation/index.md
   - Experiments:
       - Greenhouse 2026: experiments/greenhouse-2026.md
       - Bed Layout 2026: experiments/bed-layout-2026.md
   - Journal:
       - Field Journal: journal/index.md
+  - Zen:
+      - Zen and the Art of Nomad Farming: zen/index.md
 
 extra_css:
   - assets/css/garden-theme.css
   - assets/css/home-image.css
+  - assets/css/page-heroes.css
   - assets/css/crop-matrix.css
 
 extra_javascript:
   - assets/js/crop-matrix.js
+  - assets/js/page-heroes.js
 
 markdown_extensions:
   - admonition
