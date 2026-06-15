@@ -80,6 +80,14 @@ The Kiviat chart uses a compact 10-criterion profile.
 
 ---
 
+## Scatter Comparison: Calories vs Low Labor
+
+This graph shows one practical question: which crops give higher calorie score with lower labor demand.
+
+<div id="crop-scatter-labor-calories" class="crop-card crop-scatter-card"></div>
+
+---
+
 ## Score Comparison Table
 
 This table exposes the same 10-axis working score used by the Kiviat visualization.
@@ -147,7 +155,6 @@ This table shows what each crop does inside the system.
 Planned views:
 
 - full 24-criteria heatmap;
-- yield vs labor scatter plot;
 - yield vs irrigation demand scatter plot;
 - biomass vs soil improvement scatter plot;
 - seasonal work and harvest calendar;
