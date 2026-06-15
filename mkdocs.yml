@@ -27,11 +27,18 @@ nav:
   - Plants:
       - Plant Profiles: plants/plant-profiles.md
       - Functional Groups: plants/functional-groups.md
+      - Crop Matrix: plants/crop-matrix.md
   - Experiments:
       - Greenhouse 2026: experiments/greenhouse-2026.md
       - Bed Layout 2026: experiments/bed-layout-2026.md
   - Journal:
       - Field Journal: journal/index.md
+
+extra_css:
+  - assets/css/crop-matrix.css
+
+extra_javascript:
+  - assets/js/crop-matrix.js
 
 markdown_extensions:
   - admonition
