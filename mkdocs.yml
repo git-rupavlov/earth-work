@@ -51,6 +51,7 @@ nav:
 
 extra_css:
   - assets/css/garden-theme.css
+  - assets/css/home-image.css
   - assets/css/crop-matrix.css
 
 extra_javascript:
