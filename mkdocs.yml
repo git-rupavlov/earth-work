@@ -36,6 +36,8 @@ nav:
       - Overview: project/overview.md
       - 3-Year Development Plan: project/three-year-plan.md
       - Site Assessment: project/site-assessment.md
+  - Knowledge Base:
+      - Source Hierarchy: knowledge/index.md
   - Soil:
       - Ecological Processes: soil/ecological-processes.md
       - Soil Improvement Strategy: soil/soil-improvement-strategy.md
