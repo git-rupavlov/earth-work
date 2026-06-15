@@ -1,5 +1,9 @@
 # Zen and the Art of Nomad Farming
 
+<figure class="ew-page-hero">
+  <img src="../assets/images/zen.webp" alt="Resting after field work while watching the distant mountains at golden hour" loading="eager" decoding="async" />
+</figure>
+
 > Thoughts from the field.
 >
 > Soil, weather, mistakes, observations, experiments, restoration, simplicity and the long conversation between people and land.
