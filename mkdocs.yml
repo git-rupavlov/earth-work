@@ -54,6 +54,8 @@ nav:
       - Bed Layout 2026: experiments/bed-layout-2026.md
   - Journal:
       - Field Journal: journal/index.md
+  - Zen:
+      - Zen and the Art of Nomad Farming: zen/index.md
 
 extra_css:
   - assets/css/garden-theme.css
