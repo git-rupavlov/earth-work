@@ -43,6 +43,10 @@ nav:
       - Plant Profiles: plants/plant-profiles.md
       - Functional Groups: plants/functional-groups.md
       - Crop Matrix: plants/crop-matrix.md
+  - Systems:
+      - Water Systems: water/index.md
+      - Infrastructure: infrastructure/index.md
+      - Monitoring & Automation: automation/index.md
   - Experiments:
       - Greenhouse 2026: experiments/greenhouse-2026.md
       - Bed Layout 2026: experiments/bed-layout-2026.md
