@@ -80,6 +80,37 @@ The Kiviat chart uses a compact 10-criterion profile.
 
 ---
 
+## Score Comparison Table
+
+This table exposes the same 10-axis working score used by the Kiviat visualization.
+
+<div class="crop-table-wrap">
+  <table id="crop-score-comparison"></table>
+</div>
+
+### Static fallback
+
+| Crop | Calories/m² | Protein/m² | Nutrient density | Drought | Disease | Low labor | Soil | Biomass | Storage | Low risk |
+|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| Amaranth | 7 | 7 | 10 | 9 | 8 | 8 | 7 | 10 | 9 | 8 |
+| Jerusalem artichoke | 9 | 4 | 7 | 9 | 10 | 10 | 7 | 10 | 10 | 10 |
+| Butternut squash | 8 | 4 | 8 | 7 | 7 | 6 | 7 | 9 | 10 | 7 |
+| Common bean | 6 | 9 | 8 | 6 | 7 | 7 | 10 | 6 | 10 | 7 |
+| Lentil | 5 | 9 | 8 | 8 | 8 | 9 | 10 | 4 | 10 | 8 |
+| Chickpea | 6 | 9 | 8 | 8 | 8 | 8 | 9 | 5 | 10 | 7 |
+| Sunflower | 7 | 7 | 8 | 8 | 8 | 9 | 6 | 9 | 9 | 8 |
+| Okra | 4 | 4 | 7 | 9 | 8 | 8 | 5 | 5 | 6 | 7 |
+| Potato | 9 | 4 | 6 | 5 | 5 | 5 | 4 | 5 | 8 | 6 |
+| Sweet potato | 8 | 4 | 8 | 7 | 7 | 6 | 6 | 8 | 7 | 6 |
+| Cherry tomato | 5 | 3 | 8 | 5 | 5 | 3 | 4 | 6 | 3 | 4 |
+| Pink tomato | 5 | 3 | 8 | 4 | 4 | 3 | 3 | 5 | 3 | 3 |
+| Peppers | 4 | 3 | 8 | 5 | 5 | 4 | 3 | 4 | 5 | 4 |
+| Vetch | 2 | 4 | 4 | 7 | 8 | 9 | 10 | 8 | 3 | 8 |
+| Clover | 2 | 4 | 5 | 7 | 8 | 9 | 10 | 7 | 3 | 8 |
+| Phacelia | 0 | 0 | 2 | 7 | 8 | 9 | 8 | 8 | 3 | 8 |
+
+---
+
 ## Functional Matrix
 
 This table shows what each crop does inside the system.
@@ -87,6 +118,21 @@ This table shows what each crop does inside the system.
 <div class="crop-table-wrap">
   <table id="crop-function-matrix"></table>
 </div>
+
+### Static fallback
+
+| Crop | Calories | Protein | Biomass | Nitrogen | Soil | Pollinators | Mulch | Storage | Ground cover |
+|---|---|---|---|---|---|---|---|---|---|
+| Amaranth |  |  | ✓ |  |  | ✓ | ✓ |  |  |
+| Jerusalem artichoke | ✓ |  | ✓ |  |  |  | ✓ |  |  |
+| Butternut squash | ✓ |  |  |  |  |  | ✓ | ✓ | ✓ |
+| Common bean |  | ✓ |  | ✓ |  |  |  | ✓ |  |
+| Lentil |  | ✓ |  | ✓ |  |  |  | ✓ |  |
+| Chickpea |  | ✓ |  | ✓ |  |  |  | ✓ |  |
+| Sunflower |  |  | ✓ |  |  | ✓ |  |  |  |
+| Vetch |  |  |  | ✓ | ✓ |  | ✓ |  |  |
+| Clover |  |  |  | ✓ | ✓ | ✓ |  |  | ✓ |
+| Phacelia |  |  | ✓ |  | ✓ | ✓ |  |  |  |
 
 ---
 
