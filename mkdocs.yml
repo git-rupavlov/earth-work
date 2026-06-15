@@ -9,20 +9,18 @@ theme:
   name: material
   language: en
   palette:
-    - media: "(prefers-color-scheme: light)"
-      scheme: default
-      primary: green
-      accent: light green
-      toggle:
-        icon: material/weather-night
-        name: Switch to dark mode
-    - media: "(prefers-color-scheme: dark)"
-      scheme: slate
+    - scheme: slate
       primary: green
       accent: light green
       toggle:
         icon: material/weather-sunny
         name: Switch to light mode
+    - scheme: default
+      primary: green
+      accent: light green
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
   features:
     - navigation.tabs
     - navigation.sections
@@ -62,6 +60,7 @@ extra_css:
   - assets/css/home-image.css
   - assets/css/page-heroes.css
   - assets/css/crop-matrix.css
+  - assets/css/zen.css
 
 extra_javascript:
   - assets/js/crop-matrix.js
