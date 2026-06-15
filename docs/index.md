@@ -88,6 +88,16 @@
     </div>
   </section>
 
+  <section class="ew-section-block" aria-label="Personal reflections">
+    <p class="ew-section-label">Personal reflections</p>
+    <div class="ew-feature-grid ew-feature-grid-single">
+      <a class="ew-feature ew-feature-wide" href="zen/">
+        <img src="assets/images/zen.webp" alt="Resting after field work while watching the distant mountains at golden hour" loading="lazy" decoding="async" />
+        <div><span>Personal journal</span><h2>Zen and the Art of Nomad Farming</h2><p>Field thoughts, images, reflections, failures and observations from the long conversation between people and land.</p><strong>Open Zen</strong></div>
+      </a>
+    </div>
+  </section>
+
   <section class="ew-principles-panel">
     <a class="ew-principles-image" href="project/overview/" aria-label="Open regenerative principles">
       <img src="assets/images/principles.webp" alt="Regenerative principles: living roots, biodiversity, soil cover and closed loops" loading="lazy" decoding="async" />
