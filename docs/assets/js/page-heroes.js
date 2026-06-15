@@ -2,6 +2,7 @@ const EW_PAGE_HEROES = [
   {
     match: '/soil/ecological-processes/',
     className: 'ew-page-soil',
+    image: 'soil.webp',
     kicker: 'Soil system',
     title: 'Soil & Ecology',
     text: 'Living soil, roots, fungi, organic matter and ecosystem processes.'
@@ -9,6 +10,7 @@ const EW_PAGE_HEROES = [
   {
     match: '/soil/soil-improvement-strategy/',
     className: 'ew-page-soil',
+    image: 'soil.webp',
     kicker: 'Soil strategy',
     title: 'Soil Improvement',
     text: 'Practical steps for building fertility, structure and biological activity.'
@@ -16,6 +18,7 @@ const EW_PAGE_HEROES = [
   {
     match: '/plants/plant-profiles/',
     className: 'ew-page-plants',
+    image: 'plants.webp',
     kicker: 'Plant knowledge',
     title: 'Plants & Profiles',
     text: 'Crop notes, plant roles, edible parts, resilience and system value.'
@@ -23,6 +26,7 @@ const EW_PAGE_HEROES = [
   {
     match: '/plants/functional-groups/',
     className: 'ew-page-plants',
+    image: 'plants.webp',
     kicker: 'Plant functions',
     title: 'Functional Groups',
     text: 'Organizing crops by ecological and practical role inside the system.'
@@ -30,6 +34,7 @@ const EW_PAGE_HEROES = [
   {
     match: '/plants/crop-matrix/',
     className: 'ew-page-crop-matrix',
+    image: 'crop-matrix.webp',
     kicker: 'Decision support',
     title: 'Crop Matrix',
     text: 'Compare crops by yield, resilience, soil value, storage and risk.'
@@ -37,6 +42,7 @@ const EW_PAGE_HEROES = [
   {
     match: '/water/',
     className: 'ew-page-water',
+    image: 'water.webp',
     kicker: 'Resource systems',
     title: 'Water Systems',
     text: 'Capture, store and deliver water with less waste and less panic.'
@@ -44,6 +50,7 @@ const EW_PAGE_HEROES = [
   {
     match: '/infrastructure/',
     className: 'ew-page-infrastructure',
+    image: 'infrastructure.webp',
     kicker: 'Operations base',
     title: 'Infrastructure',
     text: 'Shelter, storage, tools, water tanks, access paths and practical systems.'
@@ -51,6 +58,7 @@ const EW_PAGE_HEROES = [
   {
     match: '/automation/',
     className: 'ew-page-automation',
+    image: 'monitoring.webp',
     kicker: 'Monitoring',
     title: 'Monitoring & Automation',
     text: 'Sensors, dashboards, irrigation control and field measurements.'
@@ -58,6 +66,7 @@ const EW_PAGE_HEROES = [
   {
     match: '/experiments/greenhouse-2026/',
     className: 'ew-page-experiments',
+    image: 'experiments.webp',
     kicker: 'Living laboratory',
     title: 'Greenhouse 2026',
     text: 'Controlled trials, seedlings, sensors and indoor/outdoor experiments.'
@@ -65,6 +74,7 @@ const EW_PAGE_HEROES = [
   {
     match: '/experiments/bed-layout-2026/',
     className: 'ew-page-experiments',
+    image: 'experiments.webp',
     kicker: 'Field layout',
     title: 'Bed Layout 2026',
     text: 'Planting layout, zones, access, crop placement and trial structure.'
@@ -72,6 +82,7 @@ const EW_PAGE_HEROES = [
   {
     match: '/journal/',
     className: 'ew-page-journal',
+    image: 'journal.webp',
     kicker: 'Field notes',
     title: 'Field Journal',
     text: 'Observations, logs, failures, lessons and field reports.'
@@ -79,6 +90,7 @@ const EW_PAGE_HEROES = [
   {
     match: '/project/three-year-plan/',
     className: 'ew-page-plan',
+    image: 'plan.webp',
     kicker: 'Roadmap',
     title: '3-Year Plan',
     text: 'Foundations, systems, scaling and long-term project development.'
@@ -86,16 +98,34 @@ const EW_PAGE_HEROES = [
   {
     match: '/project/overview/',
     className: 'ew-page-principles',
+    image: 'principles.webp',
     kicker: 'Project principles',
     title: 'Project Overview',
-    text: 'The purpose, principles and direction of the Earth Work project.'
+    text: 'The purpose, principles and direction of NoMad\'s Farm.'
   },
   {
     match: '/project/site-assessment/',
     className: 'ew-page-infrastructure',
+    image: 'infrastructure.webp',
     kicker: 'Site context',
     title: 'Site Assessment',
     text: 'Land, access, constraints, infrastructure and practical conditions.'
+  },
+  {
+    match: '/knowledge/',
+    className: 'ew-page-principles',
+    image: 'principles.webp',
+    kicker: 'Knowledge base',
+    title: 'Source Hierarchy',
+    text: 'USDA, JIRCAS, research sources, field evidence and project observations.'
+  },
+  {
+    match: '/zen/',
+    className: 'ew-page-zen',
+    image: 'zen.webp',
+    kicker: 'Personal journal',
+    title: 'Zen and the Art of Nomad Farming',
+    text: 'Thoughts, images, failures and observations from field work.'
   }
 ];
 
@@ -110,12 +140,26 @@ function findHeroConfig(pathname) {
   return EW_PAGE_HEROES.find(hero => path.endsWith(hero.match));
 }
 
+function getAssetBaseUrl() {
+  const cssLink = Array.from(document.querySelectorAll('link[rel="stylesheet"]'))
+    .find(link => link.href.includes('assets/css/page-heroes.css'));
+
+  if (cssLink) {
+    return cssLink.href.replace('assets/css/page-heroes.css', 'assets/images/');
+  }
+
+  return new URL('assets/images/', document.baseURI).href;
+}
+
 function buildHero(config) {
   const hero = document.createElement('section');
   hero.className = `ew-page-hero ${config.className}`;
   hero.setAttribute('aria-label', config.title);
 
+  const imgSrc = `${getAssetBaseUrl()}${config.image}`;
+
   hero.innerHTML = `
+    <img class="ew-page-hero-image" src="${imgSrc}" alt="" aria-hidden="true" loading="eager" decoding="async" />
     <div class="ew-page-hero-content">
       <p class="ew-page-hero-kicker">${config.kicker}</p>
       <h1>${config.title}</h1>
