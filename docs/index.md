@@ -1,88 +1,59 @@
 # Earth Work
 
-<div class="ew-home">
-  <section class="ew-image-landing">
-    <img src="assets/images/earth-work-home.webp" alt="Earth Work homepage dashboard: regenerative agriculture, infrastructure, monitoring, automation and project navigation" />
-  </section>
-
-  <section class="ew-grid" aria-label="Project sections">
-    <a class="ew-card ew-soil" href="soil/ecological-processes/">
-      <span class="ew-icon">🌱</span>
-      <h2>Soil & Ecology</h2>
-      <p>Biology, compost, nutrients, roots and ecosystem health.</p>
-      <strong>Explore Soil →</strong>
-    </a>
-
-    <a class="ew-card ew-plants" href="plants/plant-profiles/">
-      <span class="ew-icon">🌿</span>
-      <h2>Plants & Profiles</h2>
-      <p>Amaranth, Jerusalem artichoke, squash, beans, cover crops and support plants.</p>
-      <strong>Browse Plants →</strong>
-    </a>
-
-    <a class="ew-card ew-matrix" href="plants/crop-matrix/">
-      <span class="ew-icon">📊</span>
-      <h2>Crop Matrix</h2>
-      <p>Compare crops across criteria, functions, trade-offs and system roles.</p>
-      <strong>Open Matrix →</strong>
-    </a>
-
-    <a class="ew-card ew-water" href="project/site-assessment/">
-      <span class="ew-icon">💧</span>
-      <h2>Water Systems</h2>
-      <p>Rainwater harvesting, storage, irrigation planning and efficient use.</p>
-      <strong>Review Site →</strong>
-    </a>
-
-    <a class="ew-card ew-experiments" href="experiments/greenhouse-2026/">
-      <span class="ew-icon">🧪</span>
-      <h2>Experiments</h2>
-      <p>Trials, prototypes, greenhouse work and living laboratory notes.</p>
-      <strong>View Experiments →</strong>
-    </a>
-
-    <a class="ew-card ew-journal" href="journal/">
-      <span class="ew-icon">📓</span>
-      <h2>Field Journal</h2>
-      <p>Observations, lessons, logs, failures and field reports.</p>
-      <strong>Read Journal →</strong>
-    </a>
-
-    <a class="ew-card ew-infra" href="project/site-assessment/">
-      <span class="ew-icon">🏗️</span>
-      <h2>Infrastructure</h2>
-      <p>Shelter, container, water tanks, energy, tools and site operations.</p>
-      <strong>See Infrastructure →</strong>
-    </a>
-
-    <a class="ew-card ew-monitoring" href="experiments/bed-layout-2026/">
-      <span class="ew-icon">📈</span>
-      <h2>Monitoring & Automation</h2>
-      <p>Sensors, dashboards, measurements and automation for smarter decisions.</p>
-      <strong>Open Dashboard →</strong>
-    </a>
-
-    <a class="ew-card ew-plan" href="project/three-year-plan/">
-      <span class="ew-icon">📅</span>
-      <h2>3-Year Plan</h2>
-      <p>Foundations, systems, scaling and long-term project development.</p>
-      <strong>View Plan →</strong>
-    </a>
-  </section>
-
-  <section class="ew-principles">
-    <div>
-      <span class="ew-icon">🌍</span>
-      <h2>Regenerative Principles</h2>
-      <p>Soil first. Biodiversity. Closed loops. Minimum disturbance. Living roots. Long-term thinking.</p>
-      <a href="project/overview/">Learn principles →</a>
+<div class="ew-home ew-home-map">
+  <section class="ew-dashboard" aria-label="Earth Work project dashboard">
+    <div class="ew-dashboard-bg" aria-hidden="true">
+      <div class="ew-orb ew-orb-a"></div>
+      <div class="ew-orb ew-orb-b"></div>
+      <div class="ew-dashboard-topline"></div>
+      <div class="ew-hero-copy">
+        <span class="ew-mini">Growing systems. Deploying solutions.</span>
+        <strong>EARTH WORK</strong>
+        <em>Growing food. Restoring soil. Building resilient systems.</em>
+      </div>
+      <div class="ew-visual-farm">
+        <span class="ew-greenhouse-shape"></span>
+        <span class="ew-field-row row-1"></span>
+        <span class="ew-field-row row-2"></span>
+        <span class="ew-field-row row-3"></span>
+        <span class="ew-field-row row-4"></span>
+      </div>
     </div>
-    <ul>
-      <li>Build soil, not just yield</li>
-      <li>Maximize diversity</li>
-      <li>Keep soil covered</li>
-      <li>Minimize disturbance</li>
-      <li>Close the loop</li>
-    </ul>
+
+    <a class="ew-linkbox ew-soil-box" href="soil/ecological-processes/">
+      <span>🌱</span><strong>Soil & Ecology</strong><small>Roots, compost, biology</small>
+    </a>
+
+    <a class="ew-linkbox ew-plants-box" href="plants/plant-profiles/">
+      <span>🌿</span><strong>Plants & Profiles</strong><small>Crop knowledge base</small>
+    </a>
+
+    <a class="ew-linkbox ew-matrix-box" href="plants/crop-matrix/">
+      <span>📊</span><strong>Crop Matrix</strong><small>Kiviat and comparisons</small>
+    </a>
+
+    <a class="ew-linkbox ew-water-box" href="project/site-assessment/">
+      <span>💧</span><strong>Water Systems</strong><small>Storage, rain, irrigation</small>
+    </a>
+
+    <a class="ew-linkbox ew-experiments-box" href="experiments/greenhouse-2026/">
+      <span>🧪</span><strong>Experiments</strong><small>Trials and prototypes</small>
+    </a>
+
+    <a class="ew-linkbox ew-journal-box" href="journal/">
+      <span>📓</span><strong>Field Journal</strong><small>Logs and observations</small>
+    </a>
+
+    <a class="ew-linkbox ew-infra-box" href="project/site-assessment/">
+      <span>🏗️</span><strong>Infrastructure</strong><small>Shelter, power, tools</small>
+    </a>
+
+    <a class="ew-linkbox ew-monitoring-box" href="experiments/bed-layout-2026/">
+      <span>📈</span><strong>Monitoring</strong><small>Sensors and dashboards</small>
+    </a>
+
+    <a class="ew-linkbox ew-plan-box" href="project/three-year-plan/">
+      <span>📅</span><strong>3-Year Plan</strong><small>Roadmap and phases</small>
+    </a>
   </section>
 </div>
