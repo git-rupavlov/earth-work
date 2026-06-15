@@ -64,25 +64,70 @@
   stroke-width: 1.5;
 }
 
+.crop-scatter-card svg {
+  min-height: 360px;
+}
+
+.crop-scatter-grid {
+  stroke: var(--md-default-fg-color--lightest);
+  stroke-width: 1;
+}
+
+.crop-scatter-axis {
+  stroke: var(--md-default-fg-color--light);
+  stroke-width: 1.4;
+}
+
+.crop-scatter-dot {
+  fill: rgba(76, 130, 65, 0.9);
+  stroke: var(--md-default-bg-color);
+  stroke-width: 1.4;
+}
+
+.crop-scatter-name,
+.crop-scatter-label,
+.crop-scatter-tick {
+  fill: currentColor;
+}
+
+.crop-scatter-name {
+  font-size: 11px;
+  opacity: 0.82;
+}
+
+.crop-scatter-label {
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.crop-scatter-tick {
+  font-size: 11px;
+  opacity: 0.72;
+}
+
 .crop-latin {
   font-style: italic;
   opacity: 0.74;
 }
 
 .crop-score-table,
-#crop-function-matrix {
+#crop-function-matrix,
+#crop-score-comparison {
   width: 100%;
   border-collapse: collapse;
 }
 
 .crop-score-table td,
 #crop-function-matrix th,
-#crop-function-matrix td {
+#crop-function-matrix td,
+#crop-score-comparison th,
+#crop-score-comparison td {
   border-bottom: 1px solid var(--md-default-fg-color--lightest);
   padding: 0.45rem;
 }
 
-#crop-function-matrix td {
+#crop-function-matrix td,
+#crop-score-comparison td {
   text-align: center;
 }
 
