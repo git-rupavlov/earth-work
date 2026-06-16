@@ -65,6 +65,11 @@
         <img src="assets/images/monitoring.webp" alt="Monitoring dashboard, sensors and field telemetry" loading="lazy" decoding="async" />
         <div><span>Automation</span><h2>Monitoring & Automation</h2><p>Sensors, dashboards and automation for smarter decisions.</p><strong>Open Automation</strong></div>
       </a>
+
+      <a class="ew-feature" href="sprout-lab/">
+        <img src="assets/images/sprout-lab.webp" alt="Indoor sprout and microgreen lab with trays, shelves and controlled lighting" loading="lazy" decoding="async" />
+        <div><span>Indoor production</span><h2>Sprout Lab</h2><p>Кълнове, микрозеленчуци, разсад, тестове за кълняемост и оптимизация на процеси.</p><strong>Open Sprout Lab</strong></div>
+      </a>
     </div>
   </section>
 
