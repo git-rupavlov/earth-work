@@ -1,7 +1,6 @@
 site_name: NoMad's Farm
 site_description: Zen and the Art of Nomad Farming
 site_author: Ruslav Pavlov
-
 repo_url: https://github.com/git-rupavlov/earth-work
 repo_name: git-rupavlov/earth-work
 
@@ -34,10 +33,22 @@ nav:
       - Overview: about/overview.md
   - Projects:
       - Project Registry: projects/index.md
-      - Sprout Lab: sprout-lab/index.md
-      - Microclimate Lab: projects/microclimate-lab.md
-      - Balcony Pot House: projects/balcony-pot-house.md
-      - Gaitanevo 2026: projects/gaitanevo-2026.md
+      - Sprout Lab:
+          - Overview: sprout-lab/index.md
+          - 3-Year Development Plan: project/three-year-plan.md
+          - Site Assessment: project/site-assessment.md
+      - Microclimate Lab:
+          - Overview: projects/microclimate-lab.md
+          - 3-Year Development Plan: project/three-year-plan.md
+          - Site Assessment: project/site-assessment.md
+      - Balcony Pot House:
+          - Overview: projects/balcony-pot-house.md
+          - 3-Year Development Plan: project/three-year-plan.md
+          - Site Assessment: project/site-assessment.md
+      - Gaitanevo 2026:
+          - Overview: projects/gaitanevo-2026.md
+          - 3-Year Development Plan: project/three-year-plan.md
+          - Site Assessment: project/site-assessment.md
       - No-Maintenance Squash Trial:
           - Overview: projects/no-maintenance-squash.md
           - 3-Year Development Plan: project/three-year-plan.md
