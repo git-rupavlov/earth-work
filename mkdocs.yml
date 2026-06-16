@@ -30,18 +30,22 @@ theme:
 
 nav:
   - Home: index.md
-  - Project:
-      - Overview: project/overview.md
-      - 3-Year Development Plan: project/three-year-plan.md
-      - Site Assessment: project/site-assessment.md
+  - About:
+      - Overview: about/overview.md
   - Projects:
       - Project Registry: projects/index.md
       - Sprout Lab: sprout-lab/index.md
       - Microclimate Lab: projects/microclimate-lab.md
       - Balcony Pot House: projects/balcony-pot-house.md
       - Gaitanevo 2026: projects/gaitanevo-2026.md
-      - No-Maintenance Squash Trial: projects/no-maintenance-squash.md
-      - Greenhouse 2026: experiments/greenhouse-2026.md
+      - No-Maintenance Squash Trial:
+          - Overview: projects/no-maintenance-squash.md
+          - 3-Year Development Plan: project/three-year-plan.md
+          - Site Assessment: project/site-assessment.md
+      - Greenhouse 2026:
+          - Overview: experiments/greenhouse-2026.md
+          - 3-Year Development Plan: project/three-year-plan.md
+          - Site Assessment: project/site-assessment.md
   - Knowledge Base:
       - Source Hierarchy: knowledge/index.md
       - Content Audit: knowledge/content-audit.md
@@ -56,10 +60,6 @@ nav:
       - Water Systems: water/index.md
       - Infrastructure: infrastructure/index.md
       - Monitoring & Automation: automation/index.md
-      - Sprout Lab: sprout-lab/index.md
-  - Experiments:
-      - Greenhouse 2026: experiments/greenhouse-2026.md
-      - Bed Layout 2026: experiments/bed-layout-2026.md
   - Journal:
       - Field Journal: journal/index.md
   - Zen:
