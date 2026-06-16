@@ -34,6 +34,14 @@ nav:
       - Overview: project/overview.md
       - 3-Year Development Plan: project/three-year-plan.md
       - Site Assessment: project/site-assessment.md
+  - Projects:
+      - Project Registry: projects/index.md
+      - Sprout Lab: sprout-lab/index.md
+      - Microclimate Lab: projects/microclimate-lab.md
+      - Balcony Pot House: projects/balcony-pot-house.md
+      - Gaitanevo 2026: projects/gaitanevo-2026.md
+      - No-Maintenance Squash Trial: projects/no-maintenance-squash.md
+      - Greenhouse 2026: experiments/greenhouse-2026.md
   - Knowledge Base:
       - Source Hierarchy: knowledge/index.md
   - Soil:
