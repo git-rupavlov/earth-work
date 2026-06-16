@@ -44,6 +44,7 @@ nav:
       - Greenhouse 2026: experiments/greenhouse-2026.md
   - Knowledge Base:
       - Source Hierarchy: knowledge/index.md
+      - Content Audit: knowledge/content-audit.md
   - Soil:
       - Ecological Processes: soil/ecological-processes.md
       - Soil Improvement Strategy: soil/soil-improvement-strategy.md
