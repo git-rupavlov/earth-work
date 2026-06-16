@@ -64,6 +64,14 @@ const EW_PAGE_HEROES = [
     text: 'Sensors, dashboards, irrigation control and field measurements.'
   },
   {
+    match: '/sprout-lab/',
+    className: 'ew-page-sprout-lab',
+    image: 'sprout-lab.webp',
+    kicker: 'Indoor production lab',
+    title: 'Sprout Lab',
+    text: 'Kълнове, микрозеленчуци, разсад, тестове за кълняемост и оптимизация на процеси.'
+  },
+  {
     match: '/experiments/greenhouse-2026/',
     className: 'ew-page-experiments',
     image: 'experiments.webp',
