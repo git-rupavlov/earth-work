@@ -2,62 +2,53 @@
 
 ## Overview
 
-The purpose of the first three years is to establish soil structure, organic matter reserves, biological activity, water retention, biomass production systems and operational knowledge of the site.
+The original direction remains unchanged.
 
-Food production is included, but during the establishment phase it remains a secondary output.
+The purpose of the first three years is still to build soil structure, organic matter reserves, biological activity, water retention, biomass production systems and operational knowledge.
 
-The current working site is near Baylovo.
+Baylovo is now part of the timeline as a working system. The current role of Baylovo is practical learning, participation and validation, not replacement of the project plan.
 
-The plan keeps the original direction, but the timeline now reflects the real starting condition:
+Baylovo provides:
 
-- the greenhouse is already in use;
-- the greenhouse contains mostly lapad and nettle;
-- some vegetables are present, but they are not yet strategically important;
-- roughly 1 dka around the greenhouse can be used for biomass, seed and cover crops;
-- roughly 4 dka near the river can be used mainly for butternut squash expansion.
+- real field experience;
+- access to an active greenhouse;
+- observation of existing crops and workflows;
+- experience with water, weeds, pests and labor requirements;
+- seed collection opportunities;
+- a place to test additional resilient crops;
+- a way to improve efficiency of ongoing work.
 
-This is not a clean-sheet project anymore. That is useful. Existing biomass is better than an empty inspirational diagram, despite humanity's obvious attachment to diagrams.
+Food production is included, but during the establishment phase it remains one output among several.
 
 ---
 
-# Current Site Structure
+# Current Baylovo Context
 
 ## Greenhouse
 
 Current state:
 
-- lapad;
+- mostly lapad;
 - nettle;
 - small amount of vegetables.
 
-Strategic role:
+Role:
 
-- preserve existing perennial biomass;
-- observe soil and water behavior;
-- use as propagation and seed-support zone;
-- avoid unnecessary clearing.
+- participate in the existing system;
+- preserve useful perennial biomass;
+- improve workflow and harvesting efficiency;
+- test propagation and small protected trials;
+- document what already works.
 
 ## Land Around the Greenhouse (~1 dka)
 
-Strategic role:
+Role:
 
-- expand nettle and lapad where useful;
-- establish cover crops;
-- create biomass for compost and mulch;
-- create at least two amaranth seed beds with different varieties;
-- test low-input field management.
-
-Required amaranth beds:
-
-- Red Garnet;
-- Green Garnet.
-
-Main outputs:
-
-- seed for next year;
-- edible biomass;
-- mulch biomass;
-- compost feedstock.
+- support existing nettle and lapad biomass;
+- introduce cover crops;
+- test amaranth varieties for seed;
+- produce mulch and compost material;
+- observe soil response under low-input management.
 
 ## River Field (~4 dka)
 
@@ -65,36 +56,34 @@ Current state:
 
 - small area already planted with pumpkins.
 
-Strategic role:
+Role:
 
-- expand butternut squash as much as water, labor and access allow;
-- use squash vines as ground cover;
-- observe weed pressure, soil moisture and wildlife pressure;
-- avoid overcomplicating the field during the first season.
+- expand butternut squash where realistic;
+- observe labor, water demand, weed pressure and yield;
+- keep the first season simple;
+- use results to decide next year's scale.
 
 ---
 
-# Year 1: Assessment, Adoption and Soil Building
+# Year 1: Experience, Observation and Low-Risk Additions
 
 ## Objectives
 
-- understand the real Baylovo site conditions;
-- map current vegetation, access, water and soil behavior;
-- preserve existing useful biomass;
-- begin soil improvement without unnecessary disturbance;
-- establish seed-producing amaranth beds;
-- expand butternut squash in the river field;
-- create the first compost and mulch cycles;
-- produce small quantities of food where realistic.
+- learn from the existing Baylovo system;
+- document greenhouse condition, field access, water and soil behavior;
+- preserve useful existing biomass;
+- improve efficiency of current work;
+- introduce selected new crops carefully;
+- establish small seed-focused amaranth beds;
+- expand butternut squash only within realistic labor and water limits;
+- begin mulch and compost cycles using available biomass.
 
 ## Greenhouse Utilization
-
-The greenhouse is not an empty controlled environment. It is already biologically active.
 
 Priority:
 
 ```text
-Preserve → Observe → Selectively Improve
+Participate -> Observe -> Improve Efficiency -> Introduce Carefully
 ```
 
 Current dominant species:
@@ -104,24 +93,24 @@ Current dominant species:
 
 Use:
 
-- maintain useful existing stands;
-- harvest biomass in cycles;
-- use some biomass for mulch and compost;
-- reserve space for seedling propagation only where it does not destroy established useful growth.
-
-Vegetables already present are treated as secondary observations, not as the main production goal.
+- harvest useful biomass in cycles;
+- keep productive patches;
+- use surplus biomass for mulch and compost;
+- reserve limited space for propagation and observation;
+- avoid unnecessary clearing.
 
 ## Greenhouse Field (~1 dka)
 
 Primary functions:
 
+- experience building;
 - biomass production;
-- seed production;
 - soil cover;
-- cover crop establishment;
-- compost and mulch feedstock.
+- compost and mulch feedstock;
+- seed trials;
+- cover crop introduction.
 
-Priority species:
+Candidate species:
 
 - nettle;
 - lapad;
@@ -130,85 +119,40 @@ Priority species:
 - clover;
 - vetch;
 - phacelia;
+- buckwheat;
 - sunflower;
 - sorghum.
 
-## Required Amaranth Seed Beds
+## Amaranth Seed Trial
 
-At least two separate beds:
+At least two separated seed beds:
 
-### Bed A: Red Garnet Amaranth
-
-Purpose:
-
-- seed collection for next year;
-- edible leaf biomass;
-- mulch production;
-- observation of performance under local conditions.
-
-### Bed B: Green Garnet Amaranth
+- Red Garnet;
+- Green Garnet.
 
 Purpose:
 
-- seed collection for next year;
-- genetic and practical comparison with Red Garnet;
-- edible leaf biomass;
-- mulch production.
+- collect seed for next year;
+- observe growth under local conditions;
+- compare varieties;
+- produce edible leaves where available;
+- use residues for mulch or compost.
 
-Management priority:
-
-```text
-Seed first
-Food second
-Mulch third
-```
-
-The objective is not maximum food yield in Year 1. The objective is to create local seed capacity.
-
-## Existing Biomass Crops
-
-### Nettle
-
-Use for:
-
-- mulch;
-- compost;
-- liquid fertilizer trials;
-- mineral-rich biomass;
-- pollinator and insect habitat.
-
-### Lapad
-
-Use for:
-
-- edible spring and early-season leaves;
-- mulch;
-- compost;
-- soil cover;
-- perennial biomass.
-
-### Alfalfa
-
-Use for:
-
-- nitrogen fixation;
-- deep rooting;
-- soil structure improvement;
-- cut-and-drop biomass.
+This is a trial, not a full strategic pivot.
 
 ## River Field (~4 dka)
 
-Primary crop:
+Primary trial crop:
 
 - butternut squash.
 
 Objective:
 
 ```text
-Plant as much butternut squash as water, labor and access realistically allow.
+Increase planting only as much as water, access and labor realistically allow.
 ```
 
-Secondary species can be tested on edges or small sections:
+Possible edge or small-section tests:
 
 - sunflower;
 - amaranth;
@@ -216,20 +160,14 @@ Secondary species can be tested on edges or small sections:
 - sorghum;
 - beans.
 
-The river field should remain simple in Year 1. Complexity can wait. Nature already brought enough of its own bugs, both biological and logistical.
+The river field should remain simple in Year 1.
 
 ## Compost System
 
-Minimum target:
+Initial target:
 
 ```text
-5 m³
-```
-
-Desired target:
-
-```text
-10+ m³
+5-10 m3
 ```
 
 Feedstocks:
@@ -242,34 +180,33 @@ Feedstocks:
 - grass clippings;
 - leaves;
 - wood chips;
-- manure if available.
+- available animal manure.
 
 ## Success Criteria
 
+### Experience
+
+- routine work understood;
+- workflow constraints documented;
+- labor bottlenecks identified;
+- water access and irrigation limits recorded.
+
 ### Soil
 
-- permanent soil cover established in key zones;
+- useful soil cover preserved;
 - first mulch cycle completed;
-- active root systems present;
-- useful existing biomass preserved.
+- decomposition observed;
+- productive biomass patches mapped.
 
 ### Seeds
 
-- Red Garnet amaranth seed collected;
-- Green Garnet amaranth seed collected;
-- notes kept on germination, growth, height, pest pressure and harvest timing.
-
-### Infrastructure
-
-- greenhouse status documented;
-- field access documented;
-- water sources evaluated;
-- compost area operational;
-- zones defined: greenhouse, 1 dka field, river field.
+- amaranth seed trial completed;
+- seed collected if the season allows;
+- germination, growth, pest pressure and harvest timing recorded.
 
 ### Food
 
-Small production of:
+Small production or observation of:
 
 - lapad;
 - nettle;
@@ -280,38 +217,40 @@ Small production of:
 
 ---
 
-# Year 2: Expansion and Validation
+# Year 2: Efficiency, Validation and Controlled Expansion
 
 ## Objectives
 
-- increase cultivated area only where Year 1 showed realistic potential;
-- validate crop performance from Baylovo conditions;
-- expand internal biomass production;
-- reduce external fertility inputs;
-- use collected amaranth seed for broader planting;
-- improve water and access systems.
+- increase efficiency of current Baylovo activity;
+- validate Year 1 observations;
+- expand only what proved useful;
+- introduce additional resilient crops;
+- improve internal biomass and compost cycles;
+- reduce avoidable external inputs;
+- use collected seed where available.
 
-## Greenhouse Utilization
+## Greenhouse
 
 Target:
 
 ```text
-Selective use, not full occupation
+Better use of the existing system, not maximum occupation
 ```
 
 The greenhouse should support:
 
+- early greens;
 - seedling propagation;
-- early-season greens;
-- protected experiments;
+- small protected trials;
 - seed multiplication;
-- biomass cycling.
+- biomass cycling;
+- observation of perennial patches.
 
-Existing lapad and nettle should remain part of the system unless they block higher-priority use.
+Existing lapad and nettle remain part of the system unless they block higher-value work.
 
 ## Greenhouse Field (~1 dka)
 
-Expand:
+Possible expansion:
 
 - alfalfa;
 - nettle;
@@ -320,12 +259,14 @@ Expand:
 - clover;
 - vetch;
 - phacelia;
-- buckwheat.
+- buckwheat;
+- sorghum;
+- sunflower.
 
 Target:
 
 ```text
-30-50% cover crops and perennial biomass
+Improve productivity per unit of labor
 ```
 
 ## River Field (~4 dka)
@@ -339,9 +280,7 @@ Validate butternut squash performance:
 - wildlife damage;
 - labor requirement.
 
-If Year 1 performs well, expand squash planting.
-
-If Year 1 performs poorly, reduce squash area and increase cover crops or biomass crops.
+Expand squash only if Year 1 shows that the crop is worth the required labor and water.
 
 ## Food Production
 
@@ -353,7 +292,8 @@ Expansion candidates:
 - beans;
 - sunflower;
 - Jerusalem artichoke;
-- leafy perennials.
+- leafy perennials;
+- drought-tolerant support crops.
 
 ## Soil Monitoring
 
@@ -371,10 +311,10 @@ Observe:
 Target:
 
 ```text
-10-20 m³ annually
+10-20 m3 annually
 ```
 
-Internal production becomes the primary fertility source.
+Internal production should increasingly become the primary fertility source.
 
 ---
 
@@ -388,17 +328,6 @@ Internal production becomes the primary fertility source.
 - expand only where water, biomass and labor allow;
 - use locally produced seed where possible;
 - formalize the crop matrix with site observations.
-
-## Greenhouse Utilization
-
-Use only if justified by:
-
-- available water;
-- available biomass;
-- available labor;
-- clear production or research value.
-
-The greenhouse should not become a maintenance trap wearing transparent plastic. Humanity has built enough of those.
 
 ## Site Functions
 
@@ -445,29 +374,7 @@ Reduced irrigation requirements per unit area.
 
 # Long-Term Direction
 
-The site should transition from:
-
-```text
-External Inputs
-        ↓
-Crop Production
-```
-
-towards:
-
-```text
-Biomass
-        ↓
-Compost
-        ↓
-Soil Improvement
-        ↓
-Food Production
-        ↓
-Local Seed
-        ↓
-Better Adapted Next Cycle
-```
+The site should transition from external inputs toward internal biomass, compost, soil improvement, food production and local seed.
 
 The primary product of the system is fertile soil.
 
