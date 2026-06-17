@@ -6,7 +6,7 @@ Active.
 
 ## Overview
 
-Balcony Pot House is a small-scale urban food production and experimentation system located on a South-East facing apartment balcony.
+Balcony Pot House is a small-scale urban food production and observation system located on a South-East facing apartment balcony.
 
 The project serves three purposes:
 
@@ -15,10 +15,6 @@ The project serves three purposes:
 3. Practical data collection for future field-scale projects.
 
 The system combines container growing, passive shading, volunteer plant selection and microclimate observation.
-
-This is not just a balcony with pots. It is a compact production and learning system, because apparently even a balcony can be made to carry research responsibilities now.
-
----
 
 ## Current Inventory - June 2026
 
@@ -38,19 +34,11 @@ Contents:
 
 - Pink Dream tomato
 
-Status:
-
-- Active production container.
-
 #### F30 #2
 
 Contents:
 
 - Pink Dream tomato
-
-Status:
-
-- Active production container.
 
 #### F30 #3
 
@@ -58,15 +46,11 @@ Contents:
 
 - Sweet potato
 
-Status:
-
-- Establishment phase.
-
 Purpose:
 
-- Food production;
+- food production;
 - biomass production;
-- container ground-cover experiment.
+- container ground-cover observation.
 
 #### F30 #4
 
@@ -74,15 +58,9 @@ Contents:
 
 - Tomato sucker #1
 
-Status:
-
-- Rooting trial.
-
 Purpose:
 
-- Vegetative propagation experiment.
-
----
+- vegetative propagation observation.
 
 ## Rectangular Window Boxes
 
@@ -122,14 +100,24 @@ Layout:
 - Cherry tomato;
 - Rosemary.
 
-Purpose:
+## Small Window Boxes
 
-- Mixed production;
-- companion planting;
-- compact crop comparison;
-- use of limited balcony edge space.
+Quantity:
 
----
+- 3
+
+Contents:
+
+- Rosemary;
+- Rosemary;
+- Rosemary.
+
+Role:
+
+- culinary herb production;
+- perennial balcony stock;
+- drought-tolerant herb layer;
+- propagation source material.
 
 ## Square Cube Containers
 
@@ -173,8 +161,6 @@ Contents:
 - Parsley;
 - volunteer cherry tomato seedlings.
 
----
-
 ## Volunteer Cherry Tomato Population
 
 Origin:
@@ -183,7 +169,7 @@ Origin:
 
 Method:
 
-- Old plant material and fruit residues were buried back into the cube containers after the previous season.
+- Old plant material and fruit residues were returned to the cube containers after the previous season.
 
 Result:
 
@@ -191,22 +177,16 @@ Result:
 
 Observed selection effect:
 
-- Strong competition occurred during emergence and early growth;
+- strong competition during emergence and early growth;
 - only the strongest seedlings survived;
 - surviving seedlings developed strong root systems before visible above-ground growth became dominant.
 
 Project value:
 
-- Demonstrates natural selection under balcony container conditions;
-- provides locally adapted planting material;
-- reduces dependence on purchased seed;
-- creates a possible self-seeding balcony production cycle.
-
-Future comparison:
-
-- Compare volunteer cherry tomatoes against intentionally started seedlings from the same population.
-
----
+- local balcony selection pressure;
+- possible adapted planting material;
+- reduced dependence on purchased seed;
+- potential self-seeding production cycle.
 
 ## Current Plant Inventory
 
@@ -251,8 +231,8 @@ Quantity:
 
 Role:
 
-- climbing/legume crop observation;
-- nitrogen-fixing support crop potential;
+- climbing crop observation;
+- legume support crop potential;
 - container productivity trial.
 
 ### Parsley
@@ -271,14 +251,17 @@ Role:
 
 Quantity:
 
-- 4 plants in window boxes.
+- 7 plants total;
+- 4 plants in rectangular window boxes;
+- 3 plants in small window boxes.
 
 Role:
 
 - culinary herb;
 - drought-tolerant perennial;
 - pollinator support;
-- perennial support layer.
+- perennial support layer;
+- propagation source material.
 
 ### Grapevine
 
@@ -294,21 +277,11 @@ Role:
 - biomass production;
 - habitat creation.
 
----
-
 ## Functional Layers
 
 ### Canopy Layer
 
 - Grapevine.
-
-Functions:
-
-- Shade;
-- cooling;
-- microclimate moderation;
-- biomass;
-- habitat.
 
 ### Production Layer
 
@@ -330,8 +303,6 @@ Functions:
 - sweet potato container performance;
 - grapevine shade effect;
 - balcony microclimate observation.
-
----
 
 ## Active Experiments
 
@@ -364,11 +335,13 @@ Observation of crop combinations in restricted root volume:
 - pepper + parsley;
 - volunteer tomato competition.
 
+### Rosemary Perennial Layer
+
+Observation of rosemary performance as a low-maintenance perennial herb layer under balcony constraints.
+
 ### Solar Monitoring Development
 
 Preparation for future environmental monitoring and low-power balcony automation.
-
----
 
 ## Feeds Data Into
 
@@ -378,8 +351,6 @@ Preparation for future environmental monitoring and low-power balcony automation
 - Microclimate Lab;
 - 3-Year Development Plan;
 - Crop Oracle.
-
----
 
 ## Key Metrics
 
@@ -393,9 +364,8 @@ Preparation for future environmental monitoring and low-power balcony automation
 - pest pressure;
 - seed collection potential;
 - volunteer seedling survival;
-- crop compatibility in shared containers.
-
----
+- crop compatibility in shared containers;
+- rosemary survival and regrowth.
 
 ## Next Actions
 
@@ -404,4 +374,5 @@ Preparation for future environmental monitoring and low-power balcony automation
 - thin or transplant volunteer cherry tomatoes if overcrowding becomes limiting;
 - observe sweet potato vine growth and container coverage;
 - document grapevine shade effect during summer heat;
+- monitor rosemary survival and regrowth in small window boxes;
 - connect sensor observations through Microclimate Lab.
