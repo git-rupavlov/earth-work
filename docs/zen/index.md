@@ -1,18 +1,19 @@
 # Zen and the Art of Nomad Farming
 
-<figure class="ew-page-hero">
-  <img src="../assets/images/zen.webp" alt="Resting after field work while watching the distant mountains at golden hour" loading="eager" decoding="async" />
-</figure>
-
-> Thoughts from the field.
->
-> Soil, weather, mistakes, observations, experiments, restoration, simplicity and the long conversation between people and land.
+<section class="ew-page-hero" aria-label="Zen and the Art of Nomad Farming">
+  <img class="ew-page-hero-image" src="../assets/images/zen.webp" alt="Resting after field work while watching the distant mountains at golden hour" loading="eager" decoding="async" width="2560" height="1440" />
+  <div class="ew-page-hero-content">
+    <p class="ew-page-hero-kicker">Personal journal</p>
+    <h1>Zen and the Art of Nomad Farming</h1>
+    <p>Thoughts from the field: soil, weather, mistakes, observations, restoration, simplicity and the long conversation between people and land.</p>
+  </div>
+</section>
 
 ---
 
 ## Purpose
 
-The rest of Earth Work focuses on:
+The rest of NoMad's Farm focuses on:
 
 - measurements;
 - crop profiles;
@@ -63,7 +64,7 @@ Quarterly and annual summaries documenting progress, setbacks and changes.
 
 ## Documentation Philosophy
 
-Earth Work treats failures as valuable data.
+NoMad's Farm treats failures as valuable data.
 
 A failed experiment that is documented is more useful than a successful experiment that cannot be reproduced.
 
