@@ -29,38 +29,37 @@ Quantity:
 - 4
 
 #### F30 #1
-
-Contents:
-
 - Pink Dream tomato
 
 #### F30 #2
-
-Contents:
-
 - Pink Dream tomato
 
 #### F30 #3
-
-Contents:
-
 - Sweet potato
 
-Purpose:
-
-- food production;
-- biomass production;
-- container ground-cover observation.
-
 #### F30 #4
+- Tomato sucker #1
+
+## Cylindrical Pots - F25
+
+Diameter:
+
+- 25 cm
+
+Quantity:
+
+- 1
 
 Contents:
 
-- Tomato sucker #1
+- Sunflower
 
 Purpose:
 
-- vegetative propagation observation.
+- pollinator support;
+- biomass production;
+- seed production trial;
+- balcony biodiversity.
 
 ## Rectangular Window Boxes
 
@@ -69,33 +68,21 @@ Quantity:
 - 4
 
 ### Window Box #1
-
-Layout:
-
 - Cherry tomato;
 - Pepper;
 - Cherry tomato.
 
 ### Window Box #2
-
-Layout:
-
 - Cherry tomato;
 - Pepper;
 - Cherry tomato.
 
 ### Window Box #3
-
-Layout:
-
 - Rosemary;
 - Cherry tomato;
 - Rosemary.
 
 ### Window Box #4
-
-Layout:
-
 - Rosemary;
 - Cherry tomato;
 - Rosemary.
@@ -112,13 +99,6 @@ Contents:
 - Rosemary;
 - Rosemary.
 
-Role:
-
-- culinary herb production;
-- perennial balcony stock;
-- drought-tolerant herb layer;
-- propagation source material.
-
 ## Square Cube Containers
 
 Dimensions:
@@ -130,33 +110,21 @@ Quantity:
 - 4
 
 ### Cube Pot #1
-
-Contents:
-
 - White bean;
 - Parsley;
 - volunteer cherry tomato seedlings.
 
 ### Cube Pot #2
-
-Contents:
-
 - White bean;
 - Parsley;
 - volunteer cherry tomato seedlings.
 
 ### Cube Pot #3
-
-Contents:
-
 - Pepper;
 - Parsley;
 - volunteer cherry tomato seedlings.
 
 ### Cube Pot #4
-
-Contents:
-
 - Pepper;
 - Parsley;
 - volunteer cherry tomato seedlings.
@@ -167,115 +135,59 @@ Origin:
 
 - Previous year's cherry tomato production.
 
-Method:
-
-- Old plant material and fruit residues were returned to the cube containers after the previous season.
-
 Result:
 
-- A large number of volunteer cherry tomato seedlings emerged naturally.
-
-Observed selection effect:
-
-- strong competition during emergence and early growth;
-- only the strongest seedlings survived;
-- surviving seedlings developed strong root systems before visible above-ground growth became dominant.
-
-Project value:
-
-- local balcony selection pressure;
-- possible adapted planting material;
-- reduced dependence on purchased seed;
-- potential self-seeding production cycle.
+- Large volunteer population with strong natural selection pressure.
 
 ## Current Plant Inventory
 
 ### Tomatoes
 
-Pink Dream tomatoes:
-
-- 2 mature plants in F30 containers.
-
-Cherry tomatoes:
-
-- 6 planned plants in rectangular window boxes;
-- additional volunteer population in cube containers.
-
-Tomato propagation:
-
-- 1 direct-planted sucker trial in F30 container.
+- 2 Pink Dream tomatoes;
+- 6 cherry tomatoes in window boxes;
+- volunteer cherry tomato population;
+- 1 tomato sucker rooting trial.
 
 ### Peppers
 
-Quantity:
-
-- 2 in rectangular window boxes;
-- 2 in cube containers.
+- 4 plants total.
 
 ### Sweet Potato
 
+- 1 plant.
+
+### Sunflower
+
 Quantity:
 
-- 1 in F30 container.
+- 1
+
+Location:
+
+- F25 cylindrical pot.
 
 Role:
 
-- container food production trial;
-- biomass and cover trial.
+- pollinator attraction;
+- seed production;
+- biomass generation;
+- biodiversity support.
 
 ### White Bean
 
-Quantity:
-
 - 2 cube containers.
-
-Role:
-
-- climbing crop observation;
-- legume support crop potential;
-- container productivity trial.
 
 ### Parsley
 
-Quantity:
-
 - present in all 4 cube containers.
-
-Role:
-
-- herb layer;
-- edible green production;
-- underplanting test.
 
 ### Rosemary
 
-Quantity:
-
-- 7 plants total;
-- 4 plants in rectangular window boxes;
-- 3 plants in small window boxes.
-
-Role:
-
-- culinary herb;
-- drought-tolerant perennial;
-- pollinator support;
-- perennial support layer;
-- propagation source material.
+- 7 plants total.
 
 ### Grapevine
 
-Status:
-
-- mature established vine canopy.
-
-Role:
-
-- seasonal shading;
-- passive cooling;
-- lower evaporation;
-- biomass production;
-- habitat creation.
+- mature established canopy.
 
 ## Functional Layers
 
@@ -289,7 +201,8 @@ Role:
 - cherry tomatoes;
 - peppers;
 - white beans;
-- sweet potato.
+- sweet potato;
+- sunflower.
 
 ### Herb Layer
 
@@ -308,40 +221,39 @@ Role:
 
 ### Tomato Sucker Rooting Trial
 
-Comparison between:
-
 - direct soil planting;
 - water rooting.
 
 ### Sweet Potato Container Trial
 
-Evaluation of sweet potato performance in F30 container conditions.
+Evaluation of sweet potato performance.
 
 ### Volunteer Tomato Selection
 
-Observation of naturally selected cherry tomato seedlings from previous-year seed.
+Observation of naturally selected cherry tomatoes.
 
 ### Grapevine Microclimate Effect
 
-Observation of shade, heat reduction and moisture retention under a living canopy.
+Observation of shade and moisture retention.
 
 ### Container Polyculture Trial
-
-Observation of crop combinations in restricted root volume:
 
 - tomato + pepper;
 - tomato + rosemary;
 - bean + parsley;
-- pepper + parsley;
-- volunteer tomato competition.
+- pepper + parsley.
 
 ### Rosemary Perennial Layer
 
-Observation of rosemary performance as a low-maintenance perennial herb layer under balcony constraints.
+Observation of long-term rosemary performance.
+
+### Sunflower Container Trial
+
+Observation of sunflower performance in an F25 container.
 
 ### Solar Monitoring Development
 
-Preparation for future environmental monitoring and low-power balcony automation.
+Preparation for future environmental monitoring.
 
 ## Feeds Data Into
 
@@ -351,28 +263,3 @@ Preparation for future environmental monitoring and low-power balcony automation
 - Microclimate Lab;
 - 3-Year Development Plan;
 - Crop Oracle.
-
-## Key Metrics
-
-- container size;
-- water demand;
-- sun exposure;
-- shade effect;
-- heat stress;
-- yield;
-- pruning response;
-- pest pressure;
-- seed collection potential;
-- volunteer seedling survival;
-- crop compatibility in shared containers;
-- rosemary survival and regrowth.
-
-## Next Actions
-
-- record all containers with photos;
-- track watering frequency by container type;
-- thin or transplant volunteer cherry tomatoes if overcrowding becomes limiting;
-- observe sweet potato vine growth and container coverage;
-- document grapevine shade effect during summer heat;
-- monitor rosemary survival and regrowth in small window boxes;
-- connect sensor observations through Microclimate Lab.
