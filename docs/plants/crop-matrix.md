@@ -6,7 +6,45 @@ This page presents crops as system components, not as winners or losers.
 
 The project provides scoring, classifications and visualizations. The final interpretation belongs to the reader.
 
-A tomato, a bean and a Jerusalem artichoke do different jobs. Comparing them as if they were the same tool is how people end up arguing with vegetables. Humanity has peaked, apparently.
+A tomato, a bean, a nettle patch and a butternut squash field do different jobs. Comparing them as if they were the same tool is how people end up arguing with vegetables. Humanity has peaked, apparently.
+
+---
+
+## Current Context
+
+Baylovo does not replace the original project plan.
+
+It is a working system where we can:
+
+- participate in an existing productive setup;
+- observe real soil, water, weeds, pests and labor requirements;
+- collect experience;
+- collect seed where possible;
+- improve efficiency of current work;
+- gradually introduce new crops without breaking what already works.
+
+For next year the direction remains broadly the same:
+
+```text
+Increase efficiency of current activity
+        +
+Introduce additional resilient crops
+        +
+Use observations to improve the original plan
+```
+
+Current additional focus crops:
+
+- nettle;
+- lapad;
+- alfalfa;
+- amaranth Red Garnet;
+- amaranth Green Garnet;
+- butternut squash;
+- sorghum;
+- sunflower;
+- chickpea;
+- Jerusalem artichoke.
 
 ---
 
@@ -16,7 +54,7 @@ The crop matrix separates three layers:
 
 1. **Data** — observations, measurements, literature values and working scores.
 2. **Classification** — crop roles, plant parts, lifecycle and ecological function.
-3. **Visualization** — Kiviat charts, heatmaps, function matrices and scatter plots.
+3. **Visualization** — Kiviat charts, scatter plots, function matrices and comparison tables.
 
 The goal is to support design decisions such as:
 
@@ -25,13 +63,14 @@ The goal is to support design decisions such as:
 - biomass generation;
 - drought-tolerant planting;
 - crop combinations;
-- balcony and field experiments.
+- balcony, greenhouse and field experiments;
+- Baylovo field learning and process validation.
 
 ---
 
 ## Full 24-Criteria Matrix
 
-The full matrix is intended to be shown as a heatmap.
+The full matrix is intended to be shown as a heatmap in a later version.
 
 | Group | Criteria |
 |---|---|
@@ -103,6 +142,10 @@ This table exposes the same 10-axis working score used by the Kiviat visualizati
 | Amaranth | 7 | 7 | 10 | 9 | 8 | 8 | 7 | 10 | 9 | 8 |
 | Jerusalem artichoke | 9 | 4 | 7 | 9 | 10 | 10 | 7 | 10 | 10 | 10 |
 | Butternut squash | 8 | 4 | 8 | 7 | 7 | 6 | 7 | 9 | 10 | 7 |
+| Nettle | 2 | 4 | 10 | 8 | 10 | 10 | 9 | 10 | 2 | 10 |
+| Lapad | 3 | 3 | 9 | 8 | 9 | 10 | 8 | 8 | 2 | 10 |
+| Alfalfa | 1 | 3 | 5 | 9 | 9 | 9 | 10 | 9 | 1 | 10 |
+| Sorghum | 7 | 5 | 6 | 10 | 9 | 9 | 7 | 10 | 9 | 9 |
 | Common bean | 6 | 9 | 8 | 6 | 7 | 7 | 10 | 6 | 10 | 7 |
 | Lentil | 5 | 9 | 8 | 8 | 8 | 9 | 10 | 4 | 10 | 8 |
 | Chickpea | 6 | 9 | 8 | 8 | 8 | 8 | 9 | 5 | 10 | 7 |
@@ -131,13 +174,16 @@ This table shows what each crop does inside the system.
 
 | Crop | Calories | Protein | Biomass | Nitrogen | Soil | Pollinators | Mulch | Storage | Ground cover |
 |---|---|---|---|---|---|---|---|---|---|
-| Amaranth |  |  | ✓ |  |  | ✓ | ✓ |  |  |
-| Jerusalem artichoke | ✓ |  | ✓ |  |  |  | ✓ |  |  |
+| Amaranth | ✓ | ✓ | ✓ |  |  | ✓ | ✓ | ✓ |  |
+| Jerusalem artichoke | ✓ |  | ✓ |  |  |  | ✓ | ✓ | ✓ |
 | Butternut squash | ✓ |  |  |  |  |  | ✓ | ✓ | ✓ |
+| Nettle |  |  | ✓ |  | ✓ | ✓ | ✓ |  | ✓ |
+| Lapad |  |  | ✓ |  | ✓ |  | ✓ |  | ✓ |
+| Alfalfa |  |  | ✓ | ✓ | ✓ | ✓ | ✓ |  | ✓ |
 | Common bean |  | ✓ |  | ✓ |  |  |  | ✓ |  |
 | Lentil |  | ✓ |  | ✓ |  |  |  | ✓ |  |
 | Chickpea |  | ✓ |  | ✓ |  |  |  | ✓ |  |
-| Sunflower |  |  | ✓ |  |  | ✓ |  |  |  |
+| Sunflower | ✓ | ✓ | ✓ |  |  | ✓ |  | ✓ |  |
 | Vetch |  |  |  | ✓ | ✓ |  | ✓ |  |  |
 | Clover |  |  |  | ✓ | ✓ | ✓ |  |  | ✓ |
 | Phacelia |  |  | ✓ |  | ✓ | ✓ |  |  |  |

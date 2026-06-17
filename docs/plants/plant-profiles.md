@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Each plant profile describes the ecological function of a species within the RP Project ecosystem.
+Each plant profile describes the ecological function of a species within the NoMad's Farm ecosystem.
 
 Plants are evaluated not only as food crops but also as biological tools capable of influencing:
 
@@ -11,6 +11,8 @@ Plants are evaluated not only as food crops but also as biological tools capable
 - nutrient cycling;
 - biological activity;
 - biomass production.
+
+Baylovo adds a practical learning layer: the project now participates in an already-working system. The objective is to observe, improve efficiency and introduce new crops carefully, not to pretend the old plan vanished into the compost heap.
 
 ---
 
@@ -74,6 +76,7 @@ High below-ground value.
 - Clover
 - Phacelia
 - Buckwheat
+- Vetch
 
 ## Expected Long-Term Effect
 
@@ -89,7 +92,25 @@ High below-ground value.
 
 ## Primary Function
 
-Biomass generation.
+Biomass generation, edible leaves and seed production.
+
+## Project Role
+
+The 2026 focus is seed and observation:
+
+- Red Garnet;
+- Green Garnet.
+
+Priority order:
+
+```text
+Seed first
+Observation second
+Food third
+Mulch fourth
+```
+
+This is not because food is unimportant. It is because local seed capacity is a force multiplier, and humans keep forgetting those exist until they run out of seed packets.
 
 ## Root Architecture
 
@@ -138,7 +159,8 @@ Very high.
 ## Human Use
 
 - edible leaves;
-- edible seeds.
+- edible seeds;
+- sprouts.
 
 ## Suitable Combinations
 
@@ -146,13 +168,121 @@ Very high.
 - Clover
 - Phacelia
 - Buckwheat
+- Sunflower
+- Sorghum
 
 ## Expected Long-Term Effect
 
 | Period | Expected Effect |
 |---|---|
-| Year 1 | Large mulch production |
-| Year 2+ | Improved organic matter accumulation |
+| Year 1 | Seed collection and mulch production |
+| Year 2+ | Improved local adaptation and organic matter accumulation |
+
+---
+
+# Nettle (Urtica dioica)
+
+## Primary Function
+
+Existing perennial biomass, compost feedstock and mineral-rich leafy material.
+
+## Project Role
+
+Baylovo already contains nettle. The objective is not to erase it, but to use it intelligently.
+
+Useful outputs:
+
+- mulch;
+- compost;
+- liquid fertilizer trials;
+- mineral-rich biomass;
+- insect and pollinator habitat;
+- edible young leaves where appropriate.
+
+## Ecological Functions
+
+### Biomass Production
+
+Nettle can regrow after cutting and produce repeated biomass cycles.
+
+### Soil Cover
+
+Dense stands can protect soil from exposure and reduce disturbance.
+
+### Nutrient Cycling
+
+Cut biomass can be returned to compost or used as mulch.
+
+## Management Notes
+
+- Cut before unwanted seed spread if needed.
+- Keep productive patches.
+- Avoid treating all nettle as a weed.
+
+---
+
+# Lapad (Rumex patientia)
+
+## Primary Function
+
+Existing edible perennial leafy biomass.
+
+## Project Role
+
+Baylovo already contains lapad. This makes it part of the existing working system, not a problem to be bulldozed because a spreadsheet got excited.
+
+Useful outputs:
+
+- early green leaves;
+- edible biomass;
+- mulch;
+- compost feedstock;
+- living soil cover.
+
+## Ecological Functions
+
+### Early Growth
+
+Provides early-season leaf mass before many annual crops are established.
+
+### Soil Protection
+
+Perennial presence helps keep the soil occupied and biologically active.
+
+### Biomass Cycling
+
+Surplus leaves can be cycled into compost or mulch.
+
+## Management Notes
+
+- Harvest selectively.
+- Keep useful patches.
+- Control spread only where it blocks priority crop beds.
+
+---
+
+# Butternut Squash (Cucurbita moschata)
+
+## Primary Function
+
+Storage food crop and living ground cover.
+
+## Project Role
+
+The river field near Baylovo currently has a small pumpkin area. The practical direction is to increase butternut squash where water, access and labor allow.
+
+## Ecological Functions
+
+- shades soil;
+- suppresses weeds after establishment;
+- produces storable food;
+- leaves residues for biomass cycling.
+
+## Management Notes
+
+- Keep the system simple in the first season.
+- Observe water demand and pest pressure.
+- Record storage performance.
 
 ---
 
@@ -373,3 +503,7 @@ Planned additions:
 - Field Peas
 - White Mustard
 - Daikon Radish
+- Onion
+- Garlic
+- Horseradish
+- Dandelion

@@ -1,0 +1,19 @@
+/* Zen section and Zen home-card additions. */
+
+.ew-feature-grid-single {
+  grid-template-columns: 1fr;
+}
+
+.ew-feature-wide {
+  min-height: clamp(360px, 34vw, 520px);
+}
+
+.ew-feature-wide div {
+  min-height: clamp(10rem, 34%, 13rem);
+}
+
+@media (max-width: 760px) {
+  .ew-feature-wide {
+    min-height: 340px;
+  }
+}

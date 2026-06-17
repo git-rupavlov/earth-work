@@ -1,7 +1,6 @@
-site_name: RP Project
-site_description: Regenerative agriculture project documentation
-site_author: RP Project
-
+site_name: NoMad's Farm
+site_description: Zen and the Art of Nomad Farming
+site_author: Ruslav Pavlov
 repo_url: https://github.com/git-rupavlov/earth-work
 repo_name: git-rupavlov/earth-work
 
@@ -9,20 +8,18 @@ theme:
   name: material
   language: en
   palette:
-    - media: "(prefers-color-scheme: light)"
-      scheme: default
-      primary: green
-      accent: light green
-      toggle:
-        icon: material/weather-night
-        name: Switch to dark mode
-    - media: "(prefers-color-scheme: dark)"
-      scheme: slate
+    - scheme: slate
       primary: green
       accent: light green
       toggle:
         icon: material/weather-sunny
         name: Switch to light mode
+    - scheme: default
+      primary: green
+      accent: light green
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
   features:
     - navigation.tabs
     - navigation.sections
@@ -32,12 +29,37 @@ theme:
 
 nav:
   - Home: index.md
-  - Project:
-      - Overview: project/overview.md
-      - 3-Year Development Plan: project/three-year-plan.md
-      - Site Assessment: project/site-assessment.md
+  - About:
+      - Overview: about/overview.md
+  - Projects:
+      - Project Registry: projects/index.md
+      - Sprout Lab:
+          - Overview: sprout-lab/index.md
+          - 3-Year Development Plan: projects/sprout-lab/three-year-plan.md
+          - Site Assessment: projects/sprout-lab/site-assessment.md
+      - Microclimate Lab:
+          - Overview: projects/microclimate-lab.md
+          - 3-Year Development Plan: projects/microclimate-lab/three-year-plan.md
+          - Site Assessment: projects/microclimate-lab/site-assessment.md
+      - Balcony Pot House:
+          - Overview: projects/balcony-pot-house.md
+          - 3-Year Development Plan: projects/balcony-pot-house/three-year-plan.md
+          - Site Assessment: projects/balcony-pot-house/site-assessment.md
+      - Gaitanevo 2026:
+          - Overview: projects/gaitanevo-2026.md
+          - 3-Year Development Plan: projects/gaitanevo-2026/three-year-plan.md
+          - Site Assessment: projects/gaitanevo-2026/site-assessment.md
+      - No-Maintenance Squash Trial:
+          - Overview: projects/no-maintenance-squash.md
+          - 3-Year Development Plan: projects/no-maintenance-squash/three-year-plan.md
+          - Site Assessment: projects/no-maintenance-squash/site-assessment.md
+      - Greenhouse 2026:
+          - Overview: experiments/greenhouse-2026.md
+          - 3-Year Development Plan: projects/greenhouse-2026/three-year-plan.md
+          - Site Assessment: projects/greenhouse-2026/site-assessment.md
   - Knowledge Base:
       - Source Hierarchy: knowledge/index.md
+      - Content Audit: knowledge/content-audit.md
   - Soil:
       - Ecological Processes: soil/ecological-processes.md
       - Soil Improvement Strategy: soil/soil-improvement-strategy.md
@@ -49,11 +71,9 @@ nav:
       - Water Systems: water/index.md
       - Infrastructure: infrastructure/index.md
       - Monitoring & Automation: automation/index.md
-  - Experiments:
-      - Greenhouse 2026: experiments/greenhouse-2026.md
-      - Bed Layout 2026: experiments/bed-layout-2026.md
   - Journal:
       - Field Journal: journal/index.md
+      - Tomato Trial 2026: journal/test-entry.md
   - Zen:
       - Zen and the Art of Nomad Farming: zen/index.md
 
@@ -62,6 +82,7 @@ extra_css:
   - assets/css/home-image.css
   - assets/css/page-heroes.css
   - assets/css/crop-matrix.css
+  - assets/css/zen.css
 
 extra_javascript:
   - assets/js/crop-matrix.js
