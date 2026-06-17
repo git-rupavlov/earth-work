@@ -73,6 +73,7 @@ nav:
       - Monitoring & Automation: automation/index.md
   - Journal:
       - Field Journal: journal/index.md
+      - Tomato Trial 2026: journal/test-entry.md
   - Zen:
       - Zen and the Art of Nomad Farming: zen/index.md
 
