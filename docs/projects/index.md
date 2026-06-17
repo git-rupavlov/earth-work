@@ -13,20 +13,200 @@ Project
   -> Better decisions
 ```
 
-This section is a registry of active and planned NoMad's Farm projects.
+This page is the project registry for NoMad's Farm.
 
 ---
 
-## Active / Planned Projects
+## Project Structure
 
-| Project | Status | Type | Main Output |
-|---|---|---|---|
-| Sprout Lab | Active | Indoor production | Sprouts, microgreens, germination data |
-| Microclimate Lab | Planned / active development | Monitoring | Temperature, humidity, airflow and light data |
-| Balcony Pot House | Active | Container growing | Balcony crop observations |
-| Gaitanevo 2026 | Active | Field work | Outdoor crop and soil observations |
-| No-Maintenance Squash Trial | Active / seasonal | Field trial | Low-labor squash performance |
-| Greenhouse 2026 | Active | Protected cultivation | Greenhouse workflow and crop data |
+```text
+Projects
+├── Project Registry
+│
+├── Sprout Lab
+│   ├── Overview
+│   ├── 3-Year Development Plan
+│   └── Site Assessment
+│
+├── Microclimate Lab
+│   ├── Overview
+│   ├── 3-Year Development Plan
+│   └── Site Assessment
+│
+├── Balcony Pot House
+│   ├── Overview
+│   ├── 3-Year Development Plan
+│   └── Site Assessment
+│
+├── Gaitanevo 2026
+│   ├── Overview
+│   ├── 3-Year Development Plan
+│   └── Site Assessment
+│
+├── No-Maintenance Squash Trial
+│   ├── Overview
+│   ├── 3-Year Development Plan
+│   └── Site Assessment
+│
+└── Greenhouse 2026
+    ├── Overview
+    ├── 3-Year Development Plan
+    └── Site Assessment
+```
+
+---
+
+## Active Projects
+
+### Sprout Lab
+
+Status:
+
+- Active
+
+Type:
+
+- Indoor production system
+
+Main output:
+
+- Sprouts;
+- microgreens;
+- germination data;
+- seed viability observations.
+
+Pages:
+
+- [Overview](../sprout-lab/index.md)
+- [3-Year Development Plan](sprout-lab/three-year-plan.md)
+- [Site Assessment](sprout-lab/site-assessment.md)
+
+---
+
+### Microclimate Lab
+
+Status:
+
+- Planned / active development
+
+Type:
+
+- Monitoring system
+
+Main output:
+
+- Temperature data;
+- humidity data;
+- airflow observations;
+- light exposure observations;
+- sensor placement patterns.
+
+Pages:
+
+- [Overview](microclimate-lab.md)
+- [3-Year Development Plan](microclimate-lab/three-year-plan.md)
+- [Site Assessment](microclimate-lab/site-assessment.md)
+
+---
+
+### Balcony Pot House
+
+Status:
+
+- Active
+
+Type:
+
+- Container production and observation system
+
+Main output:
+
+- Balcony crop observations;
+- container performance;
+- volunteer cherry tomato selection;
+- grapevine shade effects;
+- small-space crop compatibility.
+
+Pages:
+
+- [Overview](balcony-pot-house.md)
+- [3-Year Development Plan](balcony-pot-house/three-year-plan.md)
+- [Site Assessment](balcony-pot-house/site-assessment.md)
+
+---
+
+### Gaitanevo 2026
+
+Status:
+
+- Active
+
+Type:
+
+- Field work program
+
+Main output:
+
+- Outdoor crop observations;
+- soil observations;
+- biomass production notes;
+- low-input field practice.
+
+Pages:
+
+- [Overview](gaitanevo-2026.md)
+- [3-Year Development Plan](gaitanevo-2026/three-year-plan.md)
+- [Site Assessment](gaitanevo-2026/site-assessment.md)
+
+---
+
+### No-Maintenance Squash Trial
+
+Status:
+
+- Active / seasonal
+
+Type:
+
+- Field trial
+
+Main output:
+
+- Low-labor squash performance;
+- scattered pit observations;
+- mulch and moisture retention notes;
+- production per visit.
+
+Pages:
+
+- [Overview](no-maintenance-squash.md)
+- [3-Year Development Plan](no-maintenance-squash/three-year-plan.md)
+- [Site Assessment](no-maintenance-squash/site-assessment.md)
+
+---
+
+### Greenhouse 2026
+
+Status:
+
+- Active
+
+Type:
+
+- Protected cultivation system
+
+Main output:
+
+- Greenhouse workflow;
+- lapad and nettle biomass notes;
+- amaranth seed production trial data;
+- protected growing observations.
+
+Pages:
+
+- [Overview](../experiments/greenhouse-2026.md)
+- [3-Year Development Plan](greenhouse-2026/three-year-plan.md)
+- [Site Assessment](greenhouse-2026/site-assessment.md)
 
 ---
 
@@ -40,5 +220,8 @@ Each project should produce useful records for:
 - Crop Matrix;
 - Plant Profiles;
 - Soil observations;
-- 3-Year Plan;
-- Monitoring & Automation.
+- 3-Year Development Plan;
+- Monitoring and Automation;
+- Crop Oracle.
+
+The project pages describe where the work happens, what is being tested and what data should flow back into the knowledge base.
