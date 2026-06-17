@@ -12,46 +12,8 @@
   min-height: clamp(10rem, 34%, 13rem);
 }
 
-.ew-page-hero {
-  position: relative;
-  margin: 0 0 1.4rem;
-  overflow: hidden;
-  border: 1px solid rgba(143, 188, 90, 0.32);
-  border-radius: 1.35rem;
-  background: #071008;
-  box-shadow:
-    0 1.2rem 3.4rem rgba(0, 0, 0, 0.34),
-    inset 0 0 0 1px rgba(246, 239, 216, 0.035);
-}
-
-.ew-page-hero img {
-  display: block;
-  width: 100%;
-  aspect-ratio: 16 / 9;
-  object-fit: cover;
-  object-position: center center;
-  margin: 0;
-}
-
-.ew-page-hero::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(180deg, rgba(6, 17, 9, 0.02), rgba(6, 17, 9, 0.18));
-  pointer-events: none;
-}
-
 @media (max-width: 760px) {
   .ew-feature-wide {
     min-height: 340px;
-  }
-
-  .ew-page-hero {
-    border-radius: 1rem;
-    margin-bottom: 1rem;
-  }
-
-  .ew-page-hero img {
-    aspect-ratio: 4 / 3;
   }
 }
