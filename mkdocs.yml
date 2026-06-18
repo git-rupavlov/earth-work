@@ -34,7 +34,7 @@ nav:
   - Projects:
       - Project Registry: projects/index.md
       - Sprout Lab:
-          - Overview: sprout-lab/index.md
+          - Overview: projects/sprout-lab/index.md
           - 3-Year Development Plan: projects/sprout-lab/three-year-plan.md
           - Site Assessment: projects/sprout-lab/site-assessment.md
       - Microclimate Lab:
@@ -54,7 +54,7 @@ nav:
           - 3-Year Development Plan: projects/no-maintenance-squash/three-year-plan.md
           - Site Assessment: projects/no-maintenance-squash/site-assessment.md
       - Greenhouse 2026:
-          - Overview: experiments/greenhouse-2026.md
+          - Overview: projects/greenhouse-2026/index.md
           - 3-Year Development Plan: projects/greenhouse-2026/three-year-plan.md
           - Site Assessment: projects/greenhouse-2026/site-assessment.md
   - Knowledge Base:
