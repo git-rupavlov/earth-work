@@ -17,7 +17,7 @@ This page is the project registry for NoMad's Farm.
 
 ---
 
-## Project Structure
+### Project Structure
 
 ```text
 Projects
@@ -56,9 +56,9 @@ Projects
 
 ---
 
-## Active Projects
+### Active Projects
 
-### Sprout Lab
+#### Sprout Lab
 
 Status:
 
@@ -77,13 +77,13 @@ Main output:
 
 Pages:
 
-- [Overview](../sprout-lab/index.md)
+- [Overview](sprout-lab/index.md)
 - [3-Year Development Plan](sprout-lab/three-year-plan.md)
 - [Site Assessment](sprout-lab/site-assessment.md)
 
 ---
 
-### Microclimate Lab
+#### Microclimate Lab
 
 Status:
 
@@ -103,13 +103,13 @@ Main output:
 
 Pages:
 
-- [Overview](microclimate-lab.md)
+- [Overview](microclimate-lab/index.md)
 - [3-Year Development Plan](microclimate-lab/three-year-plan.md)
 - [Site Assessment](microclimate-lab/site-assessment.md)
 
 ---
 
-### Balcony Pot House
+#### Balcony Pot House
 
 Status:
 
@@ -129,13 +129,13 @@ Main output:
 
 Pages:
 
-- [Overview](balcony-pot-house.md)
+- [Overview](balcony-pot-house/index.md)
 - [3-Year Development Plan](balcony-pot-house/three-year-plan.md)
 - [Site Assessment](balcony-pot-house/site-assessment.md)
 
 ---
 
-### Gaitanevo 2026
+#### Gaitanevo 2026
 
 Status:
 
@@ -154,13 +154,13 @@ Main output:
 
 Pages:
 
-- [Overview](gaitanevo-2026.md)
+- [Overview](gaitanevo-2026/index.md)
 - [3-Year Development Plan](gaitanevo-2026/three-year-plan.md)
 - [Site Assessment](gaitanevo-2026/site-assessment.md)
 
 ---
 
-### No-Maintenance Squash Trial
+#### No-Maintenance Squash Trial
 
 Status:
 
@@ -179,13 +179,13 @@ Main output:
 
 Pages:
 
-- [Overview](no-maintenance-squash.md)
+- [Overview](no-maintenance-squash/index.md)
 - [3-Year Development Plan](no-maintenance-squash/three-year-plan.md)
 - [Site Assessment](no-maintenance-squash/site-assessment.md)
 
 ---
 
-### Greenhouse 2026
+#### Greenhouse 2026
 
 Status:
 
@@ -204,13 +204,13 @@ Main output:
 
 Pages:
 
-- [Overview](../experiments/greenhouse-2026.md)
+- [Overview](greenhouse-2026/index.md)
 - [3-Year Development Plan](greenhouse-2026/three-year-plan.md)
 - [Site Assessment](greenhouse-2026/site-assessment.md)
 
 ---
 
-## Principle
+### Principle
 
 Projects are not isolated pages.
 
