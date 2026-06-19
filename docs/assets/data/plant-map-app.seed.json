@@ -1,0 +1,124 @@
+{
+  "schema_version": "0.1",
+  "dataset_id": "plant_map_app_seed",
+  "updated": "2026-06-19",
+  "privacy_note": "Home balcony coordinates are intentionally approximate and city-level. Do not store exact residential coordinates in public repository data. Humans need at least one functioning boundary, apparently.",
+  "map_defaults": {
+    "center": [42.6977, 23.3219],
+    "zoom": 11,
+    "tile_layer": "OpenStreetMap"
+  },
+  "sites": [
+    {
+      "site_id": "sofia_balcony_approx",
+      "name": "Sofia balcony, approximate",
+      "type": "balcony_site",
+      "coordinates": [42.6977, 23.3219],
+      "coordinate_quality": "city_level_privacy_safe",
+      "project_id": "balcony-pot-house",
+      "status": "active",
+      "summary": "Balcony plant monitoring site. Exact location intentionally not published."
+    },
+    {
+      "site_id": "gaitanevo_village_approx",
+      "name": "Gaitanevo garden, approximate",
+      "type": "field_site",
+      "coordinates": [42.765, 23.795],
+      "coordinate_quality": "village_level_approximate",
+      "project_id": "gaitanevo-2026",
+      "status": "planned_active",
+      "summary": "Village garden / field observation site."
+    }
+  ],
+  "plant_assets": [
+    {
+      "asset_id": "solanum_lycopersicum_pink_dream",
+      "display_name": "Pink Dream tomato",
+      "site_id": "sofia_balcony_approx",
+      "project_id": "balcony-pot-house",
+      "containers": ["f30_01", "f30_02"],
+      "map_coordinates": [42.69772, 23.32192],
+      "local_position": {"area": "balcony", "x_percent": 22, "y_percent": 62},
+      "status": "active",
+      "vitals": {
+        "height_cm": 65,
+        "growth_rate_cm_per_day": 2.1,
+        "wilting_score_0_5": null,
+        "flower_count": null,
+        "fruit_count": null
+      },
+      "environment_context_metrics": ["air_temperature_c", "relative_humidity_percent", "uv_index", "solar_radiation_w_m2", "precipitation_mm", "wind_speed_m_s", "air_pressure_hpa"],
+      "layers": ["plants", "vitals", "weather", "growth_heatmap", "topology"]
+    },
+    {
+      "asset_id": "solanum_lycopersicum_cherry_balcony_population",
+      "display_name": "Cherry tomato population",
+      "site_id": "sofia_balcony_approx",
+      "project_id": "balcony-pot-house",
+      "containers": ["window_box_01", "window_box_02", "window_box_03", "window_box_04", "cube_01", "cube_02", "cube_03", "cube_04"],
+      "map_coordinates": [42.69771, 23.32195],
+      "local_position": {"area": "balcony", "x_percent": 48, "y_percent": 48},
+      "status": "active",
+      "vitals": {"height_cm": null, "growth_rate_cm_per_day": null, "wilting_score_0_5": null, "flower_count": null, "fruit_count": null},
+      "environment_context_metrics": ["air_temperature_c", "relative_humidity_percent", "uv_index"],
+      "layers": ["plants", "vitals", "weather", "topology"]
+    },
+    {
+      "asset_id": "capsicum_annuum_balcony_pepper",
+      "display_name": "Pepper",
+      "site_id": "sofia_balcony_approx",
+      "project_id": "balcony-pot-house",
+      "containers": ["window_box_01", "window_box_02", "cube_03", "cube_04"],
+      "map_coordinates": [42.6977, 23.32189],
+      "local_position": {"area": "balcony", "x_percent": 62, "y_percent": 52},
+      "status": "active",
+      "vitals": {"height_cm": null, "growth_rate_cm_per_day": null, "wilting_score_0_5": null, "flower_count": null, "fruit_count": null},
+      "environment_context_metrics": ["air_temperature_c", "relative_humidity_percent", "uv_index"],
+      "layers": ["plants", "vitals", "weather", "topology"]
+    },
+    {
+      "asset_id": "ipomoea_batatas_balcony_sweet_potato",
+      "display_name": "Sweet potato",
+      "site_id": "sofia_balcony_approx",
+      "project_id": "balcony-pot-house",
+      "containers": ["f30_03"],
+      "map_coordinates": [42.69768, 23.32191],
+      "local_position": {"area": "balcony", "x_percent": 32, "y_percent": 74},
+      "status": "active",
+      "vitals": {"vine_length_cm": null, "growth_rate_cm_per_day": null, "wilting_score_0_5": null},
+      "environment_context_metrics": ["air_temperature_c", "relative_humidity_percent", "uv_index", "soil_temperature_c"],
+      "layers": ["plants", "vitals", "weather", "growth_heatmap", "topology"]
+    },
+    {
+      "asset_id": "helianthus_annuus_balcony_sunflower",
+      "display_name": "Sunflower",
+      "site_id": "sofia_balcony_approx",
+      "project_id": "balcony-pot-house",
+      "containers": ["f25_01"],
+      "map_coordinates": [42.69773, 23.32186],
+      "local_position": {"area": "balcony", "x_percent": 72, "y_percent": 35},
+      "status": "active",
+      "vitals": {"height_cm": null, "growth_rate_cm_per_day": null, "wilting_score_0_5": null},
+      "environment_context_metrics": ["air_temperature_c", "relative_humidity_percent", "uv_index", "solar_radiation_w_m2"],
+      "layers": ["plants", "vitals", "weather", "growth_heatmap", "topology"]
+    }
+  ],
+  "topology_edges": [
+    {"from": "sofia_balcony_approx", "to": "solanum_lycopersicum_pink_dream", "type": "hosts"},
+    {"from": "sofia_balcony_approx", "to": "solanum_lycopersicum_cherry_balcony_population", "type": "hosts"},
+    {"from": "sofia_balcony_approx", "to": "capsicum_annuum_balcony_pepper", "type": "hosts"},
+    {"from": "sofia_balcony_approx", "to": "ipomoea_batatas_balcony_sweet_potato", "type": "hosts"},
+    {"from": "sofia_balcony_approx", "to": "helianthus_annuus_balcony_sunflower", "type": "hosts"},
+    {"from": "solanum_lycopersicum_pink_dream", "to": "air_temperature_c", "type": "uses_common_environment_metric"},
+    {"from": "solanum_lycopersicum_pink_dream", "to": "relative_humidity_percent", "type": "uses_common_environment_metric"},
+    {"from": "solanum_lycopersicum_pink_dream", "to": "uv_index", "type": "uses_common_environment_metric"}
+  ],
+  "underlay_layers": [
+    {"layer_id": "osm_base", "label": "OpenStreetMap base", "type": "tile_underlay", "enabled": true},
+    {"layer_id": "plants", "label": "Plant assets", "type": "marker_overlay", "enabled": true},
+    {"layer_id": "vitals", "label": "Plant vitals", "type": "marker_popup_overlay", "enabled": true},
+    {"layer_id": "weather", "label": "Weather context", "type": "chart_overlay", "enabled": true},
+    {"layer_id": "growth_heatmap", "label": "Growth heatmap", "type": "future_heatmap_overlay", "enabled": false},
+    {"layer_id": "topology", "label": "Plant topology", "type": "graph_overlay", "enabled": true}
+  ]
+}
