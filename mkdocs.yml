@@ -68,13 +68,16 @@ extra_css:
   - assets/css/page-heroes.css
   - assets/css/crop-matrix.css
   - assets/css/plant-monitor.css
+  - assets/css/metrics-charts.css
   - assets/css/zen.css
 
 extra_javascript:
+  - https://cdn.jsdelivr.net/npm/echarts@5/dist/echarts.min.js
   - assets/js/crop-matrix.js
   - assets/js/page-heroes.js
   - assets/js/plant-monitor.js
   - assets/js/pink-tomato-growth-monitor.js
+  - assets/js/tomato-daily-chart.js
 
 markdown_extensions:
   - admonition
