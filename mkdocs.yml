@@ -77,7 +77,7 @@ extra_javascript:
   - assets/js/page-heroes.js
   - assets/js/plant-monitor.js
   - assets/js/pink-tomato-growth-monitor.js
-  - assets/js/tomato-daily-chart.js
+  - assets/js/plant-monitor-unified.js
 
 markdown_extensions:
   - admonition
