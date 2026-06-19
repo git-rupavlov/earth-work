@@ -1,0 +1,114 @@
+schema_version: 0.1
+dataset_id: balcony_environment_import_status
+project_id: balcony-pot-house
+scope: common_environment_for_all_balcony_plants
+updated: 2026-06-19
+
+summary:
+  status: source_registry_ready_actual_historical_import_pending
+  reason: The named sources define the correct authority stack, but historical daily humidity and UV values were not available as directly fetchable public structured data during setup.
+  rule: Do not fabricate humidity, UV, radiation or pressure values. Missing weather telemetry remains null until imported from an export/API/manual verified table.
+
+sources_checked:
+  - source_id: meteoblue_sofia_archive
+    url: https://www.meteoblue.com/en/weather/historyclimate/weatherarchive/sofia_bulgaria_727011
+    location_context:
+      city: Sofia
+      coordinates: 42.7N_23.32E
+      elevation_m_asl: 562
+    available_from_page:
+      - weather_archive_for_sofia
+      - time_range_selection
+      - temperature_and_relative_humidity_archive_chart
+      - cloud_and_wind_archive_chart
+      - historical_simulation_archive_since_1940
+    limitation:
+      - page_text_does_not_expose_daily_structured_values
+      - raw_historical_csv_requires_history_plus_or_export
+      - archive_is_simulation_data_not_station_measurement
+    suitable_for:
+      - historical_air_temperature
+      - relative_humidity
+      - wind_speed
+      - clouds
+      - precipitation
+      - modelled_history
+    import_status: needs_export_or_api
+
+  - source_id: sensoto_bulgaria_network
+    url: https://sensoto.io/en/
+    available_from_page:
+      - sensor_network_platform
+      - environmental_monitoring_data
+      - interactive_map
+      - interactive_diagrams
+      - open_data_concept
+    limitation:
+      - page_text_does_not_expose_sofia_daily_values
+      - station_or_sensor_selection_needed
+      - export_or_api_needed_for_automated_import
+    suitable_for:
+      - relative_humidity
+      - air_temperature
+      - pressure
+      - wind
+      - local_sensor_context
+    import_status: needs_station_selection_and_export
+
+  - source_id: weather_bg_nimh
+    url: http://www.weather.bg/
+    provider: National Institute of Meteorology and Hydrology
+    available_from_page:
+      - official_weather_source
+    limitation:
+      - fetch_attempt_failed_with_502_gateway_from_current_environment
+      - structured_historical_values_not_available_to_import_yet
+    suitable_for:
+      - official_forecast_context
+      - official_warnings
+      - agrometeorological_bulletin_context
+    import_status: needs_manual_access_or_alternate_endpoint
+
+current_environment_dataset:
+  file: docs/assets/data/balcony-environment.daily.json
+  cadence: daily
+  measurement_time_local: '06:30'
+  timezone: Europe/Sofia
+  start_date: 2026-05-12
+  end_date: 2026-06-19
+  status: scaffold_created_values_mostly_missing
+  non_null_values:
+    - timestamp: 2026-06-17T06:30:00+03:00
+      metric_id: air_temperature_c
+      value: 19
+      source_id: manual_observation
+      confidence: observed_temperature_only
+
+next_import_options:
+  - option_id: meteoblue_history_plus_export
+    description: Export Sofia archive values from meteoblue history+ as CSV and convert to JSON.
+    best_for:
+      - air_temperature_c
+      - relative_humidity_percent
+      - wind_speed_m_s
+      - precipitation_mm
+      - cloud_cover_percent
+  - option_id: sensoto_station_export
+    description: Select closest relevant Sofia/Sofia-valley sensor station and export humidity, pressure and wind data.
+    best_for:
+      - relative_humidity_percent
+      - air_pressure_hpa
+      - wind_speed_m_s
+  - option_id: nimh_manual_bulletin_entry
+    description: Manually enter official NIMH agro-bulletin summaries and warnings as context records.
+    best_for:
+      - frost_warning
+      - hail_risk
+      - drought_context
+      - evapotranspiration_context
+  - option_id: local_sensor_future
+    description: Use balcony microclimate sensors as primary truth once deployed.
+    best_for:
+      - balcony_specific_temperature
+      - balcony_specific_humidity
+      - container_or_shelf_microclimate
