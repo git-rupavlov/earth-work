@@ -54,6 +54,7 @@ nav:
       - Infrastructure: infrastructure/index.md
       - Monitoring & Automation: automation/index.md
   - Metrics:
+      - App: metrics/app.md
       - Overview: metrics/index.md
       - Monitor: metrics/monitor.md
   - Journal:
@@ -63,22 +64,26 @@ nav:
       - Zen and the Art of Nomad Farming: zen/index.md
 
 extra_css:
+  - https://unpkg.com/leaflet@1.9.4/dist/leaflet.css
   - assets/css/garden-theme.css
   - assets/css/home-image.css
   - assets/css/page-heroes.css
   - assets/css/crop-matrix.css
   - assets/css/plant-monitor.css
   - assets/css/metrics-charts.css
+  - assets/css/metrics-app.css
   - assets/css/zen.css
 
 extra_javascript:
   - https://cdn.jsdelivr.net/npm/echarts@5/dist/echarts.min.js
+  - https://unpkg.com/leaflet@1.9.4/dist/leaflet.js
   - assets/js/crop-matrix.js
   - assets/js/page-heroes.js
   - assets/js/plant-monitor.js
   - assets/js/pink-tomato-growth-monitor.js
   - assets/js/plant-monitor-unified.js
   - assets/js/plant-monitor-environment.js
+  - assets/js/metrics-app.js
 
 markdown_extensions:
   - admonition
