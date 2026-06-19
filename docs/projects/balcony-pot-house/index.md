@@ -16,6 +16,27 @@ The project serves three purposes:
 
 The system combines container growing, passive shading, volunteer plant selection and microclimate observation.
 
+## Data Files
+
+Structured inventory data is kept separately so it can later feed graphs, dashboards and time-series visualizations without turning this page into a swamp. Civilization struggles enough already.
+
+```text
+../../data/balcony-pot-house.inventory.yml
+```
+
+The data file currently tracks:
+
+- container IDs;
+- pot type;
+- pot dimensions;
+- estimated or measured soil volume;
+- sun exposure;
+- drainage and irrigation assumptions;
+- plant IDs;
+- crop roles;
+- growth tracking flags;
+- future measurement schema for temperature, humidity, light, soil moisture, plant size and yield.
+
 ## Current Inventory - June 2026
 
 ### Large Round Pots - F30
@@ -38,9 +59,9 @@ Quantity:
 - Sweet potato
 
 #### F30 #4
-- Tomato sucker #1
+- Tomato side shoot #1
 
-## Cylindrical Pots - F25
+### Cylindrical Pots - F25
 
 Diameter:
 
@@ -61,33 +82,33 @@ Purpose:
 - seed production trial;
 - balcony biodiversity.
 
-## Rectangular Window Boxes
+### Rectangular Window Boxes
 
 Quantity:
 
 - 4
 
-### Window Box #1
+#### Window Box #1
 - Cherry tomato;
 - Pepper;
 - Cherry tomato.
 
-### Window Box #2
+#### Window Box #2
 - Cherry tomato;
 - Pepper;
 - Cherry tomato.
 
-### Window Box #3
+#### Window Box #3
 - Rosemary;
 - Cherry tomato;
 - Rosemary.
 
-### Window Box #4
+#### Window Box #4
 - Rosemary;
 - Cherry tomato;
 - Rosemary.
 
-## Small Window Boxes
+### Small Window Boxes
 
 Quantity:
 
@@ -99,7 +120,7 @@ Contents:
 - Rosemary;
 - Rosemary.
 
-## Square Cube Containers
+### Square Cube Containers
 
 Dimensions:
 
@@ -109,22 +130,22 @@ Quantity:
 
 - 4
 
-### Cube Pot #1
+#### Cube Pot #1
 - White bean;
 - Parsley;
 - volunteer cherry tomato seedlings.
 
-### Cube Pot #2
+#### Cube Pot #2
 - White bean;
 - Parsley;
 - volunteer cherry tomato seedlings.
 
-### Cube Pot #3
+#### Cube Pot #3
 - Pepper;
 - Parsley;
 - volunteer cherry tomato seedlings.
 
-### Cube Pot #4
+#### Cube Pot #4
 - Pepper;
 - Parsley;
 - volunteer cherry tomato seedlings.
@@ -146,7 +167,7 @@ Result:
 - 2 Pink Dream tomatoes;
 - 6 cherry tomatoes in window boxes;
 - volunteer cherry tomato population;
-- 1 tomato sucker rooting trial.
+- 1 tomato side shoot rooting trial.
 
 ### Peppers
 
@@ -211,7 +232,7 @@ Role:
 
 ### Experimental Layer
 
-- tomato sucker rooting;
+- tomato side shoot rooting;
 - volunteer cherry tomato selection;
 - sweet potato container performance;
 - grapevine shade effect;
@@ -219,7 +240,7 @@ Role:
 
 ## Active Experiments
 
-### Tomato Sucker Rooting Trial
+### Tomato Side Shoot Rooting Trial
 
 - direct soil planting;
 - water rooting.
@@ -254,6 +275,11 @@ Observation of sunflower performance in an F25 container.
 ### Solar Monitoring Development
 
 Preparation for future environmental monitoring.
+
+## Project Pages
+
+- [3-Year Development Plan](three-year-plan.md)
+- [Site Assessment](site-assessment.md)
 
 ## Feeds Data Into
 
