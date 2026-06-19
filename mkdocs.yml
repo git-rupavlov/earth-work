@@ -65,11 +65,13 @@ extra_css:
   - assets/css/home-image.css
   - assets/css/page-heroes.css
   - assets/css/crop-matrix.css
+  - assets/css/plant-monitor.css
   - assets/css/zen.css
 
 extra_javascript:
   - assets/js/crop-matrix.js
   - assets/js/page-heroes.js
+  - assets/js/plant-monitor.js
 
 markdown_extensions:
   - admonition
