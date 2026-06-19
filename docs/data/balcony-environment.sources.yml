@@ -1,0 +1,170 @@
+schema_version: 0.1
+dataset_id: balcony_environment_weather_sources
+project_id: balcony-pot-house
+scope: common_environment_for_all_balcony_plants
+updated: 2026-06-19
+
+purpose: Define weather and agrometeorological data sources used by the Metrics and Monitor pages.
+
+source_priority:
+  - source_id: nimh_agrometeorological_bulletins
+    provider: National Institute of Meteorology and Hydrology
+    country: Bulgaria
+    source_type: official_agrometeorological_bulletin
+    authority_level: official_national
+    intended_use:
+      - soil_moisture_balance
+      - crop_condition_context
+      - evapotranspiration_context
+      - phenological_stage_context
+      - Sofia_valley_agrometeorological_reference
+    update_frequency: monthly_or_periodic
+    metrics_expected:
+      - soil_moisture_balance
+      - evapotranspiration_mm
+      - agroclimatic_anomaly_notes
+      - phenological_stage_notes
+    data_quality: high_authority_low_api_convenience
+
+  - source_id: nimh_forecast_department
+    provider: National Institute of Meteorology and Hydrology
+    country: Bulgaria
+    source_type: official_local_forecast
+    authority_level: official_national
+    model_context: ECMWF_based_forecasts
+    intended_use:
+      - localized_10_day_forecast
+      - extreme_event_warning
+      - ground_frost_warning
+      - hail_risk_warning
+      - drought_warning
+    update_frequency: daily_or_more_often
+    metrics_expected:
+      - air_temperature_c
+      - precipitation_mm
+      - wind_speed_m_s
+      - warning_type
+      - warning_severity
+    data_quality: high_authority_forecast
+
+  - source_id: meteoblue_sofia_archive
+    provider: Meteoblue
+    country: international
+    source_type: historical_model_archive_and_climate_simulation
+    authority_level: specialized_platform
+    intended_use:
+      - hourly_historical_weather
+      - solar_radiation
+      - soil_temperature
+      - growing_degree_days
+      - crop_planning_model_inputs
+    update_frequency: archive_query
+    metrics_expected:
+      - air_temperature_c
+      - relative_humidity_percent
+      - solar_radiation_w_m2
+      - uv_index
+      - soil_temperature_c
+      - growing_degree_days
+    data_quality: modelled_high_detail
+
+  - source_id: sensoto_bulgaria_network
+    provider: SENSOTO Bulgaria
+    country: Bulgaria
+    source_type: sensor_network
+    authority_level: distributed_observational_network
+    intended_use:
+      - local_humidity_trends
+      - atmospheric_pressure
+      - regional_wind_vectors
+      - near_real_time_sensor_context
+    update_frequency: near_real_time
+    metrics_expected:
+      - relative_humidity_percent
+      - air_pressure_hpa
+      - wind_speed_m_s
+      - wind_direction_deg
+      - air_temperature_c
+    data_quality: sensor_network_variable_quality
+
+  - source_id: world_bank_climate_knowledge_portal
+    provider: World Bank Climate Knowledge Portal
+    country: international
+    source_type: macro_climatology_dataset
+    authority_level: international_climate_reference
+    intended_use:
+      - long_term_temperature_deviation
+      - long_term_rainfall_deviation
+      - macro_agroclimatology_context
+    resolution: 50km_grid_approx
+    metrics_expected:
+      - monthly_temperature_anomaly_c
+      - monthly_precipitation_anomaly_mm
+      - long_term_climate_normals
+    data_quality: macro_scale_not_balcony_scale
+
+  - source_id: kaggle_sofia_weather_records
+    provider: Kaggle community datasets
+    source_origin: Norwegian_Meteorological_Institute_derived_records
+    source_type: developer_friendly_historical_hourly_dataset
+    authority_level: secondary_open_dataset
+    intended_use:
+      - prototyping
+      - custom_predictive_models
+      - historical_weather_feature_engineering
+    metrics_expected:
+      - air_temperature_c
+      - relative_humidity_percent
+      - cloud_cover_percent
+      - low_cloud_cover_percent
+      - pressure_hpa
+      - wind_speed_m_s
+    data_quality: useful_for_development_requires_validation
+
+metric_catalog:
+  - metric_id: air_temperature_c
+    unit: C
+    chart_type: time_series
+    applies_to: all_balcony_plants
+  - metric_id: relative_humidity_percent
+    unit: percent
+    chart_type: time_series
+    applies_to: all_balcony_plants
+  - metric_id: uv_index
+    unit: index
+    chart_type: time_series
+    applies_to: all_balcony_plants
+  - metric_id: solar_radiation_w_m2
+    unit: W_per_m2
+    chart_type: time_series
+    applies_to: all_balcony_plants
+  - metric_id: precipitation_mm
+    unit: mm
+    chart_type: time_series
+    applies_to: all_balcony_plants
+  - metric_id: wind_speed_m_s
+    unit: m_per_s
+    chart_type: time_series
+    applies_to: all_balcony_plants
+  - metric_id: air_pressure_hpa
+    unit: hPa
+    chart_type: time_series
+    applies_to: all_balcony_plants
+  - metric_id: soil_temperature_c
+    unit: C
+    chart_type: time_series
+    applies_to: container_or_sensor_specific
+  - metric_id: growing_degree_days
+    unit: degree_day
+    chart_type: cumulative_time_series
+    applies_to: crop_group
+
+integration_rule:
+  common_for_all_balcony_plants: true
+  plant_specific_join_key: timestamp
+  default_measurement_time_local: '06:30'
+  timezone: Europe/Sofia
+  preferred_browser_data_format: JSON
+  preferred_raw_data_format:
+    - YAML_for_source_registry
+    - CSV_for_dense_time_series
