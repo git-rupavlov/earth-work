@@ -23,6 +23,7 @@ Initial data sources:
 metrics/
 ├── balcony container inventory
 ├── balcony plant inventory
+├── Pink Dream tomato measurements
 ├── environmental measurements
 ├── plant growth measurements
 ├── harvest records
@@ -32,10 +33,12 @@ metrics/
 └── crop matrix outputs
 ```
 
-Current structured source:
+Current structured sources:
 
 ```text
 ../data/balcony-pot-house.inventory.yml
+../data/balcony-pot-house.pink-tomatoes.measurements.yml
+../data/metrics.catalog.yml
 ```
 
 Future structured sources:
@@ -46,6 +49,44 @@ Future structured sources:
 ../data/plant-growth.timeseries.yml
 ../data/harvest-log.yml
 ../data/project-scorecards.yml
+```
+
+---
+
+## Current Seed Dataset
+
+### Pink Dream Tomatoes
+
+The first measurement dataset is for the two Pink Dream tomatoes and their side-shoot propagation trial.
+
+Current metric-ready records include:
+
+```text
+2026-06-17 07:00 | tomato_pink_dream_01 | height_cm | 65
+2026-06-17 07:00 | tomato_pink_dream_01 | leaf_mass_removed_percent_midpoint | 17.5
+2026-06-17 07:00 | tomato_pink_dream_02 | leaf_mass_removed_percent_midpoint | 17.5
+2026-06-17 07:05 | tomato_side_shoot_01 | cutting_initial_length_cm | 10
+2026-06-17 07:10 | tomato_side_shoot_02 | cutting_initial_length_cm | 10
+2026-06-17 07:10 | tomato_side_shoot_02 | water_depth_cm | 4
+```
+
+Data source:
+
+```text
+../data/balcony-pot-house.pink-tomatoes.measurements.yml
+```
+
+Open measurements still needed:
+
+```text
+- current height for Pink Dream #2
+- stem diameter for both main plants
+- leaf count or leaf density score
+- flower count
+- fruit count
+- wilting score
+- rooting status for soil side shoot
+- root count and root length for water side shoot
 ```
 
 ---
