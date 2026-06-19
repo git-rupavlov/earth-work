@@ -11,7 +11,7 @@
 
 This is the plant equivalent of an NMS inventory/monitor page.
 
-The rule is simple: all plant monitoring starts here. Select a plant asset, then inspect its identity, metric interfaces, charts and logs inside the same page. No separate chart zoo. Civilization has already suffered enough.
+The rule is simple: all plant monitoring starts here. Select a plant asset, then inspect its identity, metric interfaces, charts, common environment context and logs inside the same page. No separate chart zoo. Civilization has already suffered enough.
 
 <div data-ew-plant-monitor></div>
 
@@ -33,6 +33,15 @@ and tomato growth data from:
 ../assets/data/pink-tomatoes.daily.json
 ```
 
+Common balcony environment data is defined here:
+
+```text
+../data/balcony-environment.sources.yml
+../assets/data/balcony-environment.daily.json
+```
+
+The environmental charts are shown inside every selected plant's **Charts** tab, because humidity, UV and temperature are shared context for all balcony plants.
+
 Later this monitor should read generated JSON from the YAML data files, instead of keeping the plant list inside JavaScript. Because hardcoding telemetry is how tiny dashboards become haunted furniture.
 
 ---
@@ -52,17 +61,21 @@ Overview
 └── assigned containers
 
 Charts
-├── growth time-series
+├── plant growth time-series
 ├── stress score
 ├── phenology timeline
 ├── harvest output
-└── radar profile
+├── radar profile
+├── common balcony temperature
+├── common balcony humidity
+└── common balcony UV index
 
 Logs
 ├── observations
 ├── pruning
 ├── watering
 ├── propagation
+├── weather/source imports
 ├── pest events
 └── harvest events
 ```
