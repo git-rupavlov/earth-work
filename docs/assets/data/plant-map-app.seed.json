@@ -20,6 +20,16 @@
       "summary": "Balcony plant monitoring site. Coordinates supplied by the project owner."
     },
     {
+      "site_id": "amaranth_red_garnet_plot_01",
+      "name": "Red Garnet amaranth plot 01",
+      "type": "field_plot",
+      "coordinates": [42.64405925708076, 23.36343116420011],
+      "coordinate_quality": "owner_provided",
+      "project_id": "amaranth-2026",
+      "status": "planned_active",
+      "summary": "10 x 2 m Red Garnet amaranth plot, 20 m² total area."
+    },
+    {
       "site_id": "gaitanevo_village_approx",
       "name": "Gaitanevo garden, approximate",
       "type": "field_site",
@@ -48,6 +58,29 @@
         "fruit_count": null
       },
       "environment_context_metrics": ["air_temperature_c", "relative_humidity_percent", "uv_index", "solar_radiation_w_m2", "precipitation_mm", "wind_speed_m_s", "air_pressure_hpa"],
+      "layers": ["plants", "vitals", "weather", "growth_heatmap", "topology"]
+    },
+    {
+      "asset_id": "amaranthus_red_garnet_plot_01",
+      "display_name": "Red Garnet amaranth plot",
+      "site_id": "amaranth_red_garnet_plot_01",
+      "project_id": "amaranth-2026",
+      "containers": ["field_plot_10x2m_01"],
+      "map_coordinates": [42.64405925708076, 23.36343116420011],
+      "local_position": {"area": "field_plot", "length_m": 10, "width_m": 2, "area_m2": 20},
+      "status": "planned_active",
+      "vitals": {
+        "plot_area_m2": 20,
+        "plant_count": null,
+        "emergence_percent": null,
+        "height_cm": null,
+        "growth_rate_cm_per_day": null,
+        "flowering_percent": null,
+        "seed_harvest_weight_g": null,
+        "leaf_harvest_weight_g": null,
+        "wilting_score_0_5": null
+      },
+      "environment_context_metrics": ["air_temperature_c", "relative_humidity_percent", "uv_index", "solar_radiation_w_m2", "precipitation_mm", "wind_speed_m_s", "air_pressure_hpa", "growing_degree_days"],
       "layers": ["plants", "vitals", "weather", "growth_heatmap", "topology"]
     },
     {
@@ -109,6 +142,10 @@
     {"from": "sofia_balcony", "to": "capsicum_annuum_balcony_pepper", "type": "hosts"},
     {"from": "sofia_balcony", "to": "ipomoea_batatas_balcony_sweet_potato", "type": "hosts"},
     {"from": "sofia_balcony", "to": "helianthus_annuus_balcony_sunflower", "type": "hosts"},
+    {"from": "amaranth_red_garnet_plot_01", "to": "amaranthus_red_garnet_plot_01", "type": "hosts"},
+    {"from": "amaranthus_red_garnet_plot_01", "to": "air_temperature_c", "type": "uses_common_environment_metric"},
+    {"from": "amaranthus_red_garnet_plot_01", "to": "relative_humidity_percent", "type": "uses_common_environment_metric"},
+    {"from": "amaranthus_red_garnet_plot_01", "to": "uv_index", "type": "uses_common_environment_metric"},
     {"from": "solanum_lycopersicum_pink_dream", "to": "air_temperature_c", "type": "uses_common_environment_metric"},
     {"from": "solanum_lycopersicum_pink_dream", "to": "relative_humidity_percent", "type": "uses_common_environment_metric"},
     {"from": "solanum_lycopersicum_pink_dream", "to": "uv_index", "type": "uses_common_environment_metric"}
