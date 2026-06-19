@@ -5,53 +5,21 @@
   <div class="ew-page-hero-content">
     <p class="ew-page-hero-kicker">Plant NMS</p>
     <h1>Plant Monitor</h1>
-    <p>Selectable plant inventory with asset details, metric interfaces, chart previews and logs.</p>
+    <p>One inventory-style page for all plants, with selected-asset details, charts and logs.</p>
   </div>
 </section>
 
-This is the plant equivalent of an NMS monitor tab.
+This is the plant equivalent of an NMS inventory/monitor page.
 
-Select a plant asset to inspect:
-
-- identity data;
-- family, genus, species and cultivar;
-- source / vendor analogue;
-- lifecycle and growth habit;
-- assigned containers / slots;
-- metric interfaces;
-- chart preview;
-- event logs.
+The rule is simple: all plant monitoring starts here. Select a plant asset, then inspect its identity, metric interfaces, charts and logs inside the same page. No separate chart zoo. Civilization has already suffered enough.
 
 <div data-ew-plant-monitor></div>
 
 ---
 
-## Pink Dream Tomato Daily Charts
-
-Measurement model:
-
-```text
-cadence: daily
-measurement_time: 06:30 Europe/Sofia
-plant_group: Pink Dream tomatoes
-metric: height_cm
-```
-
-<div class="ew-chart-card">
-  <div class="ew-chart" data-ew-chart="pink-tomato-daily-height"></div>
-  <p class="ew-chart-note">Daily 06:30 height trend from planting day to current height. Estimated model until replaced by direct measurements.</p>
-</div>
-
-<div class="ew-chart-card">
-  <div class="ew-chart" data-ew-chart="pink-tomato-growth-rate"></div>
-  <p class="ew-chart-note">Growth rate by phase, based on the supplied progression table.</p>
-</div>
-
----
-
 ## Current Monitor Scope
 
-The first monitor version uses the static plant asset layer from:
+The monitor uses the static plant asset layer from:
 
 ```text
 ../data/plant-assets.catalog.yml
@@ -69,9 +37,9 @@ Later this monitor should read generated JSON from the YAML data files, instead 
 
 ---
 
-## Target Tabs
+## Target Selected-Asset Tabs
 
-Each selected plant should eventually expose:
+Each selected plant should expose:
 
 ```text
 Overview
