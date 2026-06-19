@@ -1,4 +1,4 @@
-schema_version: 0.1
+schema_version: 0.2
 dataset_id: balcony_pot_house_pink_tomatoes_measurements
 project_id: balcony-pot-house
 crop_group: pink_tomatoes
@@ -8,9 +8,10 @@ created_from: chat_observations
 updated: 2026-06-19
 
 metadata:
-  purpose: Seed the metrics logic with available Pink Dream tomato observations up to the current point.
-  data_quality_note: Some values are approximate because they came from field notes written during work, not from a standardized measurement form.
+  purpose: Seed the metrics logic with Pink Dream tomato observations from the first usable baseline day.
+  data_quality_note: Day 1 is the first available project observation baseline, not germination day. Some values are approximate because they came from field notes written during work, not from a standardized measurement form.
   timezone: Europe/Sofia
+  baseline_definition: day_1_equals_first_available_balcony_observation_baseline
   default_units:
     height: cm
     length: cm
@@ -40,8 +41,64 @@ plants:
     status: active
     data_quality: observed
 
+observation_days:
+  - day_index: 1
+    date: 2026-06-12
+    label: first_available_baseline
+    source: conversation_observation
+    confidence: approximate
+    notes: First available structured baseline for the two Pink Dream tomatoes on the balcony.
+  - day_index: 6
+    date: 2026-06-17
+    label: pruning_and_propagation_day
+    source: work_observation
+    confidence: mixed
+    notes: Pruning, tying and side-shoot propagation event.
+  - day_index: 8
+    date: 2026-06-19
+    label: dataset_creation_day
+    source: data_model_creation
+    confidence: exact_for_data_creation_only
+    notes: No new physical plant measurement recorded yet; created dataset and open-measurement list.
+
 measurement_events:
+  - event_id: pink_tomato_baseline_2026_06_12
+    day_index: 1
+    timestamp: 2026-06-12T12:00:00+03:00
+    project_id: balcony-pot-house
+    event_type: baseline_observation
+    weather_context:
+      source: not_recorded
+      sky: unknown
+      temperature_c: null
+    plants:
+      - plant_id: tomato_pink_dream_01
+        container_id: f30_01
+        observations:
+          estimated_height_cm: 50
+          height_confidence: approximate
+          growth_stage: vegetative
+          support:
+            tied_to_stake: unknown
+            stake_diameter_mm: null
+          visible_stress_score_0_5: null
+          flowering_status: not_recorded
+          fruit_count: null
+      - plant_id: tomato_pink_dream_02
+        container_id: f30_02
+        observations:
+          estimated_height_cm: 50
+          height_confidence: approximate
+          growth_stage: vegetative
+          support:
+            tied_to_stake: unknown
+            stake_diameter_mm: null
+          visible_stress_score_0_5: null
+          flowering_status: not_recorded
+          fruit_count: null
+
   - event_id: pink_tomato_pruning_2026_06_17_morning
+    day_index: 6
     timestamp: 2026-06-17T07:00:00+03:00
     project_id: balcony-pot-house
     event_type: pruning_and_propagation
@@ -61,6 +118,7 @@ measurement_events:
           leaf_mass_removed_percent:
             min: 15
             max: 20
+            midpoint: 17.5
             confidence: approximate
           side_shoot_removed: true
           side_shoot_length_cm: 10
@@ -78,6 +136,7 @@ measurement_events:
           leaf_mass_removed_percent:
             min: 15
             max: 20
+            midpoint: 17.5
             confidence: approximate
           side_shoot_removed: true
           side_shoot_length_cm: 10
@@ -86,6 +145,7 @@ measurement_events:
           stress_notes: null
 
   - event_id: pink_tomato_side_shoot_direct_soil_2026_06_17
+    day_index: 6
     timestamp: 2026-06-17T07:05:00+03:00
     project_id: balcony-pot-house
     event_type: propagation_start
@@ -110,6 +170,7 @@ measurement_events:
     planned_observation_window_days: 14
 
   - event_id: pink_tomato_side_shoot_water_2026_06_17
+    day_index: 6
     timestamp: 2026-06-17T07:10:00+03:00
     project_id: balcony-pot-house
     event_type: propagation_start
@@ -132,7 +193,56 @@ measurement_events:
     planned_observation_window_days: 14
 
 metrics_ready_records:
+  - timestamp: 2026-06-12T12:00:00+03:00
+    day_index: 1
+    project_id: balcony-pot-house
+    container_id: f30_01
+    plant_id: tomato_pink_dream_01
+    metric_id: height_cm
+    value: 50
+    unit: cm
+    method: visual_estimate_from_project_observation
+    confidence: approximate
+    notes: Baseline approximate height for first usable metrics day.
+
+  - timestamp: 2026-06-12T12:00:00+03:00
+    day_index: 1
+    project_id: balcony-pot-house
+    container_id: f30_02
+    plant_id: tomato_pink_dream_02
+    metric_id: height_cm
+    value: 50
+    unit: cm
+    method: visual_estimate_from_project_observation
+    confidence: approximate
+    notes: Baseline approximate height for first usable metrics day.
+
+  - timestamp: 2026-06-12T12:00:00+03:00
+    day_index: 1
+    project_id: balcony-pot-house
+    container_id: f30_01
+    plant_id: tomato_pink_dream_01
+    metric_id: growth_stage_code
+    value: 2
+    unit: ordinal
+    method: observation_classification
+    confidence: approximate
+    notes: 2 = vegetative.
+
+  - timestamp: 2026-06-12T12:00:00+03:00
+    day_index: 1
+    project_id: balcony-pot-house
+    container_id: f30_02
+    plant_id: tomato_pink_dream_02
+    metric_id: growth_stage_code
+    value: 2
+    unit: ordinal
+    method: observation_classification
+    confidence: approximate
+    notes: 2 = vegetative.
+
   - timestamp: 2026-06-17T07:00:00+03:00
+    day_index: 6
     project_id: balcony-pot-house
     container_id: f30_01
     plant_id: tomato_pink_dream_01
@@ -144,6 +254,31 @@ metrics_ready_records:
     notes: Height after tying to 8 mm stake.
 
   - timestamp: 2026-06-17T07:00:00+03:00
+    day_index: 6
+    project_id: balcony-pot-house
+    container_id: f30_01
+    plant_id: tomato_pink_dream_01
+    metric_id: height_delta_from_baseline_cm
+    value: 15
+    unit: cm
+    method: derived
+    confidence: approximate
+    notes: Derived from baseline 50 cm and day 6 height 65 cm.
+
+  - timestamp: 2026-06-17T07:00:00+03:00
+    day_index: 6
+    project_id: balcony-pot-house
+    container_id: f30_01
+    plant_id: tomato_pink_dream_01
+    metric_id: estimated_growth_rate_cm_per_day
+    value: 3
+    unit: cm_per_day
+    method: derived
+    confidence: low
+    notes: Derived over five days from approximate baseline; useful only for test charts, not agronomic conclusion.
+
+  - timestamp: 2026-06-17T07:00:00+03:00
+    day_index: 6
     project_id: balcony-pot-house
     container_id: f30_01
     plant_id: tomato_pink_dream_01
@@ -155,6 +290,7 @@ metrics_ready_records:
     notes: Estimated 15-20 percent leaf mass removed.
 
   - timestamp: 2026-06-17T07:00:00+03:00
+    day_index: 6
     project_id: balcony-pot-house
     container_id: f30_02
     plant_id: tomato_pink_dream_02
@@ -166,6 +302,7 @@ metrics_ready_records:
     notes: Estimated 15-20 percent leaf mass removed.
 
   - timestamp: 2026-06-17T07:05:00+03:00
+    day_index: 6
     project_id: balcony-pot-house
     container_id: f30_04
     plant_id: tomato_side_shoot_01
@@ -176,7 +313,20 @@ metrics_ready_records:
     confidence: approximate
     notes: Direct-soil propagation trial.
 
+  - timestamp: 2026-06-17T07:05:00+03:00
+    day_index: 6
+    project_id: balcony-pot-house
+    container_id: f30_04
+    plant_id: tomato_side_shoot_01
+    metric_id: buried_depth_cm
+    value: 7
+    unit: cm
+    method: manual_estimate
+    confidence: approximate
+    notes: About 2/3 of the cutting buried.
+
   - timestamp: 2026-06-17T07:10:00+03:00
+    day_index: 6
     project_id: balcony-pot-house
     container_id: indoor_window_water_glass_01
     plant_id: tomato_side_shoot_02
@@ -188,6 +338,7 @@ metrics_ready_records:
     notes: Water-rooting propagation trial.
 
   - timestamp: 2026-06-17T07:10:00+03:00
+    day_index: 6
     project_id: balcony-pot-house
     container_id: indoor_window_water_glass_01
     plant_id: tomato_side_shoot_02
@@ -197,6 +348,50 @@ metrics_ready_records:
     method: manual_estimate
     confidence: approximate
     notes: Water depth at start of water-rooting trial.
+
+chart_series:
+  - series_id: pink_dream_01_height_cm
+    plant_id: tomato_pink_dream_01
+    metric_id: height_cm
+    chart_type: time_series
+    unit: cm
+    points:
+      - day_index: 1
+        timestamp: 2026-06-12T12:00:00+03:00
+        value: 50
+        confidence: approximate
+      - day_index: 6
+        timestamp: 2026-06-17T07:00:00+03:00
+        value: 65
+        confidence: approximate
+
+  - series_id: pink_dream_02_height_cm
+    plant_id: tomato_pink_dream_02
+    metric_id: height_cm
+    chart_type: time_series
+    unit: cm
+    points:
+      - day_index: 1
+        timestamp: 2026-06-12T12:00:00+03:00
+        value: 50
+        confidence: approximate
+
+  - series_id: pink_tomato_leaf_mass_removed_percent
+    plant_id: pink_dream_group
+    metric_id: leaf_mass_removed_percent_midpoint
+    chart_type: bar
+    unit: percent
+    points:
+      - day_index: 6
+        timestamp: 2026-06-17T07:00:00+03:00
+        plant_id: tomato_pink_dream_01
+        value: 17.5
+        confidence: approximate
+      - day_index: 6
+        timestamp: 2026-06-17T07:00:00+03:00
+        plant_id: tomato_pink_dream_02
+        value: 17.5
+        confidence: approximate
 
 open_measurements_needed:
   - plant_id: tomato_pink_dream_01
