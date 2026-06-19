@@ -2,22 +2,22 @@
   "schema_version": "0.1",
   "dataset_id": "plant_map_app_seed",
   "updated": "2026-06-19",
-  "privacy_note": "Home balcony coordinates are intentionally approximate and city-level. Do not store exact residential coordinates in public repository data. Humans need at least one functioning boundary, apparently.",
+  "privacy_note": "Balcony coordinates were provided by the project owner and are used as the map center for the app. Avoid publishing more granular plant placement than needed.",
   "map_defaults": {
-    "center": [42.6977, 23.3219],
-    "zoom": 11,
+    "center": [42.647012, 23.373958],
+    "zoom": 18,
     "tile_layer": "OpenStreetMap"
   },
   "sites": [
     {
-      "site_id": "sofia_balcony_approx",
-      "name": "Sofia balcony, approximate",
+      "site_id": "sofia_balcony",
+      "name": "Sofia balcony",
       "type": "balcony_site",
-      "coordinates": [42.6977, 23.3219],
-      "coordinate_quality": "city_level_privacy_safe",
+      "coordinates": [42.647012, 23.373958],
+      "coordinate_quality": "owner_provided",
       "project_id": "balcony-pot-house",
       "status": "active",
-      "summary": "Balcony plant monitoring site. Exact location intentionally not published."
+      "summary": "Balcony plant monitoring site. Coordinates supplied by the project owner."
     },
     {
       "site_id": "gaitanevo_village_approx",
@@ -34,10 +34,10 @@
     {
       "asset_id": "solanum_lycopersicum_pink_dream",
       "display_name": "Pink Dream tomato",
-      "site_id": "sofia_balcony_approx",
+      "site_id": "sofia_balcony",
       "project_id": "balcony-pot-house",
       "containers": ["f30_01", "f30_02"],
-      "map_coordinates": [42.69772, 23.32192],
+      "map_coordinates": [42.647014, 23.373960],
       "local_position": {"area": "balcony", "x_percent": 22, "y_percent": 62},
       "status": "active",
       "vitals": {
@@ -53,10 +53,10 @@
     {
       "asset_id": "solanum_lycopersicum_cherry_balcony_population",
       "display_name": "Cherry tomato population",
-      "site_id": "sofia_balcony_approx",
+      "site_id": "sofia_balcony",
       "project_id": "balcony-pot-house",
       "containers": ["window_box_01", "window_box_02", "window_box_03", "window_box_04", "cube_01", "cube_02", "cube_03", "cube_04"],
-      "map_coordinates": [42.69771, 23.32195],
+      "map_coordinates": [42.647013, 23.373963],
       "local_position": {"area": "balcony", "x_percent": 48, "y_percent": 48},
       "status": "active",
       "vitals": {"height_cm": null, "growth_rate_cm_per_day": null, "wilting_score_0_5": null, "flower_count": null, "fruit_count": null},
@@ -66,10 +66,10 @@
     {
       "asset_id": "capsicum_annuum_balcony_pepper",
       "display_name": "Pepper",
-      "site_id": "sofia_balcony_approx",
+      "site_id": "sofia_balcony",
       "project_id": "balcony-pot-house",
       "containers": ["window_box_01", "window_box_02", "cube_03", "cube_04"],
-      "map_coordinates": [42.6977, 23.32189],
+      "map_coordinates": [42.647012, 23.373955],
       "local_position": {"area": "balcony", "x_percent": 62, "y_percent": 52},
       "status": "active",
       "vitals": {"height_cm": null, "growth_rate_cm_per_day": null, "wilting_score_0_5": null, "flower_count": null, "fruit_count": null},
@@ -79,10 +79,10 @@
     {
       "asset_id": "ipomoea_batatas_balcony_sweet_potato",
       "display_name": "Sweet potato",
-      "site_id": "sofia_balcony_approx",
+      "site_id": "sofia_balcony",
       "project_id": "balcony-pot-house",
       "containers": ["f30_03"],
-      "map_coordinates": [42.69768, 23.32191],
+      "map_coordinates": [42.647010, 23.373959],
       "local_position": {"area": "balcony", "x_percent": 32, "y_percent": 74},
       "status": "active",
       "vitals": {"vine_length_cm": null, "growth_rate_cm_per_day": null, "wilting_score_0_5": null},
@@ -92,10 +92,10 @@
     {
       "asset_id": "helianthus_annuus_balcony_sunflower",
       "display_name": "Sunflower",
-      "site_id": "sofia_balcony_approx",
+      "site_id": "sofia_balcony",
       "project_id": "balcony-pot-house",
       "containers": ["f25_01"],
-      "map_coordinates": [42.69773, 23.32186],
+      "map_coordinates": [42.647015, 23.373952],
       "local_position": {"area": "balcony", "x_percent": 72, "y_percent": 35},
       "status": "active",
       "vitals": {"height_cm": null, "growth_rate_cm_per_day": null, "wilting_score_0_5": null},
@@ -104,11 +104,11 @@
     }
   ],
   "topology_edges": [
-    {"from": "sofia_balcony_approx", "to": "solanum_lycopersicum_pink_dream", "type": "hosts"},
-    {"from": "sofia_balcony_approx", "to": "solanum_lycopersicum_cherry_balcony_population", "type": "hosts"},
-    {"from": "sofia_balcony_approx", "to": "capsicum_annuum_balcony_pepper", "type": "hosts"},
-    {"from": "sofia_balcony_approx", "to": "ipomoea_batatas_balcony_sweet_potato", "type": "hosts"},
-    {"from": "sofia_balcony_approx", "to": "helianthus_annuus_balcony_sunflower", "type": "hosts"},
+    {"from": "sofia_balcony", "to": "solanum_lycopersicum_pink_dream", "type": "hosts"},
+    {"from": "sofia_balcony", "to": "solanum_lycopersicum_cherry_balcony_population", "type": "hosts"},
+    {"from": "sofia_balcony", "to": "capsicum_annuum_balcony_pepper", "type": "hosts"},
+    {"from": "sofia_balcony", "to": "ipomoea_batatas_balcony_sweet_potato", "type": "hosts"},
+    {"from": "sofia_balcony", "to": "helianthus_annuus_balcony_sunflower", "type": "hosts"},
     {"from": "solanum_lycopersicum_pink_dream", "to": "air_temperature_c", "type": "uses_common_environment_metric"},
     {"from": "solanum_lycopersicum_pink_dream", "to": "relative_humidity_percent", "type": "uses_common_environment_metric"},
     {"from": "solanum_lycopersicum_pink_dream", "to": "uv_index", "type": "uses_common_environment_metric"}
