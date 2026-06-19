@@ -78,6 +78,7 @@ extra_javascript:
   - assets/js/plant-monitor.js
   - assets/js/pink-tomato-growth-monitor.js
   - assets/js/plant-monitor-unified.js
+  - assets/js/plant-monitor-environment.js
 
 markdown_extensions:
   - admonition
