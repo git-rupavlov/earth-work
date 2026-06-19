@@ -30,6 +30,16 @@
       "summary": "10 x 2 m Red Garnet amaranth plot, 20 m² total area."
     },
     {
+      "site_id": "no_maintenance_butternut_pits_01",
+      "name": "No-maintenance butternut squash pits 01",
+      "type": "field_pit_cluster",
+      "coordinates": [42.6442028990162, 23.3636636793822],
+      "coordinate_quality": "owner_provided",
+      "project_id": "no-maintenance-squash",
+      "status": "planned",
+      "summary": "Planned 10-pit butternut squash trial."
+    },
+    {
       "site_id": "gaitanevo_village_approx",
       "name": "Gaitanevo garden, approximate",
       "type": "field_site",
@@ -78,6 +88,30 @@
         "flowering_percent": null,
         "seed_harvest_weight_g": null,
         "leaf_harvest_weight_g": null,
+        "wilting_score_0_5": null
+      },
+      "environment_context_metrics": ["air_temperature_c", "relative_humidity_percent", "uv_index", "solar_radiation_w_m2", "precipitation_mm", "wind_speed_m_s", "air_pressure_hpa", "growing_degree_days"],
+      "layers": ["plants", "vitals", "weather", "growth_heatmap", "topology"]
+    },
+    {
+      "asset_id": "cucurbita_moschata_butternut_pits_01",
+      "display_name": "No-maintenance butternut squash pits",
+      "site_id": "no_maintenance_butternut_pits_01",
+      "project_id": "no-maintenance-squash",
+      "containers": ["butternut_pit_01", "butternut_pit_02", "butternut_pit_03", "butternut_pit_04", "butternut_pit_05", "butternut_pit_06", "butternut_pit_07", "butternut_pit_08", "butternut_pit_09", "butternut_pit_10"],
+      "map_coordinates": [42.6442028990162, 23.3636636793822],
+      "local_position": {"area": "field_pit_cluster", "pit_count": 10},
+      "status": "planned",
+      "vitals": {
+        "pit_count": 10,
+        "planted_pit_count": 0,
+        "emerged_pit_count": null,
+        "emergence_percent": null,
+        "vine_length_cm": null,
+        "growth_rate_cm_per_day": null,
+        "flower_count": null,
+        "fruit_count": null,
+        "harvest_weight_g": null,
         "wilting_score_0_5": null
       },
       "environment_context_metrics": ["air_temperature_c", "relative_humidity_percent", "uv_index", "solar_radiation_w_m2", "precipitation_mm", "wind_speed_m_s", "air_pressure_hpa", "growing_degree_days"],
@@ -143,6 +177,10 @@
     {"from": "sofia_balcony", "to": "ipomoea_batatas_balcony_sweet_potato", "type": "hosts"},
     {"from": "sofia_balcony", "to": "helianthus_annuus_balcony_sunflower", "type": "hosts"},
     {"from": "amaranth_red_garnet_plot_01", "to": "amaranthus_red_garnet_plot_01", "type": "hosts"},
+    {"from": "no_maintenance_butternut_pits_01", "to": "cucurbita_moschata_butternut_pits_01", "type": "hosts"},
+    {"from": "cucurbita_moschata_butternut_pits_01", "to": "air_temperature_c", "type": "uses_common_environment_metric"},
+    {"from": "cucurbita_moschata_butternut_pits_01", "to": "relative_humidity_percent", "type": "uses_common_environment_metric"},
+    {"from": "cucurbita_moschata_butternut_pits_01", "to": "uv_index", "type": "uses_common_environment_metric"},
     {"from": "amaranthus_red_garnet_plot_01", "to": "air_temperature_c", "type": "uses_common_environment_metric"},
     {"from": "amaranthus_red_garnet_plot_01", "to": "relative_humidity_percent", "type": "uses_common_environment_metric"},
     {"from": "amaranthus_red_garnet_plot_01", "to": "uv_index", "type": "uses_common_environment_metric"},
