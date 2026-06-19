@@ -1,0 +1,202 @@
+schema_version: 0.1
+dataset_id: balcony_pot_house_pink_tomatoes_growth_phases
+project_id: balcony-pot-house
+crop_group: pink_tomatoes
+cultivar: Pink Dream
+species: Solanum lycopersicum
+updated: 2026-06-19
+
+metadata:
+  purpose: Estimated day-one-to-current growth progression for Pink Dream tomatoes.
+  source: user_supplied_growth_progression_table
+  timezone: Europe/Sofia
+  data_quality_note: Values are estimated growth phases, suitable for chart logic and dashboard prototyping. Treat as project baseline until replaced by direct measurements.
+  baseline_date: 2026-05-12
+  current_date: 2026-06-19
+  current_height_cm: 65
+  units:
+    height: cm
+    growth_rate: cm_per_day
+
+plants:
+  - plant_id: tomato_pink_dream_01
+    cultivar: Pink Dream
+    container_id: f30_01
+    status: active
+    data_role: primary_chart_reference
+  - plant_id: tomato_pink_dream_02
+    cultivar: Pink Dream
+    container_id: f30_02
+    status: active
+    data_role: paired_plant_same_phase_model_until_direct_measurements_exist
+
+growth_phases:
+  - phase_id: planting_day
+    phase_label: Day of Planting
+    date_start: 2026-05-12
+    date_end: 2026-05-12
+    days_in_phase: 0
+    growth_rate_cm_per_day: null
+    start_height_cm: 10
+    end_height_cm: 10
+    total_height_trend_cm: 10
+    stage: sprout
+    confidence: user_estimated
+    notes: Planting day baseline.
+
+  - phase_id: establishment_phase
+    phase_label: Establishment
+    date_start: 2026-05-13
+    date_end: 2026-05-22
+    days_in_phase: 10
+    growth_rate_cm_per_day: 0.5
+    start_height_cm: 10
+    end_height_cm: 15
+    total_height_trend_cm: 15
+    stage: early_vegetative
+    confidence: user_estimated
+    notes: Slow early establishment after planting.
+
+  - phase_id: vegetative_acceleration_phase
+    phase_label: Vegetative Acceleration
+    date_start: 2026-05-23
+    date_end: 2026-06-05
+    days_in_phase: 14
+    growth_rate_cm_per_day: 1.5
+    start_height_cm: 15
+    end_height_cm: 36
+    total_height_trend_cm: 36
+    stage: vegetative
+    confidence: user_estimated
+    notes: Stronger vegetative growth.
+
+  - phase_id: rapid_vegetative_phase
+    phase_label: Rapid Vegetative Growth
+    date_start: 2026-06-06
+    date_end: 2026-06-19
+    days_in_phase: 14
+    growth_rate_cm_per_day: 2.1
+    start_height_cm: 36
+    end_height_cm: 65
+    total_height_trend_cm: 65
+    stage: active_vegetative_current
+    confidence: user_estimated
+    notes: Current phase ending at 65 cm.
+
+chart_series:
+  - series_id: pink_dream_height_trend_cm
+    chart_type: time_series
+    metric_id: height_cm
+    unit: cm
+    plant_group: pink_dream_tomatoes
+    points:
+      - label: May 12
+        date: 2026-05-12
+        day_index: 1
+        value: 10
+        stage: sprout
+      - label: May 22
+        date: 2026-05-22
+        day_index: 11
+        value: 15
+        stage: early_vegetative
+      - label: Jun 05
+        date: 2026-06-05
+        day_index: 25
+        value: 36
+        stage: vegetative
+      - label: Jun 19
+        date: 2026-06-19
+        day_index: 39
+        value: 65
+        stage: current
+
+  - series_id: pink_dream_growth_rate_by_phase
+    chart_type: bar
+    metric_id: growth_rate_cm_per_day
+    unit: cm_per_day
+    plant_group: pink_dream_tomatoes
+    points:
+      - label: May 13 - May 22
+        date_start: 2026-05-13
+        date_end: 2026-05-22
+        value: 0.5
+      - label: May 23 - Jun 05
+        date_start: 2026-05-23
+        date_end: 2026-06-05
+        value: 1.5
+      - label: Jun 06 - Jun 19
+        date_start: 2026-06-06
+        date_end: 2026-06-19
+        value: 2.1
+
+metrics_ready_records:
+  - timestamp: 2026-05-12T12:00:00+03:00
+    project_id: balcony-pot-house
+    plant_group: pink_dream_tomatoes
+    metric_id: height_cm
+    value: 10
+    unit: cm
+    method: user_estimated_growth_progression
+    confidence: estimated
+    notes: Day of planting, sprout stage.
+
+  - timestamp: 2026-05-22T12:00:00+03:00
+    project_id: balcony-pot-house
+    plant_group: pink_dream_tomatoes
+    metric_id: height_cm
+    value: 15
+    unit: cm
+    method: user_estimated_growth_progression
+    confidence: estimated
+    notes: End of establishment phase.
+
+  - timestamp: 2026-06-05T12:00:00+03:00
+    project_id: balcony-pot-house
+    plant_group: pink_dream_tomatoes
+    metric_id: height_cm
+    value: 36
+    unit: cm
+    method: user_estimated_growth_progression
+    confidence: estimated
+    notes: End of vegetative acceleration phase.
+
+  - timestamp: 2026-06-19T12:00:00+03:00
+    project_id: balcony-pot-house
+    plant_group: pink_dream_tomatoes
+    metric_id: height_cm
+    value: 65
+    unit: cm
+    method: user_estimated_growth_progression
+    confidence: estimated
+    notes: Current height trend.
+
+  - timestamp: 2026-05-22T12:00:00+03:00
+    project_id: balcony-pot-house
+    plant_group: pink_dream_tomatoes
+    metric_id: growth_rate_cm_per_day
+    value: 0.5
+    unit: cm_per_day
+    method: user_estimated_growth_progression
+    confidence: estimated
+    notes: May 13 - May 22.
+
+  - timestamp: 2026-06-05T12:00:00+03:00
+    project_id: balcony-pot-house
+    plant_group: pink_dream_tomatoes
+    metric_id: growth_rate_cm_per_day
+    value: 1.5
+    unit: cm_per_day
+    method: user_estimated_growth_progression
+    confidence: estimated
+    notes: May 23 - Jun 05.
+
+  - timestamp: 2026-06-19T12:00:00+03:00
+    project_id: balcony-pot-house
+    plant_group: pink_dream_tomatoes
+    metric_id: growth_rate_cm_per_day
+    value: 2.1
+    unit: cm_per_day
+    method: user_estimated_growth_progression
+    confidence: estimated
+    notes: Jun 06 - Jun 19.
