@@ -53,7 +53,9 @@ nav:
       - Water Systems: water/index.md
       - Infrastructure: infrastructure/index.md
       - Monitoring & Automation: automation/index.md
-  - Metrics: metrics/index.md
+  - Metrics:
+      - Overview: metrics/index.md
+      - Monitor: metrics/monitor.md
   - Journal:
       - Field Journal: journal/index.md
       - Tomato Trial 2026: journal/test-entry.md
