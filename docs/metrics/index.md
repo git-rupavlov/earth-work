@@ -30,22 +30,21 @@ The purpose is simple: every observation that becomes measurable should eventual
 
 ---
 
-## Monitor
+## Metrics Section Structure
 
-The monitor below is the first NMS-style plant inventory view.
+```text
+Metrics
+├── Overview
+└── Monitor
+```
 
-Select a plant asset to inspect:
+The Monitor is now a separate page:
 
-- identity data;
-- family/genus/species/cultivar;
-- source/vendor analogue;
-- lifecycle and growth habit;
-- assigned containers;
-- metric interfaces;
-- chart preview;
-- event logs.
+```text
+monitor.md
+```
 
-<div data-ew-plant-monitor></div>
+Use it for selectable plant views, plant-specific chart previews and logs.
 
 ---
 
