@@ -74,6 +74,7 @@ extra_javascript:
   - assets/js/crop-matrix.js
   - assets/js/page-heroes.js
   - assets/js/plant-monitor.js
+  - assets/js/pink-tomato-growth-monitor.js
 
 markdown_extensions:
   - admonition
