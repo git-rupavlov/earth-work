@@ -1,0 +1,655 @@
+schema_version: 0.1
+project:
+  id: balcony-pot-house
+  name: Balcony Pot House
+  status: active
+  location_type: apartment_balcony
+  orientation: south_east
+  climate_context:
+    city: Sofia
+    country: Bulgaria
+    exposure_notes:
+      - morning_and_midday_sun
+      - grapevine_canopy_shade
+      - high_container_drying_risk_in_summer
+  data_quality:
+    inventory_date: 2026-06
+    volume_values: estimated_unless_marked_measured
+    dimensions: estimated_where_not_measured
+    notes: Update measured dimensions and soil volumes after physical measurement.
+
+containers:
+  - container_id: f30_01
+    label: F30 #1
+    container_group: large_round_pots_f30
+    pot_type: round_pot
+    pot_shape: cylindrical_round
+    pot_dimensions_cm:
+      diameter: 30
+      height: null
+      length: null
+      width: null
+    soil_volume_l:
+      measured: null
+      estimated: 18
+      estimate_range: [15, 22]
+    soil:
+      mix_id: balcony_general_mix
+      surface_mulch: unknown
+      amendments: []
+    sun_exposure:
+      orientation: south_east
+      direct_sun: morning_to_midday
+      shade_source: grapevine_canopy_partial
+      notes: Exposure changes through the season as grapevine canopy develops.
+    drainage: assumed_bottom_drainage
+    irrigation:
+      method: manual_watering
+      schedule: observation_based
+    contents:
+      - plant_id: tomato_pink_dream_01
+
+  - container_id: f30_02
+    label: F30 #2
+    container_group: large_round_pots_f30
+    pot_type: round_pot
+    pot_shape: cylindrical_round
+    pot_dimensions_cm:
+      diameter: 30
+      height: null
+      length: null
+      width: null
+    soil_volume_l:
+      measured: null
+      estimated: 18
+      estimate_range: [15, 22]
+    soil:
+      mix_id: balcony_general_mix
+      surface_mulch: unknown
+      amendments: []
+    sun_exposure:
+      orientation: south_east
+      direct_sun: morning_to_midday
+      shade_source: grapevine_canopy_partial
+    drainage: assumed_bottom_drainage
+    irrigation:
+      method: manual_watering
+      schedule: observation_based
+    contents:
+      - plant_id: tomato_pink_dream_02
+
+  - container_id: f30_03
+    label: F30 #3
+    container_group: large_round_pots_f30
+    pot_type: round_pot
+    pot_shape: cylindrical_round
+    pot_dimensions_cm:
+      diameter: 30
+      height: null
+      length: null
+      width: null
+    soil_volume_l:
+      measured: null
+      estimated: 18
+      estimate_range: [15, 22]
+    soil:
+      mix_id: balcony_general_mix
+      surface_mulch: unknown
+      amendments: []
+    sun_exposure:
+      orientation: south_east
+      direct_sun: morning_to_midday
+      shade_source: grapevine_canopy_partial
+    drainage: assumed_bottom_drainage
+    irrigation:
+      method: manual_watering
+      schedule: observation_based
+    contents:
+      - plant_id: sweet_potato_01
+
+  - container_id: f30_04
+    label: F30 #4
+    container_group: large_round_pots_f30
+    pot_type: round_pot
+    pot_shape: cylindrical_round
+    pot_dimensions_cm:
+      diameter: 30
+      height: null
+      length: null
+      width: null
+    soil_volume_l:
+      measured: null
+      estimated: 18
+      estimate_range: [15, 22]
+    soil:
+      mix_id: balcony_general_mix
+      surface_mulch: unknown
+      amendments: []
+    sun_exposure:
+      orientation: south_east
+      direct_sun: morning_to_midday
+      shade_source: grapevine_canopy_partial
+    drainage: assumed_bottom_drainage
+    irrigation:
+      method: manual_watering
+      schedule: observation_based
+    contents:
+      - plant_id: tomato_side_shoot_01
+
+  - container_id: f25_01
+    label: F25 #1
+    container_group: cylindrical_pots_f25
+    pot_type: cylindrical_pot
+    pot_shape: cylindrical_round
+    pot_dimensions_cm:
+      diameter: 25
+      height: null
+      length: null
+      width: null
+    soil_volume_l:
+      measured: null
+      estimated: 10
+      estimate_range: [8, 13]
+    soil:
+      mix_id: balcony_general_mix
+      surface_mulch: unknown
+      amendments: []
+    sun_exposure:
+      orientation: south_east
+      direct_sun: morning_to_midday
+      shade_source: partial_balcony_and_grapevine_shade
+    drainage: assumed_bottom_drainage
+    irrigation:
+      method: manual_watering
+      schedule: observation_based
+    contents:
+      - plant_id: sunflower_01
+
+  - container_id: window_box_01
+    label: Window Box #1
+    container_group: rectangular_window_boxes
+    pot_type: rectangular_window_box
+    pot_shape: rectangular_prism
+    pot_dimensions_cm:
+      length: null
+      width: null
+      height: null
+      diameter: null
+    soil_volume_l:
+      measured: null
+      estimated: null
+      estimate_range: null
+    sun_exposure:
+      orientation: south_east
+      direct_sun: morning_to_midday
+      shade_source: partial_grapevine_shade
+    drainage: assumed_bottom_drainage
+    irrigation:
+      method: manual_watering
+      schedule: observation_based
+    contents:
+      - plant_id: cherry_tomato_box_01_a
+      - plant_id: pepper_box_01
+      - plant_id: cherry_tomato_box_01_b
+
+  - container_id: window_box_02
+    label: Window Box #2
+    container_group: rectangular_window_boxes
+    pot_type: rectangular_window_box
+    pot_shape: rectangular_prism
+    pot_dimensions_cm:
+      length: null
+      width: null
+      height: null
+      diameter: null
+    soil_volume_l:
+      measured: null
+      estimated: null
+      estimate_range: null
+    sun_exposure:
+      orientation: south_east
+      direct_sun: morning_to_midday
+      shade_source: partial_grapevine_shade
+    drainage: assumed_bottom_drainage
+    irrigation:
+      method: manual_watering
+      schedule: observation_based
+    contents:
+      - plant_id: cherry_tomato_box_02_a
+      - plant_id: pepper_box_02
+      - plant_id: cherry_tomato_box_02_b
+
+  - container_id: window_box_03
+    label: Window Box #3
+    container_group: rectangular_window_boxes
+    pot_type: rectangular_window_box
+    pot_shape: rectangular_prism
+    pot_dimensions_cm:
+      length: null
+      width: null
+      height: null
+      diameter: null
+    soil_volume_l:
+      measured: null
+      estimated: null
+      estimate_range: null
+    sun_exposure:
+      orientation: south_east
+      direct_sun: morning_to_midday
+      shade_source: partial_grapevine_shade
+    drainage: assumed_bottom_drainage
+    irrigation:
+      method: manual_watering
+      schedule: observation_based
+    contents:
+      - plant_id: rosemary_box_03_a
+      - plant_id: cherry_tomato_box_03
+      - plant_id: rosemary_box_03_b
+
+  - container_id: window_box_04
+    label: Window Box #4
+    container_group: rectangular_window_boxes
+    pot_type: rectangular_window_box
+    pot_shape: rectangular_prism
+    pot_dimensions_cm:
+      length: null
+      width: null
+      height: null
+      diameter: null
+    soil_volume_l:
+      measured: null
+      estimated: null
+      estimate_range: null
+    sun_exposure:
+      orientation: south_east
+      direct_sun: morning_to_midday
+      shade_source: partial_grapevine_shade
+    drainage: assumed_bottom_drainage
+    irrigation:
+      method: manual_watering
+      schedule: observation_based
+    contents:
+      - plant_id: rosemary_box_04_a
+      - plant_id: cherry_tomato_box_04
+      - plant_id: rosemary_box_04_b
+
+  - container_id: small_box_01
+    label: Small Window Box #1
+    container_group: small_window_boxes
+    pot_type: small_window_box
+    pot_shape: rectangular_prism
+    pot_dimensions_cm:
+      length: null
+      width: null
+      height: null
+      diameter: null
+    soil_volume_l:
+      measured: null
+      estimated: null
+      estimate_range: null
+    sun_exposure:
+      orientation: south_east
+      direct_sun: morning_to_midday
+      shade_source: partial_grapevine_shade
+    contents:
+      - plant_id: rosemary_small_box_01
+
+  - container_id: small_box_02
+    label: Small Window Box #2
+    container_group: small_window_boxes
+    pot_type: small_window_box
+    pot_shape: rectangular_prism
+    pot_dimensions_cm:
+      length: null
+      width: null
+      height: null
+      diameter: null
+    soil_volume_l:
+      measured: null
+      estimated: null
+      estimate_range: null
+    sun_exposure:
+      orientation: south_east
+      direct_sun: morning_to_midday
+      shade_source: partial_grapevine_shade
+    contents:
+      - plant_id: rosemary_small_box_02
+
+  - container_id: small_box_03
+    label: Small Window Box #3
+    container_group: small_window_boxes
+    pot_type: small_window_box
+    pot_shape: rectangular_prism
+    pot_dimensions_cm:
+      length: null
+      width: null
+      height: null
+      diameter: null
+    soil_volume_l:
+      measured: null
+      estimated: null
+      estimate_range: null
+    sun_exposure:
+      orientation: south_east
+      direct_sun: morning_to_midday
+      shade_source: partial_grapevine_shade
+    contents:
+      - plant_id: rosemary_small_box_03
+
+  - container_id: cube_01
+    label: Cube Pot #1
+    container_group: square_cube_containers
+    pot_type: square_cube_container
+    pot_shape: cube
+    pot_dimensions_cm:
+      length: 25
+      width: 25
+      height: 25
+      diameter: null
+    geometric_volume_l: 15.6
+    soil_volume_l:
+      measured: null
+      estimated: 13
+      estimate_range: [12, 15]
+    sun_exposure:
+      orientation: south_east
+      direct_sun: morning_to_midday
+      shade_source: grapevine_canopy_partial
+    contents:
+      - plant_id: white_bean_01
+      - plant_id: parsley_cube_01
+      - plant_id: volunteer_cherry_tomato_population_cube_01
+
+  - container_id: cube_02
+    label: Cube Pot #2
+    container_group: square_cube_containers
+    pot_type: square_cube_container
+    pot_shape: cube
+    pot_dimensions_cm:
+      length: 25
+      width: 25
+      height: 25
+      diameter: null
+    geometric_volume_l: 15.6
+    soil_volume_l:
+      measured: null
+      estimated: 13
+      estimate_range: [12, 15]
+    sun_exposure:
+      orientation: south_east
+      direct_sun: morning_to_midday
+      shade_source: grapevine_canopy_partial
+    contents:
+      - plant_id: white_bean_02
+      - plant_id: parsley_cube_02
+      - plant_id: volunteer_cherry_tomato_population_cube_02
+
+  - container_id: cube_03
+    label: Cube Pot #3
+    container_group: square_cube_containers
+    pot_type: square_cube_container
+    pot_shape: cube
+    pot_dimensions_cm:
+      length: 25
+      width: 25
+      height: 25
+      diameter: null
+    geometric_volume_l: 15.6
+    soil_volume_l:
+      measured: null
+      estimated: 13
+      estimate_range: [12, 15]
+    sun_exposure:
+      orientation: south_east
+      direct_sun: morning_to_midday
+      shade_source: grapevine_canopy_partial
+    contents:
+      - plant_id: pepper_cube_03
+      - plant_id: parsley_cube_03
+      - plant_id: volunteer_cherry_tomato_population_cube_03
+
+  - container_id: cube_04
+    label: Cube Pot #4
+    container_group: square_cube_containers
+    pot_type: square_cube_container
+    pot_shape: cube
+    pot_dimensions_cm:
+      length: 25
+      width: 25
+      height: 25
+      diameter: null
+    geometric_volume_l: 15.6
+    soil_volume_l:
+      measured: null
+      estimated: 13
+      estimate_range: [12, 15]
+    sun_exposure:
+      orientation: south_east
+      direct_sun: morning_to_midday
+      shade_source: grapevine_canopy_partial
+    contents:
+      - plant_id: pepper_cube_04
+      - plant_id: parsley_cube_04
+      - plant_id: volunteer_cherry_tomato_population_cube_04
+
+plant_inventory:
+  - plant_id: tomato_pink_dream_01
+    common_name: tomato
+    cultivar: Pink Dream
+    scientific_name: Solanum lycopersicum
+    count: 1
+    container_id: f30_01
+    role: fruit_production
+    status: active
+    origin: purchased_or_started_seedling
+    measurements:
+      height_cm: null
+      stem_diameter_mm: null
+      leaf_count: null
+      last_measured: null
+    tracking:
+      growth_series_enabled: true
+      phenology_series_enabled: true
+      yield_series_enabled: true
+
+  - plant_id: tomato_pink_dream_02
+    common_name: tomato
+    cultivar: Pink Dream
+    scientific_name: Solanum lycopersicum
+    count: 1
+    container_id: f30_02
+    role: fruit_production
+    status: active
+    origin: purchased_or_started_seedling
+    measurements:
+      height_cm: null
+      stem_diameter_mm: null
+      leaf_count: null
+      last_measured: null
+    tracking:
+      growth_series_enabled: true
+      phenology_series_enabled: true
+      yield_series_enabled: true
+
+  - plant_id: tomato_side_shoot_01
+    common_name: tomato side shoot
+    cultivar: Pink Dream
+    scientific_name: Solanum lycopersicum
+    count: 1
+    container_id: f30_04
+    role: propagation_trial
+    status: active
+    origin: side_shoot_from_balcony_tomato
+    measurements:
+      height_cm: null
+      rooted: unknown
+      last_measured: null
+    tracking:
+      rooting_trial_enabled: true
+      growth_series_enabled: true
+
+  - plant_id: sweet_potato_01
+    common_name: sweet potato
+    scientific_name: Ipomoea batatas
+    count: 1
+    container_id: f30_03
+    role: tuber_and_vine_trial
+    status: active
+    measurements:
+      vine_length_cm: null
+      node_count: null
+      last_measured: null
+    tracking:
+      growth_series_enabled: true
+      harvest_series_enabled: true
+
+  - plant_id: sunflower_01
+    common_name: sunflower
+    scientific_name: Helianthus annuus
+    count: 1
+    container_id: f25_01
+    role: pollinator_support_biomass_seed_trial
+    status: active
+    measurements:
+      height_cm: null
+      stem_diameter_mm: null
+      flower_head_diameter_cm: null
+      last_measured: null
+    tracking:
+      growth_series_enabled: true
+      flowering_series_enabled: true
+      seed_series_enabled: true
+
+  - plant_id: cherry_tomatoes_window_boxes
+    common_name: cherry tomato
+    scientific_name: Solanum lycopersicum
+    count: 6
+    container_ids:
+      - window_box_01
+      - window_box_02
+      - window_box_03
+      - window_box_04
+    role: fruit_production_small_space_trial
+    status: active
+    origin: mixed
+    tracking:
+      growth_series_enabled: true
+      yield_series_enabled: true
+
+  - plant_id: peppers_total
+    common_name: pepper
+    scientific_name: Capsicum annuum
+    count: 4
+    container_ids:
+      - window_box_01
+      - window_box_02
+      - cube_03
+      - cube_04
+    role: fruit_production_container_trial
+    status: active
+    tracking:
+      growth_series_enabled: true
+      yield_series_enabled: true
+
+  - plant_id: rosemary_total
+    common_name: rosemary
+    scientific_name: Salvia rosmarinus
+    count: 7
+    container_ids:
+      - window_box_03
+      - window_box_04
+      - small_box_01
+      - small_box_02
+      - small_box_03
+    role: perennial_herb_layer
+    status: active
+    tracking:
+      survival_series_enabled: true
+      pruning_series_enabled: true
+
+  - plant_id: parsley_total
+    common_name: parsley
+    scientific_name: Petroselinum crispum
+    count: 4
+    container_ids:
+      - cube_01
+      - cube_02
+      - cube_03
+      - cube_04
+    role: herb_layer_companion_trial
+    status: active
+    tracking:
+      harvest_series_enabled: true
+      regrowth_series_enabled: true
+
+  - plant_id: white_beans_total
+    common_name: white bean
+    scientific_name: Phaseolus vulgaris
+    count: 2
+    container_ids:
+      - cube_01
+      - cube_02
+    role: climbing_legume_seed_and_biomass_trial
+    status: active
+    tracking:
+      growth_series_enabled: true
+      flowering_series_enabled: true
+      pod_series_enabled: true
+
+  - plant_id: volunteer_cherry_tomato_population
+    common_name: volunteer cherry tomato population
+    scientific_name: Solanum lycopersicum
+    count: many
+    container_ids:
+      - cube_01
+      - cube_02
+      - cube_03
+      - cube_04
+    role: self_seeded_selection_population
+    status: active
+    origin: previous_year_fruit_seed_bank
+    tracking:
+      selection_series_enabled: true
+      survival_series_enabled: true
+      transplant_candidates_enabled: true
+
+  - plant_id: grapevine_01
+    common_name: grapevine
+    scientific_name: Vitis vinifera
+    count: 1
+    container_id: established_balcony_canopy
+    role: canopy_shade_microclimate_modifier
+    status: established
+    tracking:
+      canopy_density_series_enabled: true
+      shade_effect_series_enabled: true
+
+future_measurement_schema:
+  environment_timeseries:
+    - timestamp
+    - sensor_id
+    - location_id
+    - temperature_c
+    - relative_humidity_percent
+    - light_lux
+    - soil_moisture_percent
+    - substrate_temperature_c
+  plant_growth_timeseries:
+    - timestamp
+    - plant_id
+    - container_id
+    - height_cm
+    - vine_length_cm
+    - stem_diameter_mm
+    - leaf_count
+    - flowering_status
+    - fruit_count
+    - harvest_weight_g
+  container_observation_timeseries:
+    - timestamp
+    - container_id
+    - watering_l
+    - drainage_observed
+    - wilting_score_0_5
+    - pest_pressure_score_0_5
+    - notes
