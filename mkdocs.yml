@@ -33,30 +33,12 @@ nav:
       - Overview: about/overview.md
   - Projects:
       - Project Registry: projects/index.md
-      - Sprout Lab:
-          - Overview: projects/sprout-lab/index.md
-          - 3-Year Development Plan: projects/sprout-lab/three-year-plan.md
-          - Site Assessment: projects/sprout-lab/site-assessment.md
-      - Microclimate Lab:
-          - Overview: projects/microclimate-lab/index.md
-          - 3-Year Development Plan: projects/microclimate-lab/three-year-plan.md
-          - Site Assessment: projects/microclimate-lab/site-assessment.md
-      - Balcony Pot House:
-          - Overview: projects/balcony-pot-house/index.md
-          - 3-Year Development Plan: projects/balcony-pot-house/three-year-plan.md
-          - Site Assessment: projects/balcony-pot-house/site-assessment.md
-      - Gaitanevo 2026:
-          - Overview: projects/gaitanevo-2026/index.md
-          - 3-Year Development Plan: projects/gaitanevo-2026/three-year-plan.md
-          - Site Assessment: projects/gaitanevo-2026/site-assessment.md
-      - No-Maintenance Squash Trial:
-          - Overview: projects/no-maintenance-squash/index.md
-          - 3-Year Development Plan: projects/no-maintenance-squash/three-year-plan.md
-          - Site Assessment: projects/no-maintenance-squash/site-assessment.md
-      - Greenhouse 2026:
-          - Overview: projects/greenhouse-2026/index.md
-          - 3-Year Development Plan: projects/greenhouse-2026/three-year-plan.md
-          - Site Assessment: projects/greenhouse-2026/site-assessment.md
+      - Sprout Lab: projects/sprout-lab/index.md
+      - Microclimate Lab: projects/microclimate-lab/index.md
+      - Balcony Pot House: projects/balcony-pot-house/index.md
+      - Gaitanevo 2026: projects/gaitanevo-2026/index.md
+      - No-Maintenance Squash Trial: projects/no-maintenance-squash/index.md
+      - Greenhouse 2026: projects/greenhouse-2026/index.md
   - Knowledge Base:
       - Source Hierarchy: knowledge/index.md
       - Content Audit: knowledge/content-audit.md
