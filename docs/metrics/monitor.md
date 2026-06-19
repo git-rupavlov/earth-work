@@ -26,6 +26,29 @@ Select a plant asset to inspect:
 
 ---
 
+## Pink Dream Tomato Daily Charts
+
+Measurement model:
+
+```text
+cadence: daily
+measurement_time: 06:30 Europe/Sofia
+plant_group: Pink Dream tomatoes
+metric: height_cm
+```
+
+<div class="ew-chart-card">
+  <div class="ew-chart" data-ew-chart="pink-tomato-daily-height"></div>
+  <p class="ew-chart-note">Daily 06:30 height trend from planting day to current height. Estimated model until replaced by direct measurements.</p>
+</div>
+
+<div class="ew-chart-card">
+  <div class="ew-chart" data-ew-chart="pink-tomato-growth-rate"></div>
+  <p class="ew-chart-note">Growth rate by phase, based on the supplied progression table.</p>
+</div>
+
+---
+
 ## Current Monitor Scope
 
 The first monitor version uses the static plant asset layer from:
@@ -34,10 +57,12 @@ The first monitor version uses the static plant asset layer from:
 ../data/plant-assets.catalog.yml
 ```
 
-and the first Pink Dream tomato measurement seed from:
+and tomato growth data from:
 
 ```text
 ../data/balcony-pot-house.pink-tomatoes.measurements.yml
+../data/balcony-pot-house.pink-tomatoes.growth-phases.yml
+../assets/data/pink-tomatoes.daily.json
 ```
 
 Later this monitor should read generated JSON from the YAML data files, instead of keeping the plant list inside JavaScript. Because hardcoding telemetry is how tiny dashboards become haunted furniture.
