@@ -19,14 +19,17 @@ const EW_PLANT_MONITOR_ASSETS = [
     roles: ['food production', 'propagation trial source', 'container performance reference'],
     metrics: ['height_cm', 'stem_diameter_mm', 'leaf_count', 'flower_count', 'fruit_count', 'wilting_score_0_5', 'harvest_weight_g'],
     logs: [
+      '2026-06-12 12:00 | Day 1 baseline | both Pink Dream tomatoes ≈ 50 cm',
       '2026-06-17 07:00 | cloudy, 19°C | pruning and propagation event',
       '2026-06-17 07:00 | tomato_pink_dream_01 | height_cm = 65',
+      '2026-06-17 07:00 | tomato_pink_dream_01 | derived growth since baseline ≈ 15 cm',
       '2026-06-17 07:00 | both main plants | leaf mass removed ≈ 15-20%',
       '2026-06-17 07:05 | side shoot #1 | direct soil propagation started',
       '2026-06-17 07:10 | side shoot #2 | water rooting propagation started'
     ],
     chartData: [
-      { label: 'Jun 17', value: 65, metric: 'height_cm', instance: 'tomato_pink_dream_01' }
+      { label: 'Day 1', value: 50, metric: 'height_cm', instance: 'tomato_pink_dream_01' },
+      { label: 'Day 6', value: 65, metric: 'height_cm', instance: 'tomato_pink_dream_01' }
     ]
   },
   {
