@@ -1,0 +1,186 @@
+schema_version: 0.1
+catalog_id: nomads_farm_metrics_catalog
+purpose: Registry of metric groups and visualization types for future dashboards.
+
+visualization_types:
+  - id: time_series
+    label: Time-series graph
+    purpose: Repeated measurements over time.
+    best_for:
+      - temperature_c
+      - relative_humidity_percent
+      - light_lux
+      - soil_moisture_percent
+      - height_cm
+      - vine_length_cm
+      - harvest_weight_g
+
+  - id: radar
+    label: Radar diagram
+    purpose: Multi-axis comparison of crop, project or container performance.
+    candidate_axes:
+      - yield
+      - water_efficiency
+      - heat_tolerance
+      - shade_tolerance
+      - soil_value
+      - storage_value
+      - labor_efficiency
+      - pest_resistance
+      - regrowth_potential
+      - seed_value
+
+  - id: bar
+    label: Bar chart
+    purpose: Compare discrete categories.
+    best_for:
+      - soil_volume_l
+      - plant_count
+      - harvest_weight_g
+      - watering_l
+      - observation_count
+
+  - id: scatter
+    label: Scatter plot
+    purpose: Compare relationships between two numeric variables.
+    example_pairs:
+      - x: soil_volume_l
+        y: height_cm
+      - x: direct_sun_hours
+        y: harvest_weight_g
+      - x: watering_l
+        y: wilting_score_0_5
+      - x: temperature_c
+        y: growth_rate_cm_per_day
+
+  - id: heatmap
+    label: Heatmap
+    purpose: Show intensity across two dimensions.
+    examples:
+      - sun_exposure_by_hour_and_container
+      - temperature_by_sensor_and_time
+      - humidity_by_day_and_hour
+      - crop_suitability_by_site_condition
+
+  - id: calendar
+    label: Calendar view
+    purpose: Show events and repeated actions.
+    examples:
+      - sowing_dates
+      - transplant_dates
+      - pruning_dates
+      - watering_events
+      - harvest_events
+      - pest_observations
+
+  - id: scorecard
+    label: Scorecard
+    purpose: Compact decision summary.
+    examples:
+      - crop_repeatability_score
+      - container_stress_score
+      - project_readiness_score
+      - balcony_suitability_score
+
+metric_groups:
+  environment:
+    - metric_id: temperature_c
+      unit: C
+      source: sensor_or_manual
+      default_visualization: time_series
+    - metric_id: relative_humidity_percent
+      unit: percent
+      source: sensor_or_manual
+      default_visualization: time_series
+    - metric_id: light_lux
+      unit: lux
+      source: sensor_or_manual
+      default_visualization: time_series
+    - metric_id: soil_moisture_percent
+      unit: percent
+      source: sensor_or_manual
+      default_visualization: time_series
+
+  plant_growth:
+    - metric_id: height_cm
+      unit: cm
+      source: manual_measurement
+      default_visualization: time_series
+    - metric_id: vine_length_cm
+      unit: cm
+      source: manual_measurement
+      default_visualization: time_series
+    - metric_id: stem_diameter_mm
+      unit: mm
+      source: manual_measurement
+      default_visualization: time_series
+    - metric_id: leaf_count
+      unit: count
+      source: manual_measurement
+      default_visualization: time_series
+
+  production:
+    - metric_id: harvest_weight_g
+      unit: g
+      source: manual_measurement
+      default_visualization: bar
+    - metric_id: fruit_count
+      unit: count
+      source: manual_measurement
+      default_visualization: time_series
+    - metric_id: seeds_harvested_g
+      unit: g
+      source: manual_measurement
+      default_visualization: bar
+
+  management:
+    - metric_id: watering_l
+      unit: L
+      source: manual_log
+      default_visualization: time_series
+    - metric_id: labor_minutes
+      unit: min
+      source: manual_log
+      default_visualization: bar
+    - metric_id: wilting_score_0_5
+      unit: score
+      source: observation
+      default_visualization: time_series
+
+project_views:
+  balcony-pot-house:
+    priority_visualizations:
+      - soil_volume_by_container
+      - plant_count_by_species
+      - tomato_growth_over_time
+      - sweet_potato_vine_length_over_time
+      - sunflower_growth_over_time
+      - watering_vs_wilting
+      - temperature_and_humidity_by_time_of_day
+      - container_stress_score
+
+  sprout-lab:
+    priority_visualizations:
+      - germination_rate_by_seed_type
+      - harvest_weight_by_tray
+      - days_to_harvest
+      - mold_events_by_crop
+      - rinse_frequency_vs_failure_rate
+      - light_duration_vs_growth
+
+  microclimate-lab:
+    priority_visualizations:
+      - temperature_by_sensor_location
+      - humidity_by_sensor_location
+      - shelf_to_shelf_difference
+      - airflow_intervention_effect
+      - daily_min_max_summaries
+
+  field-projects:
+    priority_visualizations:
+      - crop_survival
+      - water_demand
+      - biomass_production
+      - labor_minutes_per_useful_output
+      - yield_per_visit
+      - crop_repeatability_score
