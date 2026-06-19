@@ -1,0 +1,509 @@
+schema_version: 0.1
+catalog_id: nomads_farm_plant_assets
+purpose: NMS-style plant inventory catalog for metrics, dashboards and crop/device-like asset tracking.
+updated: 2026-06-19
+
+asset_model:
+  analogy:
+    network_device: plant_asset
+    vendor: seed_or_plant_source
+    model: cultivar_or_variety
+    pid: plant_asset_id
+    serial_number: individual_plant_id
+    software_version: growth_stage_or_phenology_state
+    site: project_or_growing_location
+    rack_or_slot: container_id
+    interface: measured_metric_stream
+    telemetry: plant_growth_and_environment_timeseries
+  required_fields:
+    - asset_id
+    - common_name
+    - family
+    - genus
+    - species
+    - cultivar_or_variety
+    - life_cycle
+    - growth_habit
+    - edible_parts
+    - primary_roles
+    - current_project_ids
+    - metric_profile
+
+plant_assets:
+  - asset_id: solanum_lycopersicum_pink_dream
+    common_name: Pink Dream tomato
+    bulgarian_name: Розова мечта домат
+    asset_type: crop_plant
+    family: Solanaceae
+    genus: Solanum
+    species: Solanum lycopersicum
+    subspecies: null
+    cultivar_or_variety: Pink Dream
+    strain_or_population: balcony_2026_two_main_plants
+    vendor_or_source: purchased_or_started_seedling
+    model_role: large_fruiting_tomato
+    life_cycle: tender_perennial_grown_as_annual
+    growth_habit: indeterminate_or_semi_indeterminate_unknown
+    edible_parts:
+      - fruit
+    useful_parts:
+      - fruit
+      - side_shoots_for_propagation
+      - biomass_after_season
+    primary_roles:
+      - food_production
+      - propagation_trial_source
+      - balcony_container_performance_reference
+    current_project_ids:
+      - balcony-pot-house
+    active_instances:
+      - tomato_pink_dream_01
+      - tomato_pink_dream_02
+    containers:
+      - f30_01
+      - f30_02
+    metric_profile:
+      identity_metrics:
+        - plant_id
+        - cultivar
+        - container_id
+      growth_metrics:
+        - height_cm
+        - stem_diameter_mm
+        - leaf_count
+        - leaf_density_score_0_5
+      phenology_metrics:
+        - flower_count
+        - fruit_count
+        - fruit_stage
+      stress_metrics:
+        - wilting_score_0_5
+        - yellowing_score_0_5
+        - pest_pressure_score_0_5
+      production_metrics:
+        - harvest_weight_g
+        - fruit_count_harvested
+      propagation_metrics:
+        - side_shoot_count
+        - cutting_length_cm
+        - rooting_success
+    dashboard_views:
+      - growth_time_series
+      - plant_health_scorecard
+      - fruiting_timeline
+      - pruning_and_propagation_events
+    notes: Primary reference crop for current Pink Dream tomato measurement dataset.
+
+  - asset_id: solanum_lycopersicum_cherry_balcony_population
+    common_name: Cherry tomato
+    bulgarian_name: Чери домат
+    asset_type: crop_plant_population
+    family: Solanaceae
+    genus: Solanum
+    species: Solanum lycopersicum
+    subspecies: null
+    cultivar_or_variety: mixed_or_unknown_cherry
+    strain_or_population: balcony_volunteer_population_2026
+    vendor_or_source: previous_year_fruit_seed_bank
+    model_role: small_fruiting_tomato
+    life_cycle: tender_perennial_grown_as_annual
+    growth_habit: indeterminate_unknown
+    edible_parts:
+      - fruit
+    useful_parts:
+      - fruit
+      - seed
+      - biomass_after_season
+    primary_roles:
+      - food_production
+      - volunteer_selection
+      - local_adaptation_observation
+    current_project_ids:
+      - balcony-pot-house
+    active_instances:
+      - cherry_tomatoes_window_boxes
+      - volunteer_cherry_tomato_population
+    containers:
+      - window_box_01
+      - window_box_02
+      - window_box_03
+      - window_box_04
+      - cube_01
+      - cube_02
+      - cube_03
+      - cube_04
+    metric_profile:
+      growth_metrics:
+        - height_cm
+        - survival_count
+        - transplant_candidate_count
+      phenology_metrics:
+        - flower_count
+        - fruit_count
+      production_metrics:
+        - harvest_weight_g
+        - fruit_count_harvested
+      selection_metrics:
+        - self_seeded_survival_rate
+        - vigor_score_0_5
+        - transplant_success
+    dashboard_views:
+      - population_survival_scorecard
+      - fruiting_timeline
+      - volunteer_selection_funnel
+
+  - asset_id: capsicum_annuum_balcony_pepper
+    common_name: Pepper
+    bulgarian_name: Пипер
+    asset_type: crop_plant
+    family: Solanaceae
+    genus: Capsicum
+    species: Capsicum annuum
+    subspecies: null
+    cultivar_or_variety: unknown
+    strain_or_population: balcony_2026_pepper_group
+    vendor_or_source: unknown
+    model_role: fruiting_pepper
+    life_cycle: tender_perennial_grown_as_annual
+    growth_habit: bushy
+    edible_parts:
+      - fruit
+    useful_parts:
+      - fruit
+      - seed
+      - biomass_after_season
+    primary_roles:
+      - food_production
+      - container_crop_comparison
+    current_project_ids:
+      - balcony-pot-house
+    active_instances:
+      - peppers_total
+    containers:
+      - window_box_01
+      - window_box_02
+      - cube_03
+      - cube_04
+    metric_profile:
+      growth_metrics:
+        - height_cm
+        - stem_diameter_mm
+        - leaf_count
+      phenology_metrics:
+        - flower_count
+        - fruit_count
+      stress_metrics:
+        - wilting_score_0_5
+        - pest_pressure_score_0_5
+      production_metrics:
+        - harvest_weight_g
+        - fruit_count_harvested
+    dashboard_views:
+      - plant_health_scorecard
+      - fruiting_timeline
+
+  - asset_id: ipomoea_batatas_balcony_sweet_potato
+    common_name: Sweet potato
+    bulgarian_name: Сладък картоф
+    asset_type: crop_plant
+    family: Convolvulaceae
+    genus: Ipomoea
+    species: Ipomoea batatas
+    subspecies: null
+    cultivar_or_variety: unknown
+    strain_or_population: balcony_2026_single_plant
+    vendor_or_source: tuber_or_slip_unknown
+    model_role: vine_tuber_crop
+    life_cycle: tender_perennial_grown_as_annual
+    growth_habit: trailing_vine
+    edible_parts:
+      - tuberous_roots
+      - young_leaves_optional
+    useful_parts:
+      - vines
+      - biomass
+      - tuberous_roots
+    primary_roles:
+      - container_tuber_trial
+      - biomass_trial
+      - vine_growth_tracking
+    current_project_ids:
+      - balcony-pot-house
+    active_instances:
+      - sweet_potato_01
+    containers:
+      - f30_03
+    metric_profile:
+      growth_metrics:
+        - vine_length_cm
+        - node_count
+        - canopy_spread_cm
+      stress_metrics:
+        - wilting_score_0_5
+        - yellowing_score_0_5
+      production_metrics:
+        - harvest_weight_g
+        - tuber_count
+    dashboard_views:
+      - vine_growth_time_series
+      - container_crop_scorecard
+
+  - asset_id: helianthus_annuus_balcony_sunflower
+    common_name: Sunflower
+    bulgarian_name: Слънчоглед
+    asset_type: crop_and_support_plant
+    family: Asteraceae
+    genus: Helianthus
+    species: Helianthus annuus
+    subspecies: null
+    cultivar_or_variety: unknown
+    strain_or_population: balcony_2026_single_plant
+    vendor_or_source: seed_unknown
+    model_role: pollinator_seed_biomass_plant
+    life_cycle: annual
+    growth_habit: upright_single_stem
+    edible_parts:
+      - seeds
+      - sprouts_optional
+    useful_parts:
+      - flower
+      - seeds
+      - stalk_biomass
+    primary_roles:
+      - pollinator_support
+      - seed_production_trial
+      - biomass_generation
+      - biodiversity_support
+    current_project_ids:
+      - balcony-pot-house
+    active_instances:
+      - sunflower_01
+    containers:
+      - f25_01
+    metric_profile:
+      growth_metrics:
+        - height_cm
+        - stem_diameter_mm
+        - leaf_count
+      phenology_metrics:
+        - flowering_status
+        - flower_head_diameter_cm
+      production_metrics:
+        - seeds_harvested_g
+        - seed_head_count
+    dashboard_views:
+      - height_time_series
+      - flowering_timeline
+      - seed_scorecard
+
+  - asset_id: salvia_rosmarinus_balcony_rosemary
+    common_name: Rosemary
+    bulgarian_name: Розмарин
+    asset_type: perennial_herb
+    family: Lamiaceae
+    genus: Salvia
+    species: Salvia rosmarinus
+    former_species_name: Rosmarinus officinalis
+    subspecies: null
+    cultivar_or_variety: unknown
+    strain_or_population: balcony_2026_rosemary_group
+    vendor_or_source: unknown
+    model_role: perennial_aromatic_herb
+    life_cycle: perennial
+    growth_habit: woody_shrub
+    edible_parts:
+      - leaves
+    useful_parts:
+      - leaves
+      - woody_prunings
+      - flowers
+    primary_roles:
+      - perennial_herb_layer
+      - aromatic_companion
+      - long_term_container_survival_indicator
+    current_project_ids:
+      - balcony-pot-house
+    active_instances:
+      - rosemary_total
+    containers:
+      - window_box_03
+      - window_box_04
+      - small_box_01
+      - small_box_02
+      - small_box_03
+    metric_profile:
+      growth_metrics:
+        - height_cm
+        - canopy_width_cm
+        - pruning_weight_g
+      stress_metrics:
+        - tip_burn_score_0_5
+        - drought_stress_score_0_5
+      production_metrics:
+        - harvest_weight_g
+    dashboard_views:
+      - perennial_survival_scorecard
+      - pruning_calendar
+
+  - asset_id: petroselinum_crispum_balcony_parsley
+    common_name: Parsley
+    bulgarian_name: Магданоз
+    asset_type: herb
+    family: Apiaceae
+    genus: Petroselinum
+    species: Petroselinum crispum
+    subspecies: null
+    cultivar_or_variety: unknown
+    strain_or_population: balcony_2026_cube_group
+    vendor_or_source: unknown
+    model_role: leafy_herb
+    life_cycle: biennial_often_grown_as_annual
+    growth_habit: rosette
+    edible_parts:
+      - leaves
+      - stems
+      - root_optional_by_type
+    useful_parts:
+      - leaves
+      - flowers_for_pollinators_if_bolted
+    primary_roles:
+      - herb_layer
+      - companion_trial
+      - harvest_regrowth_observation
+    current_project_ids:
+      - balcony-pot-house
+    active_instances:
+      - parsley_total
+    containers:
+      - cube_01
+      - cube_02
+      - cube_03
+      - cube_04
+    metric_profile:
+      growth_metrics:
+        - leaf_count
+        - regrowth_days
+      production_metrics:
+        - harvest_weight_g
+        - cut_count
+      stress_metrics:
+        - yellowing_score_0_5
+        - bolting_status
+    dashboard_views:
+      - harvest_regrowth_timeline
+      - herb_layer_scorecard
+
+  - asset_id: phaseolus_vulgaris_balcony_white_bean
+    common_name: White bean
+    bulgarian_name: Бял фасул
+    asset_type: legume_crop
+    family: Fabaceae
+    genus: Phaseolus
+    species: Phaseolus vulgaris
+    subspecies: null
+    cultivar_or_variety: white_bean_unknown
+    strain_or_population: balcony_2026_two_plants
+    vendor_or_source: dry_bean_seed_or_unknown
+    model_role: climbing_or_bush_legume_unknown
+    life_cycle: annual
+    growth_habit: climbing_or_bush_unknown
+    edible_parts:
+      - green_pods
+      - dry_seeds
+    useful_parts:
+      - pods
+      - seeds
+      - biomass
+      - roots_with_nodules
+    primary_roles:
+      - seed_production_trial
+      - biomass_generation
+      - nitrogen_association_observation
+      - vertical_growth_trial
+    current_project_ids:
+      - balcony-pot-house
+    active_instances:
+      - white_beans_total
+    containers:
+      - cube_01
+      - cube_02
+    metric_profile:
+      growth_metrics:
+        - vine_length_cm
+        - height_cm
+        - leaf_count
+      phenology_metrics:
+        - flower_count
+        - pod_count
+      production_metrics:
+        - pod_count_harvested
+        - seed_weight_g
+      soil_interaction_metrics:
+        - nodule_observed
+    dashboard_views:
+      - pod_timeline
+      - legume_scorecard
+
+  - asset_id: vitis_vinifera_balcony_grapevine
+    common_name: Grapevine
+    bulgarian_name: Лоза
+    asset_type: perennial_canopy
+    family: Vitaceae
+    genus: Vitis
+    species: Vitis vinifera
+    subspecies: null
+    cultivar_or_variety: unknown
+    strain_or_population: established_balcony_canopy
+    vendor_or_source: established_existing_plant
+    model_role: canopy_microclimate_modifier
+    life_cycle: perennial
+    growth_habit: woody_climbing_vine
+    edible_parts:
+      - grapes
+      - young_leaves_optional
+    useful_parts:
+      - shade_canopy
+      - prunings
+      - leaves
+      - fruit_if_present
+    primary_roles:
+      - canopy_layer
+      - shade_provider
+      - microclimate_modifier
+      - drying_risk_reduction
+    current_project_ids:
+      - balcony-pot-house
+    active_instances:
+      - grapevine_01
+    containers:
+      - established_balcony_canopy
+    metric_profile:
+      canopy_metrics:
+        - canopy_density_score_0_5
+        - shade_hours
+        - pruning_weight_g
+      environment_effect_metrics:
+        - shaded_temperature_delta_c
+        - shaded_humidity_delta_percent
+    dashboard_views:
+      - shade_effect_time_series
+      - canopy_density_calendar
+
+summary_groups:
+  by_family:
+    Solanaceae:
+      - solanum_lycopersicum_pink_dream
+      - solanum_lycopersicum_cherry_balcony_population
+      - capsicum_annuum_balcony_pepper
+    Convolvulaceae:
+      - ipomoea_batatas_balcony_sweet_potato
+    Asteraceae:
+      - helianthus_annuus_balcony_sunflower
+    Lamiaceae:
+      - salvia_rosmarinus_balcony_rosemary
+    Apiaceae:
+      - petroselinum_crispum_balcony_parsley
+    Fabaceae:
+      - phaseolus_vulgaris_balcony_white_bean
+    Vitaceae:
+      - vitis_vinifera_balcony_grapevine
