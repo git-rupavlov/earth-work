@@ -5,13 +5,28 @@
   <div class="ew-page-hero-content">
     <p class="ew-page-hero-kicker">Data layer</p>
     <h1>Metrics & Visualizations</h1>
-    <p>One place for measurements, dashboards, time-series, radar diagrams and project comparison views.</p>
+    <p>Plant inventory, telemetry, dashboards, time-series, radar diagrams and project comparison views.</p>
   </div>
 </section>
 
-Metrics is the future dashboard layer for NoMad's Farm.
+Metrics is the Network Management System layer for NoMad's Farm.
 
-The purpose is simple: every observation that becomes measurable should eventually be able to appear as a graph, table, score, timeline or comparison view. Otherwise we are just hoarding notes like medieval monks with worse handwriting.
+The analogy is deliberate:
+
+```text
+network device      -> plant asset
+vendor              -> seed / plant source
+model               -> cultivar / variety
+PID                 -> plant asset ID
+serial number       -> individual plant ID
+software version    -> growth stage / phenology state
+site                -> project or growing location
+rack / slot         -> container ID
+interface           -> measured metric stream
+telemetry           -> plant growth and environment time-series
+```
+
+The purpose is simple: every observation that becomes measurable should eventually appear as a graph, table, score, timeline or comparison view. Otherwise we are just hoarding notes like medieval monks with worse handwriting.
 
 ---
 
@@ -21,6 +36,7 @@ Initial data sources:
 
 ```text
 metrics/
+├── plant asset catalog
 ├── balcony container inventory
 ├── balcony plant inventory
 ├── Pink Dream tomato measurements
@@ -36,6 +52,7 @@ metrics/
 Current structured sources:
 
 ```text
+../data/plant-assets.catalog.yml
 ../data/balcony-pot-house.inventory.yml
 ../data/balcony-pot-house.pink-tomatoes.measurements.yml
 ../data/metrics.catalog.yml
@@ -50,6 +67,71 @@ Future structured sources:
 ../data/harvest-log.yml
 ../data/project-scorecards.yml
 ```
+
+---
+
+## Plant Asset Inventory
+
+The plant asset catalog is the equivalent of an NMS device inventory.
+
+Each plant asset should include:
+
+```text
+asset_id
+common_name
+Bulgarian name
+family
+genus
+species
+subspecies
+cultivar / variety
+strain / population
+source
+life cycle
+growth habit
+edible parts
+useful parts
+primary roles
+active instances
+container IDs
+metric profile
+dashboard views
+```
+
+Current plant asset catalog:
+
+```text
+../data/plant-assets.catalog.yml
+```
+
+Current asset groups:
+
+```text
+Solanaceae
+├── Pink Dream tomato
+├── Cherry tomato population
+└── Pepper
+
+Convolvulaceae
+└── Sweet potato
+
+Asteraceae
+└── Sunflower
+
+Lamiaceae
+└── Rosemary
+
+Apiaceae
+└── Parsley
+
+Fabaceae
+└── White bean
+
+Vitaceae
+└── Grapevine
+```
+
+This gives us a stable asset layer before we start building visualizations. Yes, apparently even tomatoes now need something suspiciously close to CMDB hygiene. Good.
 
 ---
 
@@ -411,9 +493,10 @@ All future metric records should follow these rules:
 ## Next Implementation Steps
 
 1. Keep structured inventory in YAML.
-2. Add measurement logs as YAML or CSV.
-3. Build simple tables first.
-4. Add time-series graphs.
-5. Add radar diagrams for crop and project comparison.
-6. Add dashboard-style summary cards.
-7. Connect measurements back to Crop Matrix and Project pages.
+2. Maintain plant asset catalog as the plant NMS inventory.
+3. Add measurement logs as YAML or CSV.
+4. Build simple tables first.
+5. Add time-series graphs.
+6. Add radar diagrams for crop and project comparison.
+7. Add dashboard-style summary cards.
+8. Connect measurements back to Crop Matrix and Project pages.
