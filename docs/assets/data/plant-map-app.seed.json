@@ -40,6 +40,16 @@
       "summary": "Planned 10-pit butternut squash trial."
     },
     {
+      "site_id": "urtica_dioica_nettle_plot_01",
+      "name": "Nettle plot 01",
+      "type": "field_plot",
+      "coordinates": [42.639796131804054, 23.359499123949462],
+      "coordinate_quality": "owner_provided",
+      "project_id": "nettle-2026",
+      "status": "planned_active",
+      "summary": "10 x 2 m nettle plot, 20 m² total area."
+    },
+    {
       "site_id": "gaitanevo_village_approx",
       "name": "Gaitanevo garden, approximate",
       "type": "field_site",
@@ -118,6 +128,28 @@
       "layers": ["plants", "vitals", "weather", "growth_heatmap", "topology"]
     },
     {
+      "asset_id": "urtica_dioica_nettle_plot_01",
+      "display_name": "Nettle plot",
+      "site_id": "urtica_dioica_nettle_plot_01",
+      "project_id": "nettle-2026",
+      "containers": ["field_plot_10x2m_02"],
+      "map_coordinates": [42.639796131804054, 23.359499123949462],
+      "local_position": {"area": "field_plot", "length_m": 10, "width_m": 2, "area_m2": 20},
+      "status": "planned_active",
+      "vitals": {
+        "plot_area_m2": 20,
+        "plant_count": null,
+        "emergence_percent": null,
+        "height_cm": null,
+        "growth_rate_cm_per_day": null,
+        "leaf_harvest_weight_g": null,
+        "stinging_hazard_score_0_5": null,
+        "wilting_score_0_5": null
+      },
+      "environment_context_metrics": ["air_temperature_c", "relative_humidity_percent", "uv_index", "solar_radiation_w_m2", "precipitation_mm", "wind_speed_m_s", "air_pressure_hpa", "growing_degree_days"],
+      "layers": ["plants", "vitals", "weather", "growth_heatmap", "topology"]
+    },
+    {
       "asset_id": "solanum_lycopersicum_cherry_balcony_population",
       "display_name": "Cherry tomato population",
       "site_id": "sofia_balcony",
@@ -178,6 +210,10 @@
     {"from": "sofia_balcony", "to": "helianthus_annuus_balcony_sunflower", "type": "hosts"},
     {"from": "amaranth_red_garnet_plot_01", "to": "amaranthus_red_garnet_plot_01", "type": "hosts"},
     {"from": "no_maintenance_butternut_pits_01", "to": "cucurbita_moschata_butternut_pits_01", "type": "hosts"},
+    {"from": "urtica_dioica_nettle_plot_01", "to": "urtica_dioica_nettle_plot_01", "type": "hosts"},
+    {"from": "urtica_dioica_nettle_plot_01", "to": "air_temperature_c", "type": "uses_common_environment_metric"},
+    {"from": "urtica_dioica_nettle_plot_01", "to": "relative_humidity_percent", "type": "uses_common_environment_metric"},
+    {"from": "urtica_dioica_nettle_plot_01", "to": "uv_index", "type": "uses_common_environment_metric"},
     {"from": "cucurbita_moschata_butternut_pits_01", "to": "air_temperature_c", "type": "uses_common_environment_metric"},
     {"from": "cucurbita_moschata_butternut_pits_01", "to": "relative_humidity_percent", "type": "uses_common_environment_metric"},
     {"from": "cucurbita_moschata_butternut_pits_01", "to": "uv_index", "type": "uses_common_environment_metric"},
