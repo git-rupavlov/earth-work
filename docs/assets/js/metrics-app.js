@@ -55,6 +55,7 @@ function ewSelectAppAsset(app, data, assetId) {
 
   ewRenderTopology(app, data, asset);
   ewRenderWeatherContext(app, asset);
+  ewRenderPlantRadarProfile(app, asset);
 }
 
 function ewInitMap(app, data) {
@@ -143,7 +144,6 @@ async function ewRenderWeatherContext(app, asset) {
   }
 
   const rows = data.series || [];
-  const metrics = ['air_temperature_c', 'relative_humidity_percent', 'uv_index'];
   const chart = echarts.init(el);
   chart.setOption({
     title: { text: 'Shared balcony weather context', subtext: `${asset.display_name} uses common environment telemetry`, left: 'center' },
@@ -157,6 +157,44 @@ async function ewRenderWeatherContext(app, asset) {
       { name: 'Humidity %', type: 'line', connectNulls: false, data: rows.map(row => row.relative_humidity_percent) },
       { name: 'UV index', type: 'line', connectNulls: false, data: rows.map(row => row.uv_index) }
     ]
+  });
+  window.addEventListener('resize', () => chart.resize());
+}
+
+async function ewRenderPlantRadarProfile(app, asset) {
+  const el = app.querySelector('[data-ew-app-radar]');
+  if (!el || typeof echarts === 'undefined') return;
+
+  let data;
+  try {
+    data = await ewFetchJson('/assets/data/plant-radar-profiles.json');
+  } catch (error) {
+    el.innerHTML = `<p class="ew-muted">Radar profile failed to load: ${error.message}</p>`;
+    return;
+  }
+
+  const profile = data.profiles?.[asset.asset_id];
+  if (!profile) {
+    el.innerHTML = '<p class="ew-muted">No radar profile yet for this plant asset.</p>';
+    return;
+  }
+
+  const chart = echarts.init(el);
+  chart.setOption({
+    title: {
+      text: 'Хранителен / ресурсен радар',
+      subtext: `${profile.label} · normalized 0-10 heuristic seed`,
+      left: 'center'
+    },
+    tooltip: {},
+    radar: {
+      radius: '64%',
+      indicator: data.axes.map(axis => ({ name: axis.label, max: axis.max }))
+    },
+    series: [{
+      type: 'radar',
+      data: [{ value: profile.values, name: profile.label }]
+    }]
   });
   window.addEventListener('resize', () => chart.resize());
 }
@@ -188,6 +226,7 @@ async function ewInitMetricsApp() {
       <main>
         <div class="ew-app-map-card"><div class="ew-app-map" data-ew-app-map></div></div>
         <div class="ew-app-detail-card" data-ew-app-detail></div>
+        <div class="ew-app-detail-card"><div class="ew-app-radar" data-ew-app-radar></div></div>
         <div class="ew-app-detail-card"><div class="ew-app-topology" data-ew-app-topology></div></div>
         <div class="ew-app-detail-card"><div class="ew-app-weather" data-ew-app-weather></div></div>
       </main>
