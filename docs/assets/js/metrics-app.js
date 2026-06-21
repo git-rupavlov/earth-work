@@ -10,6 +10,12 @@ function ewVitalsSummary(asset) {
     .join('<br>');
 }
 
+function ewKnownVitalRatio(asset) {
+  const values = Object.values(asset.vitals || {});
+  if (!values.length) return 0;
+  return values.filter(value => value !== null && value !== undefined).length / values.length;
+}
+
 function ewRenderAssetList(app, data, selectedId) {
   const list = app.querySelector('[data-ew-app-assets]');
   list.innerHTML = data.plant_assets.map(asset => `
@@ -55,7 +61,8 @@ function ewSelectAppAsset(app, data, assetId) {
 
   ewRenderTopology(app, data, asset);
   ewRenderWeatherContext(app, asset);
-  ewRenderPlantRadarProfile(app, asset);
+  ewRenderOperationalRadar(app, asset);
+  ewRenderNutritionResourceRadar(app, asset);
 }
 
 function ewInitMap(app, data) {
@@ -161,8 +168,45 @@ async function ewRenderWeatherContext(app, asset) {
   window.addEventListener('resize', () => chart.resize());
 }
 
-async function ewRenderPlantRadarProfile(app, asset) {
-  const el = app.querySelector('[data-ew-app-radar]');
+function ewRenderOperationalRadar(app, asset) {
+  const el = app.querySelector('[data-ew-app-radar-operational]');
+  if (!el || typeof echarts === 'undefined') return;
+
+  const knownRatio = ewKnownVitalRatio(asset);
+  const knownVitalsScore = Math.round(knownRatio * 10);
+  const statusScore = asset.status === 'active' ? 8 : asset.status === 'planned_active' ? 6 : 3;
+  const hasGrowth = asset.vitals?.growth_rate_cm_per_day ? 8 : 2;
+  const hasYield = asset.vitals?.fruit_count || asset.vitals?.seed_harvest_weight_g || asset.vitals?.leaf_harvest_weight_g || asset.vitals?.harvest_weight_g ? 8 : 2;
+  const fieldLoad = asset.local_position?.area_m2 ? Math.min(10, Math.round(asset.local_position.area_m2 / 2)) : 3;
+
+  const chart = echarts.init(el);
+  chart.setOption({
+    title: { text: 'Оперативен радар', subtext: `${asset.display_name} · asset/vitals readiness`, left: 'center' },
+    tooltip: {},
+    radar: {
+      radius: '64%',
+      indicator: [
+        { name: 'Известни витали', max: 10 },
+        { name: 'Активност', max: 10 },
+        { name: 'Растеж', max: 10 },
+        { name: 'Добивни данни', max: 10 },
+        { name: 'Площ / товар', max: 10 },
+        { name: 'Weather връзки', max: 10 }
+      ]
+    },
+    series: [{
+      type: 'radar',
+      data: [{
+        name: asset.display_name,
+        value: [knownVitalsScore, statusScore, hasGrowth, hasYield, fieldLoad, Math.min(10, asset.environment_context_metrics.length)]
+      }]
+    }]
+  });
+  window.addEventListener('resize', () => chart.resize());
+}
+
+async function ewRenderNutritionResourceRadar(app, asset) {
+  const el = app.querySelector('[data-ew-app-radar-nutrition]');
   if (!el || typeof echarts === 'undefined') return;
 
   let data;
@@ -175,7 +219,7 @@ async function ewRenderPlantRadarProfile(app, asset) {
 
   const profile = data.profiles?.[asset.asset_id];
   if (!profile) {
-    el.innerHTML = '<p class="ew-muted">No radar profile yet for this plant asset.</p>';
+    el.innerHTML = '<p class="ew-muted">No nutrition/resource radar profile yet for this plant asset.</p>';
     return;
   }
 
@@ -226,7 +270,10 @@ async function ewInitMetricsApp() {
       <main>
         <div class="ew-app-map-card"><div class="ew-app-map" data-ew-app-map></div></div>
         <div class="ew-app-detail-card" data-ew-app-detail></div>
-        <div class="ew-app-detail-card"><div class="ew-app-radar" data-ew-app-radar></div></div>
+        <div class="ew-app-detail-card ew-app-radar-grid">
+          <div class="ew-app-radar" data-ew-app-radar-operational></div>
+          <div class="ew-app-radar" data-ew-app-radar-nutrition></div>
+        </div>
         <div class="ew-app-detail-card"><div class="ew-app-topology" data-ew-app-topology></div></div>
         <div class="ew-app-detail-card"><div class="ew-app-weather" data-ew-app-weather></div></div>
       </main>
