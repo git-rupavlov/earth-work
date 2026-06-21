@@ -1,0 +1,64 @@
+{
+  "schema_version": "0.1",
+  "dataset_id": "plant_radar_profiles",
+  "updated": "2026-06-21",
+  "scale": {
+    "min": 0,
+    "max": 10,
+    "meaning": "Normalized comparative score for the selected crop. For resource/load axes, higher means greater need or higher amount, not better. Yes, mixed-sign radar axes are ugly, but so are most real systems."
+  },
+  "axes": [
+    {"metric_id": "vitamins_per_kg", "label": "Витамини / кг", "max": 10},
+    {"metric_id": "minerals_per_kg", "label": "Минерали / кг", "max": 10},
+    {"metric_id": "beneficial_compounds_per_kg", "label": "Полезни вещества / кг", "max": 10},
+    {"metric_id": "watering_need", "label": "Нужда от често поливане", "max": 10},
+    {"metric_id": "care_need", "label": "Нужда от грижи", "max": 10},
+    {"metric_id": "space_need", "label": "Необходима площ", "max": 10},
+    {"metric_id": "sugars_per_kg", "label": "Захари / кг", "max": 10},
+    {"metric_id": "protein_per_kg", "label": "Белтъци / кг", "max": 10},
+    {"metric_id": "fat_per_kg", "label": "Мазнини / кг", "max": 10},
+    {"metric_id": "kg_per_m2", "label": "Кг / м²", "max": 10}
+  ],
+  "profiles": {
+    "solanum_lycopersicum_pink_dream": {
+      "label": "Pink Dream tomato",
+      "profile_quality": "heuristic_seed",
+      "values": [6, 5, 7, 7, 6, 5, 5, 2, 1, 6]
+    },
+    "solanum_lycopersicum_cherry_balcony_population": {
+      "label": "Cherry tomato population",
+      "profile_quality": "heuristic_seed",
+      "values": [6, 5, 7, 7, 6, 5, 6, 2, 1, 7]
+    },
+    "capsicum_annuum_balcony_pepper": {
+      "label": "Pepper",
+      "profile_quality": "heuristic_seed",
+      "values": [8, 5, 7, 6, 6, 4, 4, 2, 1, 5]
+    },
+    "ipomoea_batatas_balcony_sweet_potato": {
+      "label": "Sweet potato",
+      "profile_quality": "heuristic_seed",
+      "values": [7, 6, 7, 6, 5, 7, 7, 3, 1, 8]
+    },
+    "helianthus_annuus_balcony_sunflower": {
+      "label": "Sunflower",
+      "profile_quality": "heuristic_seed",
+      "values": [4, 6, 7, 4, 4, 6, 2, 5, 9, 5]
+    },
+    "amaranthus_red_garnet_plot_01": {
+      "label": "Red Garnet amaranth plot",
+      "profile_quality": "heuristic_seed",
+      "values": [8, 8, 8, 5, 4, 6, 2, 7, 4, 6]
+    },
+    "cucurbita_moschata_butternut_pits_01": {
+      "label": "No-maintenance butternut squash pits",
+      "profile_quality": "heuristic_seed",
+      "values": [7, 5, 7, 5, 3, 9, 7, 2, 1, 9]
+    },
+    "urtica_dioica_nettle_plot_01": {
+      "label": "Nettle plot",
+      "profile_quality": "heuristic_seed",
+      "values": [9, 9, 9, 5, 3, 6, 1, 7, 2, 6]
+    }
+  }
+}
