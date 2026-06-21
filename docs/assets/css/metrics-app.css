@@ -37,6 +37,12 @@
   margin-top: 1rem;
 }
 
+.ew-app-radar-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
 .ew-app-toolbar {
   display: flex;
   flex-wrap: wrap;
@@ -115,6 +121,10 @@
   margin-top: 1rem;
 }
 
+.ew-app-radar-grid .ew-app-radar {
+  margin-top: 0;
+}
+
 .ew-app-popup strong,
 .ew-app-popup span {
   display: block;
@@ -134,6 +144,10 @@
   .ew-app-map {
     height: 72vh;
     min-height: 60vh;
+  }
+
+  .ew-app-radar-grid {
+    grid-template-columns: 1fr;
   }
 
   .ew-app-radar,
