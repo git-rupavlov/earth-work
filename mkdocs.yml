@@ -29,39 +29,29 @@ theme:
 
 nav:
   - Home: index.md
-  - About:
-      - Overview: about/overview.md
   - Projects:
       - Project Registry: projects/index.md
+      - Metrics App: metrics/app.md
+      - Balcony Pot House: projects/balcony-pot-house/index.md
+      - No-Maintenance Squash Trial: projects/no-maintenance-squash/index.md
+      - Gaitanevo 2026: projects/gaitanevo-2026/index.md
+      - Greenhouse 2026: projects/greenhouse-2026/index.md
       - Sprout Lab: projects/sprout-lab/index.md
       - Microclimate Lab: projects/microclimate-lab/index.md
-      - Balcony Pot House: projects/balcony-pot-house/index.md
-      - Gaitanevo 2026: projects/gaitanevo-2026/index.md
-      - No-Maintenance Squash Trial: projects/no-maintenance-squash/index.md
-      - Greenhouse 2026: projects/greenhouse-2026/index.md
   - Knowledge Base:
       - Source Hierarchy: knowledge/index.md
-      - Content Audit: knowledge/content-audit.md
-  - Soil:
-      - Ecological Processes: soil/ecological-processes.md
-      - Soil Improvement Strategy: soil/soil-improvement-strategy.md
+      - Tomato Seedlings: knowledge/tomato-seedlings.md
+      - Tomato Pruning: knowledge/tomato-pruning.md
+      - Pepper Pruning: knowledge/pepper-pruning.md
+      - Squash Pot: knowledge/squash-pot.md
   - Plants:
+      - Crop Matrix: plants/crop-matrix.md
+      - Crop Oracle: plants/crop-oracle.md
       - Plant Profiles: plants/plant-profiles.md
       - Functional Groups: plants/functional-groups.md
-      - Crop Matrix: plants/crop-matrix.md
-  - Systems:
-      - Water Systems: water/index.md
-      - Infrastructure: infrastructure/index.md
-      - Monitoring & Automation: automation/index.md
-  - Metrics:
-      - App: metrics/app.md
-      - Overview: metrics/index.md
-      - Monitor: metrics/monitor.md
-  - Journal:
-      - Field Journal: journal/index.md
-      - Tomato Trial 2026: journal/test-entry.md
-  - Zen:
-      - Zen and the Art of Nomad Farming: zen/index.md
+  - Blog:
+      - Q&A: blog/q-and-a.md
+      - Discussions: blog/discussions.md
 
 extra_css:
   - https://unpkg.com/leaflet@1.9.4/dist/leaflet.css
