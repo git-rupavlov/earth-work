@@ -29,7 +29,6 @@ theme:
 
 nav:
   - Home: index.md
-  - Plant Inventory App: app.md
   - Projects:
       - Project Registry: projects/index.md
       - Balcony Pot House: projects/balcony-pot-house/index.md
