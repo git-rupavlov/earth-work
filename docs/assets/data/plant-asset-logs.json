@@ -1,16 +1,28 @@
 {
   "schema_version": "0.1",
   "dataset_id": "plant_asset_logs",
-  "updated": "2026-06-21",
+  "updated": "2026-06-23",
   "timezone": "Europe/Sofia",
   "log_format": "nms_style_event_records",
   "logs": {
-    "solanum_lycopersicum_pink_dream": [
-      {"timestamp":"2026-05-12T06:30:00+03:00","severity":"info","event_type":"planting","message":"Pink Dream tomato planted. Initial sprout height estimated at 10 cm."},
+    "solanum_lycopersicum_pink_dream_01": [
+      {"timestamp":"2026-05-12T06:30:00+03:00","severity":"info","event_type":"planting","message":"Pink Dream tomato 01 planted in f30_01. Initial sprout height estimated at 10 cm."},
       {"timestamp":"2026-05-22T06:30:00+03:00","severity":"info","event_type":"growth_phase","message":"End of establishment phase. Estimated height 15 cm."},
       {"timestamp":"2026-06-05T06:30:00+03:00","severity":"info","event_type":"growth_phase","message":"End of vegetative acceleration phase. Estimated height 36 cm."},
       {"timestamp":"2026-06-17T06:30:00+03:00","severity":"notice","event_type":"measurement","message":"Observed current height around 65 cm. Strong vertical growth."},
-      {"timestamp":"2026-06-17T07:10:00+03:00","severity":"notice","event_type":"pruning","message":"Pruning / propagation work logged for Pink Dream tomato."}
+      {"timestamp":"2026-06-17T07:10:00+03:00","severity":"notice","event_type":"pruning","message":"Pruning / propagation work logged for Pink Dream tomato 01."}
+    ],
+    "solanum_lycopersicum_pink_dream_02": [
+      {"timestamp":"2026-06-23T06:30:00+03:00","severity":"info","event_type":"inventory_split","message":"Pink Dream tomato 02 created as individual asset in f30_02."},
+      {"timestamp":"2026-06-23T06:31:00+03:00","severity":"planned","event_type":"monitoring_plan","message":"Track height, growth rate, flower count, fruit count and wilting score separately from the other Pink Dream tomatoes."}
+    ],
+    "solanum_lycopersicum_pink_dream_03": [
+      {"timestamp":"2026-06-23T06:30:00+03:00","severity":"info","event_type":"inventory_split","message":"Pink Dream tomato 03 created as individual asset in f30_03."},
+      {"timestamp":"2026-06-23T06:31:00+03:00","severity":"planned","event_type":"monitoring_plan","message":"Track height, growth rate, flower count, fruit count and wilting score separately from the other Pink Dream tomatoes."}
+    ],
+    "solanum_lycopersicum_pink_dream_04": [
+      {"timestamp":"2026-06-23T06:30:00+03:00","severity":"info","event_type":"inventory_split","message":"Pink Dream tomato 04 created as individual asset in f30_04."},
+      {"timestamp":"2026-06-23T06:31:00+03:00","severity":"planned","event_type":"monitoring_plan","message":"Track height, growth rate, flower count, fruit count and wilting score separately from the other Pink Dream tomatoes."}
     ],
     "solanum_lycopersicum_cherry_balcony_population": [
       {"timestamp":"2026-06-19T06:30:00+03:00","severity":"info","event_type":"inventory","message":"Cherry tomato population tracked as balcony asset group."},
