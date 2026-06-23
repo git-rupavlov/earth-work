@@ -103,10 +103,8 @@ function ewSelectAppAsset(app, data, assetId) {
   ewRenderDetail(app, asset);
   ewRenderLogs(app, asset);
 
-  if (app.ewMarkers) {
-    app.ewMarkers.forEach(({ marker, asset: markerAsset }) => {
-      if (markerAsset.asset_id === asset.asset_id) marker.openPopup();
-    });
+  if (app.ewMap && Array.isArray(asset.map_coordinates)) {
+    app.ewMap.panTo(asset.map_coordinates, { animate: true, duration: 0.35 });
   }
 
   ewRenderTopology(app, data, asset);
@@ -117,28 +115,42 @@ function ewSelectAppAsset(app, data, assetId) {
 
 function ewInitMap(app, data) {
   const mapEl = app.querySelector('[data-ew-app-map]');
-  const map = L.map(mapEl).setView(data.map_defaults.center, data.map_defaults.zoom);
-  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', { maxZoom: 19, attribution: '&copy; OpenStreetMap contributors' }).addTo(map);
+  const map = L.map(mapEl, { scrollWheelZoom: false }).setView(data.map_defaults.center, 15);
+  const baseLayer = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', { maxZoom: 19, attribution: '&copy; OpenStreetMap contributors' }).addTo(map);
   const siteLayer = L.layerGroup().addTo(map);
   const plantLayer = L.layerGroup().addTo(map);
 
-  data.sites.forEach(site => {
-    L.circleMarker(site.coordinates, { radius: 9, weight: 2, fillOpacity: 0.6 })
-      .bindPopup(`<div class="ew-app-popup"><strong>${site.name}</strong><span>${site.summary}</span><span>${site.coordinate_quality}</span></div>`)
-      .addTo(siteLayer);
-  });
+  data.sites
+    .filter(site => site.coordinate_quality !== 'village_level_approximate')
+    .forEach(site => {
+      L.circleMarker(site.coordinates, { radius: 7, weight: 2, fillOpacity: 0.48 })
+        .bindPopup(`<div class="ew-app-popup"><strong>${site.name}</strong><span>${site.summary}</span><span>${site.coordinate_quality}</span></div>`)
+        .addTo(siteLayer);
+    });
 
   app.ewMarkers = data.plant_assets.map(asset => {
     const marker = L.marker(asset.map_coordinates)
       .bindPopup(`<div class="ew-app-popup"><strong>${asset.display_name}</strong><span>${asset.project_id}</span><span>${ewVitalsSummary(asset)}</span></div>`)
       .addTo(plantLayer);
-    marker.on('click', () => ewSelectAppAsset(app, data, asset.asset_id));
+    marker.on('click', () => {
+      ewSelectAppAsset(app, data, asset.asset_id);
+      marker.openPopup();
+    });
     return { marker, asset };
   });
 
-  L.control.layers({ 'OpenStreetMap': map }, { 'Sites': siteLayer, 'Plant assets': plantLayer }, { collapsed: false }).addTo(map);
+  const boundsPoints = [
+    ...data.sites.filter(site => site.coordinate_quality !== 'village_level_approximate').map(site => site.coordinates),
+    ...data.plant_assets.map(asset => asset.map_coordinates)
+  ].filter(point => Array.isArray(point) && point.length === 2);
+
+  if (boundsPoints.length > 1) {
+    map.fitBounds(L.latLngBounds(boundsPoints), { padding: [32, 32], maxZoom: 16 });
+  }
+
+  L.control.layers({ 'OpenStreetMap': baseLayer }, { 'Sites': siteLayer, 'Plant assets': plantLayer }, { collapsed: true }).addTo(map);
   app.ewMap = map;
-  setTimeout(() => map.invalidateSize(), 100);
+  setTimeout(() => map.invalidateSize(), 150);
 }
 
 function ewRenderTopology(app, data, selectedAsset) {
