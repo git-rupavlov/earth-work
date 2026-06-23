@@ -29,9 +29,9 @@ theme:
 
 nav:
   - Home: index.md
+  - Plant Inventory App: app.md
   - Projects:
       - Project Registry: projects/index.md
-      - Metrics App: metrics/app.md
       - Balcony Pot House: projects/balcony-pot-house/index.md
       - No-Maintenance Squash Trial: projects/no-maintenance-squash/index.md
       - Gaitanevo 2026: projects/gaitanevo-2026/index.md
