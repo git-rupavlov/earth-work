@@ -1,0 +1,43 @@
+{
+  "schema_version": "0.1",
+  "dataset_id": "plant_asset_logs",
+  "updated": "2026-06-21",
+  "timezone": "Europe/Sofia",
+  "log_format": "nms_style_event_records",
+  "logs": {
+    "solanum_lycopersicum_pink_dream": [
+      {"timestamp":"2026-05-12T06:30:00+03:00","severity":"info","event_type":"planting","message":"Pink Dream tomato planted. Initial sprout height estimated at 10 cm."},
+      {"timestamp":"2026-05-22T06:30:00+03:00","severity":"info","event_type":"growth_phase","message":"End of establishment phase. Estimated height 15 cm."},
+      {"timestamp":"2026-06-05T06:30:00+03:00","severity":"info","event_type":"growth_phase","message":"End of vegetative acceleration phase. Estimated height 36 cm."},
+      {"timestamp":"2026-06-17T06:30:00+03:00","severity":"notice","event_type":"measurement","message":"Observed current height around 65 cm. Strong vertical growth."},
+      {"timestamp":"2026-06-17T07:10:00+03:00","severity":"notice","event_type":"pruning","message":"Pruning / propagation work logged for Pink Dream tomato."}
+    ],
+    "solanum_lycopersicum_cherry_balcony_population": [
+      {"timestamp":"2026-06-19T06:30:00+03:00","severity":"info","event_type":"inventory","message":"Cherry tomato population tracked as balcony asset group."},
+      {"timestamp":"2026-06-19T06:35:00+03:00","severity":"info","event_type":"growth_habit","message":"Previous generation noted as tall vining / indeterminate habit."}
+    ],
+    "capsicum_annuum_balcony_pepper": [
+      {"timestamp":"2026-06-19T06:30:00+03:00","severity":"info","event_type":"inventory","message":"Balcony pepper population registered in plant inventory."},
+      {"timestamp":"2026-06-19T06:35:00+03:00","severity":"watch","event_type":"leaf_status","message":"Watch for leaf curl, watering response and heat stress."}
+    ],
+    "ipomoea_batatas_balcony_sweet_potato": [
+      {"timestamp":"2026-06-19T06:30:00+03:00","severity":"info","event_type":"inventory","message":"Sweet potato tracked as balcony container asset."},
+      {"timestamp":"2026-06-19T06:35:00+03:00","severity":"watch","event_type":"emergence","message":"Monitor sprouting / vine emergence from container."}
+    ],
+    "helianthus_annuus_balcony_sunflower": [
+      {"timestamp":"2026-06-19T06:30:00+03:00","severity":"info","event_type":"inventory","message":"Sunflower registered as balcony plant asset."}
+    ],
+    "amaranthus_red_garnet_plot_01": [
+      {"timestamp":"2026-06-21T06:30:00+03:00","severity":"info","event_type":"site_registered","message":"Red Garnet amaranth plot registered. Area 10 x 2 m, 20 m²."},
+      {"timestamp":"2026-06-21T06:31:00+03:00","severity":"planned","event_type":"monitoring_plan","message":"Track emergence percent, height, flowering percent, leaf harvest and seed harvest."}
+    ],
+    "cucurbita_moschata_butternut_pits_01": [
+      {"timestamp":"2026-06-21T06:30:00+03:00","severity":"planned","event_type":"site_registered","message":"No-maintenance butternut squash pit cluster registered. Planned 10 pits."},
+      {"timestamp":"2026-06-21T06:31:00+03:00","severity":"planned","event_type":"monitoring_plan","message":"Track planted pits, emerged pits, vine length, flowering, fruit count and harvest weight."}
+    ],
+    "urtica_dioica_nettle_plot_01": [
+      {"timestamp":"2026-06-21T06:30:00+03:00","severity":"planned","event_type":"site_registered","message":"Nettle plot registered. Area 10 x 2 m, 20 m²."},
+      {"timestamp":"2026-06-21T06:31:00+03:00","severity":"planned","event_type":"monitoring_plan","message":"Track emergence, height, leaf harvest, moisture response and stinging hazard score."}
+    ]
+  }
+}
