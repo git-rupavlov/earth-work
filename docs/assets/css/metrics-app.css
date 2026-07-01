@@ -1,10 +1,11 @@
 .ew-metrics-app {
   --ew-app-gap: clamp(0.75rem, 1.4vw, 1.25rem);
   display: grid;
-  grid-template-columns: clamp(16rem, 24%, 22rem) minmax(0, 1fr);
+  grid-template-columns: minmax(18rem, 24rem) minmax(0, 1fr);
   gap: var(--ew-app-gap);
   width: min(96vw, 104rem);
   margin: 1.5rem auto;
+  align-items: start;
 }
 
 .ew-app-panel,
@@ -20,6 +21,17 @@
   padding: clamp(0.75rem, 1vw, 1rem);
   max-height: calc(100vh - 8rem);
   overflow: auto;
+  position: sticky;
+  top: 5rem;
+}
+
+.ew-app-main,
+.ew-app-section {
+  min-width: 0;
+}
+
+.ew-app-section[hidden] {
+  display: none !important;
 }
 
 .ew-app-map-card {
@@ -27,7 +39,7 @@
 }
 
 .ew-app-map {
-  height: clamp(20rem, 42vh, 34rem);
+  height: clamp(18rem, 38vh, 30rem);
   width: 100%;
   background: rgba(0, 0, 0, 0.18);
 }
@@ -35,11 +47,17 @@
 .ew-app-detail-card {
   padding: clamp(0.75rem, 1vw, 1rem);
   margin-top: var(--ew-app-gap);
+  min-height: auto;
+}
+
+.ew-app-section > .ew-app-detail-card:first-child,
+.ew-app-section > .ew-app-map-card:first-child {
+  margin-top: 0;
 }
 
 .ew-app-radar-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(min(100%, 24rem), 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 22rem), 1fr));
   gap: var(--ew-app-gap);
 }
 
@@ -76,6 +94,7 @@
   text-align: left;
   display: grid;
   gap: 0.15rem;
+  width: 100%;
 }
 
 .ew-app-asset-button strong {
@@ -85,6 +104,7 @@
 .ew-app-asset-button span {
   font-size: 0.82rem;
   opacity: 0.74;
+  overflow-wrap: anywhere;
 }
 
 .ew-app-detail-grid {
@@ -157,13 +177,48 @@
 .ew-app-radar,
 .ew-app-topology,
 .ew-app-weather {
-  height: clamp(20rem, 44vh, 30rem);
+  height: clamp(18rem, 38vh, 28rem);
   width: 100%;
   margin-top: var(--ew-app-gap);
 }
 
 .ew-app-radar-grid .ew-app-radar {
   margin-top: 0;
+}
+
+.ew-doc-card {
+  margin-top: 0.75rem;
+  border: 1px solid rgba(125, 160, 110, 0.22);
+  border-radius: 0.9rem;
+  background: rgba(255, 255, 255, 0.035);
+  padding: clamp(0.8rem, 1.2vw, 1rem);
+}
+
+.ew-doc-card h4,
+.ew-doc-card h5 {
+  margin: 0.35rem 0;
+}
+
+.ew-doc-card ul {
+  margin: 0.4rem 0 0.8rem;
+  padding-left: 1.15rem;
+}
+
+.ew-doc-card li {
+  margin-bottom: 0.25rem;
+}
+
+.ew-doc-path {
+  display: block;
+  font-size: 0.76rem;
+  opacity: 0.68;
+  overflow-wrap: anywhere;
+}
+
+.ew-doc-section {
+  border-top: 1px solid rgba(125, 160, 110, 0.16);
+  padding-top: 0.65rem;
+  margin-top: 0.65rem;
 }
 
 .ew-app-popup strong,
@@ -185,14 +240,28 @@
     grid-template-columns: 1fr;
     width: min(100%, calc(100vw - 1rem));
     margin: 1rem auto;
+    gap: 0.75rem;
   }
 
   .ew-app-panel {
     max-height: none;
+    position: static;
+  }
+
+  .ew-app-toolbar {
+    gap: 0.45rem;
+  }
+
+  .ew-app-toggle {
+    padding: 0.5rem 0.75rem;
+  }
+
+  .ew-app-asset-list {
+    max-height: none;
   }
 
   .ew-app-map {
-    height: clamp(18rem, 45vh, 28rem);
+    height: 20rem;
   }
 
   .ew-log-row {
@@ -202,6 +271,6 @@
   .ew-app-radar,
   .ew-app-topology,
   .ew-app-weather {
-    height: clamp(18rem, 48vh, 28rem);
+    height: 20rem;
   }
 }
