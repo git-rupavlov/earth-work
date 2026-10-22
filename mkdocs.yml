@@ -1,12 +1,15 @@
 site_name: NoMad's Farm
 site_description: Zen and the Art of Nomad Farming
 site_author: Ruslav Pavlov
+site_url: https://nomadfarmer.tech
 repo_url: https://github.com/git-rupavlov/earth-work
 repo_name: git-rupavlov/earth-work
 
 theme:
   name: material
   language: en
+  logo: assets/images/nomadfarmer-logo.svg
+  favicon: assets/images/nomadfarmer-logo.svg
   palette:
     - scheme: slate
       primary: green
