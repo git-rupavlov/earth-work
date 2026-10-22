@@ -9,13 +9,25 @@
   </div>
 </section>
 
-Seed inventory, provenance, storage, germination tests and seed-saving records.
+The seed section is an inventory and selection database rather than a storefront. It tracks what exists, what is only referenced or planned, where a line came from, and what still needs germination or stock data.
 
-## Scope
+<div data-ew-seed-catalog></div>
 
-- seed source and variety;
-- acquisition or harvest date;
-- storage conditions;
-- germination tests;
-- seed-saving generation;
-- notes and observations.
+---
+
+## Inventory model
+
+```text
+Seed record
+├── category / species / variety
+├── generation or hybrid status
+├── inventory state
+├── quantity
+├── provenance / source
+├── lifecycle
+├── container suitability
+├── tags
+└── notes / future germination records
+```
+
+Unknown values stay explicitly unknown until they are measured or verified.
