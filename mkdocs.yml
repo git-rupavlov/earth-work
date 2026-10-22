@@ -60,6 +60,7 @@ extra_css:
   - assets/css/garden-theme.css
   - assets/css/home-image.css
   - assets/css/home-logo-background.css
+  - assets/css/home-minimal.css
   - assets/css/page-heroes.css
   - assets/css/crop-matrix.css
   - assets/css/plant-monitor.css
