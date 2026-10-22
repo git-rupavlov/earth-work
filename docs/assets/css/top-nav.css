@@ -1,0 +1,167 @@
+/*
+  Single-plane desktop navigation inspired by the Red Hat Developer header.
+  Keeps NoMad's Farm colors and MkDocs Material semantics.
+*/
+
+@media screen and (min-width: 76.25em) {
+  :root {
+    --ew-topnav-height: 5.1rem;
+    --ew-topnav-max: 104rem;
+  }
+
+  .md-header {
+    height: var(--ew-topnav-height);
+    background: linear-gradient(90deg, var(--rp-leaf-900), var(--rp-leaf-700) 55%, var(--rp-soil-700));
+    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.05), 0 0.45rem 1.4rem rgba(0, 0, 0, 0.2);
+  }
+
+  .md-header__inner {
+    height: var(--ew-topnav-height);
+    max-width: min(96vw, var(--ew-topnav-max));
+    margin: 0 auto;
+    padding: 0 1rem;
+    gap: 0.75rem;
+  }
+
+  .md-header__button.md-logo {
+    width: 3.15rem;
+    height: 3.15rem;
+    margin: 0 0.7rem 0 0;
+    padding: 0;
+    flex: 0 0 3.15rem;
+  }
+
+  .md-header__button.md-logo img,
+  .md-header__button.md-logo svg {
+    display: block;
+    width: 3.15rem;
+    height: 3.15rem;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+
+  .md-header__title {
+    flex: 0 0 auto;
+    width: auto;
+    max-width: none;
+    margin: 0 clamp(2rem, 4vw, 4rem) 0 0;
+    padding: 0;
+    font-size: 1.05rem;
+    font-weight: 800;
+    letter-spacing: 0.01em;
+    white-space: nowrap;
+  }
+
+  .md-header__topic {
+    position: static;
+    width: auto;
+    opacity: 1;
+    transform: none;
+  }
+
+  .md-header__topic + .md-header__topic {
+    display: none;
+  }
+
+  /*
+    Material renders tabs as a second nav element. On desktop we move that
+    element into the header's visual plane, matching the Red Hat-style layout:
+    brand first, then horizontal navigation, then utility controls at right.
+  */
+  .md-tabs {
+    position: fixed;
+    z-index: 4;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: var(--ew-topnav-height);
+    background: transparent;
+    box-shadow: none;
+    pointer-events: none;
+  }
+
+  .md-tabs__inner {
+    max-width: min(96vw, var(--ew-topnav-max));
+    height: 100%;
+    margin: 0 auto;
+    padding: 0 clamp(12rem, 16vw, 15.5rem) 0 clamp(13.5rem, 17vw, 17.5rem);
+  }
+
+  .md-tabs__list {
+    display: flex;
+    align-items: center;
+    gap: clamp(1.25rem, 2vw, 2.2rem);
+    height: 100%;
+    margin: 0;
+  }
+
+  .md-tabs__item {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    padding: 0;
+  }
+
+  .md-tabs__link {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    color: rgba(246, 239, 216, 0.9);
+    font-size: 0.98rem;
+    font-weight: 500;
+    line-height: 1;
+    opacity: 1;
+    white-space: nowrap;
+    pointer-events: auto;
+    transition: color 140ms ease;
+  }
+
+  .md-tabs__link:hover,
+  .md-tabs__link--active {
+    color: #fff6ce;
+  }
+
+  .md-tabs__link--active::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0.7rem;
+    height: 2px;
+    border-radius: 999px;
+    background: var(--rp-sun-500);
+  }
+
+  /* Utilities stay at the right edge, like search/account controls in RH. */
+  .md-header__option,
+  .md-header__source,
+  .md-search {
+    position: relative;
+    z-index: 6;
+  }
+
+  /* No second navigation plane and no desktop side navigation. */
+  .md-sidebar--primary,
+  .md-sidebar--secondary {
+    display: none;
+  }
+
+  .md-main__inner {
+    margin-top: 1.35rem;
+  }
+}
+
+/* Mobile/tablet: use Material's compact header/drawer rather than squeezing five tabs. */
+@media screen and (max-width: 76.24em) {
+  .md-sidebar--secondary {
+    display: none;
+  }
+
+  .md-header__button.md-logo img,
+  .md-header__button.md-logo svg {
+    border-radius: 50%;
+  }
+}
