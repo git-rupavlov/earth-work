@@ -8,7 +8,7 @@
       <p class="ew-hero-lead">Growing food. Restoring soil. Building resilient systems.</p>
       <p class="ew-hero-text">A practical documentation hub for regenerative agriculture, balcony production, protected cultivation, field trials, monitoring and long-term learning.</p>
       <div class="ew-hero-actions">
-        <a class="ew-btn ew-btn-primary" href="app/">Open Plant Inventory App</a>
+        <a class="ew-btn ew-btn-primary" href="metrics/app/">Open Plant Inventory App</a>
         <a class="ew-btn ew-btn-secondary" href="projects/">Open Projects</a>
         <a class="ew-btn ew-btn-secondary" href="plants/crop-matrix/">Open Crop Matrix</a>
       </div>
@@ -19,23 +19,23 @@
     <div>
       <p class="ew-eyebrow">Start here</p>
       <h2>Use the site as a working system.</h2>
-      <p>Start from the plant inventory app or the project registry, then move into active project pages, observations and knowledge sections. Projects are nested work streams, not a flat pile of links, because apparently navigation should not be a compost heap.</p>
+      <p>Home is the navigation plane. Open the plant inventory app for operational plant data, or move into projects, the knowledge base, plant tools and the blog.</p>
     </div>
     <ol>
-      <li><a href="app/">Open the plant inventory app</a></li>
+      <li><a href="metrics/app/">Open the plant inventory app</a></li>
       <li><a href="projects/">Open the project registry</a></li>
-      <li><a href="projects/balcony-pot-house/">Review Balcony Pot House</a></li>
-      <li><a href="projects/sprout-lab/">Review Sprout Lab</a></li>
+      <li><a href="knowledge/">Open the knowledge base</a></li>
       <li><a href="plants/crop-matrix/">Compare crops</a></li>
+      <li><a href="blog/q-and-a/">Open Q&amp;A</a></li>
     </ol>
   </section>
 
-  <section class="ew-section-block" aria-label="Active projects">
-    <p class="ew-section-label">Active projects</p>
+  <section class="ew-section-block" aria-label="Active projects and tools">
+    <p class="ew-section-label">Operations & projects</p>
     <div class="ew-feature-grid">
-      <a class="ew-feature" href="app/">
+      <a class="ew-feature" href="metrics/app/">
         <img src="assets/images/monitoring.webp" alt="Plant inventory dashboard with maps, telemetry and logs" loading="lazy" decoding="async" width="2560" height="1440" />
-        <div><span>Operations</span><h2>Plant Inventory App</h2><p>NMS-style plant inventory with map markers, asset records, logs, radar charts, topology and weather context.</p><strong>Open App</strong></div>
+        <div><span>Operations</span><h2>Plant Inventory App</h2><p>NMS-style plant inventory with individual plant IDs, asset records, logs, radar charts, topology and map context.</p><strong>Open App</strong></div>
       </a>
 
       <a class="ew-feature" href="projects/sprout-lab/">
@@ -91,14 +91,14 @@
   </section>
 
   <section class="ew-principles-panel">
-    <a class="ew-principles-image" href="app/" aria-label="Open plant inventory app">
+    <a class="ew-principles-image" href="metrics/app/" aria-label="Open plant inventory app">
       <img src="assets/images/monitoring.webp" alt="Monitoring sensors and field telemetry" loading="lazy" decoding="async" width="2560" height="1440" />
     </a>
     <div class="ew-principles-copy">
       <p class="ew-eyebrow">Plant operations</p>
       <h2>Inventory first, then observations.</h2>
       <p>Plant assets, plots, telemetry links, event logs and field context are tracked in the standalone app.</p>
-      <a class="ew-btn ew-btn-primary" href="app/">Open Plant Inventory App</a>
+      <a class="ew-btn ew-btn-primary" href="metrics/app/">Open Plant Inventory App</a>
     </div>
   </section>
 </div>
