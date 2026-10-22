@@ -64,6 +64,7 @@ extra_css:
   - assets/css/plant-monitor.css
   - assets/css/metrics-charts.css
   - assets/css/metrics-app.css
+  - assets/css/seeds-catalog.css
   - assets/css/zen.css
   - assets/css/top-nav.css
 
@@ -77,6 +78,7 @@ extra_javascript:
   - assets/js/plant-monitor-unified.js
   - assets/js/plant-monitor-environment.js
   - assets/js/metrics-app.js
+  - assets/js/seeds-catalog.js
 
 markdown_extensions:
   - admonition
