@@ -65,6 +65,7 @@ extra_css:
   - assets/css/metrics-charts.css
   - assets/css/metrics-app.css
   - assets/css/zen.css
+  - assets/css/top-nav.css
 
 extra_javascript:
   - https://cdn.jsdelivr.net/npm/echarts@5/dist/echarts.min.js
