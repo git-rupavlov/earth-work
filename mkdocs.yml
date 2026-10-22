@@ -1,5 +1,5 @@
 site_name: NoMad's Farm
-site_description: Zen and the Art of Nomad Farming
+site_description: NoMad farming inventory, propagation and field notes
 site_author: Ruslav Pavlov
 site_url: https://nomadfarmer.tech
 repo_url: https://github.com/git-rupavlov/earth-work
@@ -32,51 +32,27 @@ theme:
 
 nav:
   - Home: index.md
-  - Projects:
-      - Project Registry: projects/index.md
-      - Balcony Pot House: projects/balcony-pot-house/index.md
-      - No-Maintenance Squash Trial: projects/no-maintenance-squash/index.md
-      - Gaitanevo 2026: projects/gaitanevo-2026/index.md
-      - Greenhouse 2026: projects/greenhouse-2026/index.md
-      - Sprout Lab: projects/sprout-lab/index.md
-      - Microclimate Lab: projects/microclimate-lab/index.md
-  - Knowledge Base:
-      - Source Hierarchy: knowledge/index.md
-      - Tomato Seedlings: knowledge/tomato-seedlings.md
-      - Tomato Pruning: knowledge/tomato-pruning.md
-      - Pepper Pruning: knowledge/pepper-pruning.md
-      - Squash Pot: knowledge/squash-pot.md
-  - Plants:
-      - Crop Matrix: plants/crop-matrix.md
-      - Crop Oracle: plants/crop-oracle.md
-      - Plant Profiles: plants/plant-profiles.md
-      - Functional Groups: plants/functional-groups.md
+  - Seeds: seeds/index.md
+  - Seedlings: seedlings/index.md
+  - Plant Database: metrics/app.md
   - Blog:
+      - Overview: blog/index.md
       - Q&A: blog/q-and-a.md
       - Discussions: blog/discussions.md
+  - About: about/overview.md
 
 extra_css:
   - https://unpkg.com/leaflet@1.9.4/dist/leaflet.css
   - assets/css/garden-theme.css
   - assets/css/home-minimal.css
   - assets/css/page-heroes.css
-  - assets/css/crop-matrix.css
-  - assets/css/plant-monitor.css
-  - assets/css/metrics-charts.css
   - assets/css/metrics-app.css
   - assets/css/seeds-catalog.css
-  - assets/css/zen.css
   - assets/css/top-nav.css
 
 extra_javascript:
   - https://cdn.jsdelivr.net/npm/echarts@5/dist/echarts.min.js
   - https://unpkg.com/leaflet@1.9.4/dist/leaflet.js
-  - assets/js/crop-matrix.js
-  - assets/js/page-heroes.js
-  - assets/js/plant-monitor.js
-  - assets/js/pink-tomato-growth-monitor.js
-  - assets/js/plant-monitor-unified.js
-  - assets/js/plant-monitor-environment.js
   - assets/js/metrics-app.js
   - assets/js/seeds-catalog.js
 
