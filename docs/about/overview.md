@@ -1,40 +1,47 @@
-# Overview
+# About
 
 <section class="ew-page-hero" aria-label="About NoMad's Farm">
   <object class="ew-page-hero-image" data="/assets/images/heroes/about.svg" type="image/svg+xml" aria-label="NoMad's Farm workbench with seeds, notes, seedlings and monitoring equipment at sunset"></object>
   <div class="ew-page-hero-content">
     <p class="ew-page-hero-kicker">05 · System identity</p>
     <h1>About NoMad's Farm</h1>
-    <p>Why the farm exists, how the system is built and what gets measured.</p>
+    <p>A practical operating system for seeds, propagation, individual plants and field observations.</p>
   </div>
 </section>
 
-NoMad's Farm is a practical documentation system for resilient food production, regenerative agriculture, soil recovery and long-term field learning.
+NoMad's Farm combines growing, experimentation and technical monitoring into one small operational system.
 
-The site is organized around four layers:
+## Current structure
 
 ```text
-Knowledge Base -> Projects -> Journal -> Zen
+Home
+├── Seeds
+├── Seedlings
+├── Plant Database
+├── Blog
+└── About
 ```
 
-## Knowledge Base
+### Seeds
 
-Universal knowledge, methods and practical handbooks.
+Seed stock, provenance, generations, viability and sowing plans.
 
-## Projects
+### Seedlings
 
-Active work streams where knowledge is applied and tested.
+Propagation runs from sowing or cutting through hardening and transplant.
 
-## Journal
+### Plant Database
 
-Dated observations, field notes, failures and records.
+Individual plant assets, locations, containers, vitals, measurements and event logs.
 
-## Zen
+### Blog
 
-Personal reflections, images and long-form thinking.
+Questions, discussions, observations and longer field notes.
+
+### About
+
+The operating model, identity and purpose of the project.
 
 ## Principle
 
-The purpose is not to document one greenhouse, one balcony or one field.
-
-The purpose is to build a reusable handbook and project memory system that improves with every season.
+Keep the public structure small. Put detailed operational data behind the relevant inventory instead of creating a new navigation branch for every experiment.
