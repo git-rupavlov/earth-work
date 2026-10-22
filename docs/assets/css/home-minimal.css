@@ -45,7 +45,7 @@
   position: absolute;
   inset: -3%;
   z-index: -2;
-  background: url('../images/home-background.jpg') center center / cover no-repeat;
+  background: url('../images/home-background.png') center center / cover no-repeat;
   filter: blur(18px) brightness(0.34) saturate(0.72);
   transform: scale(1.04);
   opacity: 0.88;
@@ -60,7 +60,7 @@
   z-index: -1;
   background:
     linear-gradient(180deg, rgba(5, 14, 8, 0.02) 0%, rgba(5, 14, 8, 0.03) 60%, rgba(5, 14, 8, 0.42) 100%),
-    url('../images/home-background.jpg') center center / contain no-repeat;
+    url('../images/home-background.png') center center / contain no-repeat;
   pointer-events: none;
 }
 
@@ -176,7 +176,7 @@
   .ew-home-minimal .ew-landing-hero::after {
     background:
       linear-gradient(180deg, rgba(5, 14, 8, 0.01) 0%, rgba(5, 14, 8, 0.06) 50%, rgba(5, 14, 8, 0.58) 100%),
-      url('../images/home-background.jpg') center center / contain no-repeat;
+      url('../images/home-background.png') center center / contain no-repeat;
   }
 
   .ew-home-menu {
