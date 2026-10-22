@@ -1,11 +1,11 @@
 # Metrics App
 
-<section class="ew-page-hero" aria-label="Metrics app">
-  <img class="ew-page-hero-image" src="../assets/images/monitoring.webp" alt="" aria-hidden="true" loading="eager" decoding="async" width="2560" height="1440" />
+<section class="ew-page-hero" aria-label="Plant Database">
+  <img class="ew-page-hero-image" src="../assets/images/heroes/plant-database.svg" alt="Plant monitoring dashboard, sensors and field notebook in the NoMad's Farm garden" loading="eager" decoding="async" />
   <div class="ew-page-hero-content">
-    <p class="ew-page-hero-kicker">Plant operations</p>
-    <h1>Plant Inventory & Metrics App</h1>
-    <p>NMS-style plant inventory, individual plant IDs, per-asset logs, map context, vitals, radar profiles, topology and environmental telemetry.</p>
+    <p class="ew-page-hero-kicker">03 · Operations</p>
+    <h1>Plant Database</h1>
+    <p>Individual plant assets, vitals, logs, topology and map context.</p>
   </div>
 </section>
 
