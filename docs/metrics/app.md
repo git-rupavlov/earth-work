@@ -3,35 +3,39 @@
 <section class="ew-page-hero" aria-label="Metrics app">
   <img class="ew-page-hero-image" src="../assets/images/monitoring.webp" alt="" aria-hidden="true" loading="eager" decoding="async" width="2560" height="1440" />
   <div class="ew-page-hero-content">
-    <p class="ew-page-hero-kicker">Plant data application</p>
-    <h1>Metrics App</h1>
-    <p>Map underlays, plant asset inventory, vitals, topology, common weather context and future heatmap layers.</p>
+    <p class="ew-page-hero-kicker">Plant operations</p>
+    <h1>Plant Inventory & Metrics App</h1>
+    <p>NMS-style plant inventory, individual plant IDs, per-asset logs, map context, vitals, radar profiles, topology and environmental telemetry.</p>
   </div>
 </section>
 
-This is the new direction for Metrics: not just a page, but a static-site app.
-
-The app starts with:
+This is the canonical operational app for NoMad's Farm.
 
 ```text
-real map underlay       -> OpenStreetMap / Leaflet
-plant location overlay  -> plant assets and sites
-vitals panel            -> selected asset detail
-weather context         -> shared balcony environment telemetry
-topology view           -> site → plant → metric relationship graph
-future heatmaps         -> growth, stress, sun, humidity, UV and soil moisture
+site / location
+  -> individual plant or plot asset
+     -> container / slot
+     -> vitals
+     -> event logs
+     -> environmental interfaces
+     -> radar profile
+     -> map / topology context
 ```
 
-Home balcony coordinates are intentionally approximate and city-level in the public repository. Exact residential coordinates do not belong in a public plant dashboard, because apparently tomatoes do not need doxxing support.
+Each individually managed plant gets its own stable asset ID and log stream. Group assets are kept only where the real-world object is intentionally managed as a plot, population or pit cluster.
+
+Owner-provided coordinates are used for mapped sites and assets. Plant-level GPS offsets are only visualization offsets inside the same growing location, not centimeter-accurate survey positions.
 
 <div data-ew-metrics-app></div>
 
 ---
 
-## App Data Sources
+## App data sources
 
 ```text
-../assets/data/plant-map-app.seed.json
+../assets/data/plant-map-app.seed.json      # inventory, locations, topology, vitals
+../assets/data/plant-asset-logs.json        # per-asset event history
+../assets/data/plant-radar-profiles.json    # crop/resource comparison profiles
 ../assets/data/balcony-environment.daily.json
 ../assets/data/pink-tomatoes.daily.json
 ../data/balcony-environment.sources.yml
@@ -39,24 +43,40 @@ Home balcony coordinates are intentionally approximate and city-level in the pub
 
 ---
 
-## Target Underlay / Overlay Model
+## Inventory model
 
 ```text
-Base underlays
-├── OpenStreetMap
-├── satellite / orthophoto later
-├── elevation / slope later
-└── soil / climate grid later
+Site
+├── Plant Asset 01
+│   ├── Asset ID / SN
+│   ├── Type / PID
+│   ├── Container / slot
+│   ├── Status
+│   ├── Vitals
+│   ├── Logs
+│   └── Metric interfaces
+├── Plant Asset 02
+└── Plot / population assets where grouping is intentional
+```
+
+Current Pink Dream tomatoes are represented as four independent plant assets, each assigned to its own F30 pot.
+
+---
+
+## Map / overlay model
+
+```text
+Base underlay
+└── OpenStreetMap
 
 Plant overlays
-├── plant assets
-├── containers / beds
+├── sites
+├── individual plant assets
+├── field plots / pit clusters
 ├── vitals
-├── growth rate
-├── stress score
 └── topology
 
-Weather overlays
+Weather context
 ├── temperature
 ├── humidity
 ├── UV index
@@ -65,7 +85,7 @@ Weather overlays
 ├── wind
 └── pressure
 
-Future heatmaps
+Future overlays
 ├── growth heatmap
 ├── water stress heatmap
 ├── UV stress heatmap
