@@ -1,7 +1,7 @@
 # Overview
 
 <section class="ew-page-hero" aria-label="About NoMad's Farm">
-  <img class="ew-page-hero-image" src="../assets/images/heroes/about.svg" alt="NoMad's Farm workbench with seeds, notes, seedlings and monitoring equipment at sunset" loading="eager" decoding="async" />
+  <object class="ew-page-hero-image" data="/assets/images/heroes/about.svg" type="image/svg+xml" aria-label="NoMad's Farm workbench with seeds, notes, seedlings and monitoring equipment at sunset"></object>
   <div class="ew-page-hero-content">
     <p class="ew-page-hero-kicker">05 · System identity</p>
     <h1>About NoMad's Farm</h1>
