@@ -1,7 +1,7 @@
 # Seedlings
 
 <section class="ew-page-hero" aria-label="Seedlings">
-  <img class="ew-page-hero-image" src="../assets/images/heroes/seedlings.svg" alt="Seedling trays and propagation workspace in the NoMad's Farm balcony garden" loading="eager" decoding="async" />
+  <object class="ew-page-hero-image" data="/assets/images/heroes/seedlings.svg" type="image/svg+xml" aria-label="Seedling trays and propagation workspace in the NoMad's Farm balcony garden"></object>
   <div class="ew-page-hero-content">
     <p class="ew-page-hero-kicker">02 · Propagation</p>
     <h1>Seedlings</h1>
