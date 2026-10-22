@@ -1,0 +1,71 @@
+/* Minimal Home: five primary destinations over the existing nomadfarmer artwork. */
+
+.md-content__inner:has(.ew-home-minimal) > h1:first-child {
+  display: none;
+}
+
+.md-content__inner:has(.ew-home-minimal) {
+  max-width: none;
+  margin: 0;
+  padding-top: 0;
+}
+
+.ew-home-minimal {
+  margin-top: -1rem;
+}
+
+.ew-home-minimal .ew-landing-hero {
+  min-height: calc(100vh - 7rem);
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: clamp(1.25rem, 5vw, 5rem);
+}
+
+.ew-home-menu {
+  display: grid;
+  gap: 0.75rem;
+  width: min(30rem, 92%);
+  padding: clamp(0.85rem, 2vw, 1.2rem);
+  border: 1px solid rgba(168, 207, 107, 0.24);
+  border-radius: 1.15rem;
+  background: rgba(6, 17, 9, 0.48);
+  backdrop-filter: blur(3px);
+  box-shadow: 0 1.2rem 3rem rgba(0, 0, 0, 0.28);
+}
+
+.ew-home-menu a {
+  display: flex;
+  align-items: center;
+  min-height: 4rem;
+  padding: 0.9rem 1.15rem;
+  border: 1px solid rgba(168, 207, 107, 0.42);
+  border-radius: 0.8rem;
+  background: rgba(20, 38, 21, 0.74);
+  color: #f6efd8;
+  text-decoration: none;
+  font-size: clamp(1.1rem, 2vw, 1.45rem);
+  font-weight: 800;
+  letter-spacing: 0.01em;
+  transition: transform 140ms ease, background 140ms ease, border-color 140ms ease;
+}
+
+.ew-home-menu a:hover,
+.ew-home-menu a:focus-visible {
+  transform: translateX(0.25rem);
+  background: rgba(36, 81, 42, 0.86);
+  border-color: rgba(217, 164, 65, 0.72);
+  color: #fff6ce;
+}
+
+@media (max-width: 760px) {
+  .ew-home-minimal .ew-landing-hero {
+    min-height: calc(100vh - 5rem);
+    padding: 1rem;
+    align-items: flex-end;
+  }
+
+  .ew-home-menu {
+    width: 100%;
+  }
+}
