@@ -1,7 +1,7 @@
 # Metrics App
 
 <section class="ew-page-hero" aria-label="Plant Database">
-  <img class="ew-page-hero-image" src="../assets/images/heroes/plant-database.svg" alt="Plant monitoring dashboard, sensors and field notebook in the NoMad's Farm garden" loading="eager" decoding="async" />
+  <object class="ew-page-hero-image" data="/assets/images/heroes/plant-database.svg" type="image/svg+xml" aria-label="Plant monitoring dashboard, sensors and field notebook in the NoMad's Farm garden"></object>
   <div class="ew-page-hero-content">
     <p class="ew-page-hero-kicker">03 · Operations</p>
     <h1>Plant Database</h1>
