@@ -137,6 +137,21 @@
   box-shadow: 0 .75rem 1.8rem rgba(0, 0, 0, .16);
 }
 
+.ew-seed-media {
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  background: #071008;
+  border-bottom: 1px solid rgba(168, 207, 107, .14);
+}
+
+.ew-seed-media img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
 .ew-seed-card-top {
   min-height: 5rem;
   padding: .9rem;
