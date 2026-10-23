@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.1",
+  "schema_version": "0.2",
   "dataset_id": "nomadfarmer_seed_inventory",
-  "updated": "2026-10-22",
-  "notes": "Initial catalog contains only project-referenced seed lines. Unknown stock, germination and provenance fields remain explicit rather than inferred.",
+  "updated": "2026-10-23",
+  "notes": "Catalog contains project-referenced seed lines. Unknown stock, germination and provenance fields remain explicit rather than inferred.",
   "seeds": [
     {
       "id": "seed-tomato-vilma-f5",
@@ -16,6 +16,7 @@
       "source": "NoMad's Farm selection",
       "lifecycle": "annual",
       "container_suitability": "high",
+      "image": "/assets/images/nmf-seeds-vimla.webp",
       "tags": ["balcony", "compact", "selection"],
       "notes": "Balcony tomato line under continued selection."
     },
@@ -31,6 +32,7 @@
       "source": "commercial",
       "lifecycle": "annual",
       "container_suitability": "high",
+      "image": "/assets/images/nmf-seeds-venus.webp",
       "tags": ["balcony", "compact"],
       "notes": "Container tomato used in the balcony project."
     },
@@ -46,8 +48,25 @@
       "source": "commercial",
       "lifecycle": "annual",
       "container_suitability": "high",
+      "image": "/assets/images/nmf-seeds-yellowh.webp",
       "tags": ["balcony", "compact", "yellow fruit"],
       "notes": "Compact yellow-fruited balcony hybrid."
+    },
+    {
+      "id": "seed-tomato-jb-little",
+      "category": "Tomato",
+      "species": "Solanum lycopersicum",
+      "variety": "JB Little",
+      "generation": null,
+      "seed_type": null,
+      "inventory_state": "referenced",
+      "quantity": null,
+      "source": null,
+      "lifecycle": "annual",
+      "container_suitability": null,
+      "image": "/assets/images/nmf-seeds-jblittle.webp",
+      "tags": ["tomato"],
+      "notes": "Seed artwork added to the project; stock and provenance details are not yet recorded."
     },
     {
       "id": "seed-tomato-red-robin",
