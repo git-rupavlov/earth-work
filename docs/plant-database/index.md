@@ -1,7 +1,7 @@
 # Plant Database
 
 <section class="ew-page-hero" aria-label="Plant Database">
-  <object class="ew-page-hero-image" data="/assets/images/heroes/plant-database.svg" type="image/svg+xml" aria-label="Plant monitoring dashboard, sensors and field notebook in the NoMad's Farm garden"></object>
+  <img class="ew-page-hero-image" src="/assets/images/heroes/nmf-plantdb.webp" alt="Plant monitoring dashboard, sensors and field notebook in the NoMad's Farm garden" />
   <div class="ew-page-hero-content">
     <p class="ew-page-hero-kicker">03 · Operations</p>
     <h1>Plant Database</h1>
