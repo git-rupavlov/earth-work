@@ -1,7 +1,7 @@
 # About
 
 <section class="ew-page-hero" aria-label="About NoMad's Farm">
-  <object class="ew-page-hero-image" data="/assets/images/heroes/about.svg" type="image/svg+xml" aria-label="NoMad's Farm workbench with seeds, notes, seedlings and monitoring equipment at sunset"></object>
+  <img class="ew-page-hero-image" src="/assets/images/heroes/nmf-about.webp" alt="NoMad's Farm workbench with seeds, notes, seedlings and monitoring equipment at sunset" />
   <div class="ew-page-hero-content">
     <p class="ew-page-hero-kicker">05 · System identity</p>
     <h1>About NoMad's Farm</h1>
