@@ -34,7 +34,7 @@
   position: absolute;
   inset: -3%;
   z-index: -2;
-  background: url('../images/home-background.png') center / cover no-repeat;
+  background: url('../images/heroes/nmf-home.webp') center / cover no-repeat;
   filter: blur(18px) brightness(0.34) saturate(0.72);
   transform: scale(1.04);
   opacity: 0.88;
@@ -48,7 +48,7 @@
   z-index: -1;
   background:
     linear-gradient(180deg, rgba(5, 14, 8, 0.02) 0%, rgba(5, 14, 8, 0.03) 58%, rgba(5, 14, 8, 0.48) 100%),
-    url('../images/home-background.png') center / contain no-repeat;
+    url('../images/heroes/nmf-home.webp') center / contain no-repeat;
   pointer-events: none;
 }
 
@@ -68,10 +68,6 @@
   box-shadow: 0 1rem 2.8rem rgba(0, 0, 0, 0.38), inset 0 1px 0 rgba(246, 239, 216, 0.045);
 }
 
-/*
-  The link remains a generous rectangular click target, but the visible media is
-  a circle. This avoids the old "round artwork inside a square image card" look.
-*/
 .ew-home-card {
   counter-increment: home-destination;
   position: relative;
@@ -107,6 +103,8 @@
   box-shadow:
     0 0.7rem 1.8rem rgba(0, 0, 0, 0.34),
     inset 0 0 0 1px rgba(246, 239, 216, 0.05);
+  object-fit: cover;
+  object-position: center;
   pointer-events: none;
   filter: brightness(0.82) saturate(0.96);
   transition: border-color 160ms ease, box-shadow 160ms ease, filter 160ms ease;
@@ -181,7 +179,7 @@
   .ew-home-minimal .ew-landing-hero::after {
     background:
       linear-gradient(180deg, rgba(5, 14, 8, 0.01) 0%, rgba(5, 14, 8, 0.06) 50%, rgba(5, 14, 8, 0.58) 100%),
-      url('../images/home-background.png') center / contain no-repeat;
+      url('../images/heroes/nmf-home.webp') center / contain no-repeat;
   }
 
   .ew-home-menu {
