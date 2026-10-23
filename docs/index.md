@@ -12,15 +12,15 @@
         <span>Seedlings</span>
       </a>
       <a class="ew-home-card" href="plant-database/">
-        <object class="ew-home-card-image" data="/assets/images/heroes/plant-database.svg" type="image/svg+xml" aria-hidden="true"></object>
+        <img class="ew-home-card-image" src="/assets/images/heroes/nmf-plantdb.webp" alt="" aria-hidden="true" />
         <span>Plant Database</span>
       </a>
       <a class="ew-home-card" href="blog/">
-        <object class="ew-home-card-image" data="/assets/images/heroes/blog.svg" type="image/svg+xml" aria-hidden="true"></object>
+        <img class="ew-home-card-image" src="/assets/images/heroes/nmf-blog.webp" alt="" aria-hidden="true" />
         <span>Blog</span>
       </a>
       <a class="ew-home-card" href="about/overview/">
-        <object class="ew-home-card-image" data="/assets/images/heroes/about.svg" type="image/svg+xml" aria-hidden="true"></object>
+        <img class="ew-home-card-image" src="/assets/images/heroes/nmf-about.webp" alt="" aria-hidden="true" />
         <span>About</span>
       </a>
     </nav>
