@@ -19,7 +19,6 @@
   isolation: isolate;
 }
 
-/* Supports both normal raster <img> heroes and self-contained SVG <object> heroes. */
 .ew-page-hero-image {
   position: absolute;
   inset: 0;
@@ -36,9 +35,11 @@
   pointer-events: none;
 }
 
-.ew-page-hero object.ew-page-hero-image {
-  overflow: hidden;
-  background: #071008;
+/* Seeds and Seedlings artwork is composed from the ground upward, so keep the
+   lower edge visible and let any necessary crop happen at the top. */
+.ew-page-hero-image[src$="/nmf-seeds.webp"],
+.ew-page-hero-image[src$="/nmf-seedlings.webp"] {
+  object-position: center bottom;
 }
 
 .ew-page-hero::before {
