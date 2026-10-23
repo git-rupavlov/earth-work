@@ -34,7 +34,7 @@ nav:
   - Home: index.md
   - Seeds: seeds/index.md
   - Seedlings: seedlings/index.md
-  - Plant Database: metrics/app.md
+  - Plant Database: plant-database/index.md
   - Blog:
       - Overview: blog/index.md
       - Q&A: blog/q-and-a.md

@@ -2,18 +2,24 @@
 
 MkDocs site for the current NoMad's Farm operating structure.
 
-## Canonical sections
+## Active site
 
 ```text
-Home
-├── Seeds
-├── Seedlings
-├── Plant Database
-├── Blog
-└── About
+docs/
+├── index.md
+├── seeds/
+├── seedlings/
+├── plant-database/
+├── blog/
+├── about/
+└── assets/
+    ├── css/
+    ├── js/
+    ├── data/
+    └── images/
 ```
 
-Older project, knowledge and journal material remains in the repository as historical source material, but is not part of the public navigation or active runtime.
+Everything from the previous documentation tree that is not required by the current site is preserved under `OLD/docs/`. It is intentionally outside the MkDocs `docs/` directory and is not part of the active build.
 
 ## Local preview
 
