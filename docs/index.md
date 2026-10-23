@@ -4,11 +4,11 @@
   <section class="ew-landing-hero" aria-label="NoMad's Farm home navigation">
     <nav class="ew-home-menu" aria-label="Primary home destinations">
       <a class="ew-home-card" href="seeds/">
-        <object class="ew-home-card-image" data="/assets/images/heroes/seeds.svg" type="image/svg+xml" aria-hidden="true"></object>
+        <img class="ew-home-card-image" src="/assets/images/heroes/nmf-seeds.webp" alt="" aria-hidden="true" />
         <span>Seeds</span>
       </a>
       <a class="ew-home-card" href="seedlings/">
-        <object class="ew-home-card-image" data="/assets/images/heroes/seedlings.svg" type="image/svg+xml" aria-hidden="true"></object>
+        <img class="ew-home-card-image" src="/assets/images/heroes/nmf-seedlings.webp" alt="" aria-hidden="true" />
         <span>Seedlings</span>
       </a>
       <a class="ew-home-card" href="plant-database/">
