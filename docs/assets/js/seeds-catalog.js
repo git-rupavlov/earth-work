@@ -62,9 +62,13 @@
       .filter(Boolean)
       .map((value, index) => `<span class="ew-seed-badge"${index === 0 ? ` data-state="${esc(item.inventory_state)}"` : ''}>${esc(value)}</span>`)
       .join('');
+    const media = item.image
+      ? `<div class="ew-seed-media"><img src="${esc(item.image)}" alt="${esc(displayName)} seed artwork" loading="lazy" decoding="async"></div>`
+      : '';
 
     return `
       <article class="ew-seed-card" data-seed-id="${esc(item.id)}">
+        ${media}
         <div class="ew-seed-card-top">
           <span class="ew-seed-category">${esc(item.category)}</span>
           <h3>${esc(displayName)}</h3>
