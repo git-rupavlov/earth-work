@@ -1,7 +1,12 @@
 # NoMad's Farm
 
 <div class="ew-home-minimal">
-  <section class="ew-landing-hero" aria-label="NoMad's Farm home artwork"></section>
+  <section class="ew-landing-hero" aria-label="NoMad's Farm home artwork">
+    <div class="ew-home-hero-hover" aria-hidden="true">
+      <strong>NoMad's Farm</strong>
+      <span>Grow · observe · document</span>
+    </div>
+  </section>
 
   <nav class="ew-home-menu" aria-label="Primary home destinations">
     <a class="ew-home-card" href="seeds/">
