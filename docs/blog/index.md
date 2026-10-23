@@ -1,7 +1,7 @@
 # Blog
 
 <section class="ew-page-hero" aria-label="Blog">
-  <object class="ew-page-hero-image" data="/assets/images/heroes/blog.svg" type="image/svg+xml" aria-label="Field notebook, camera and garden observations at sunset"></object>
+  <img class="ew-page-hero-image" src="/assets/images/heroes/nmf-blog.webp" alt="Field notebook, camera and garden observations at sunset" />
   <div class="ew-page-hero-content">
     <p class="ew-page-hero-kicker">04 · Field notes</p>
     <h1>Blog</h1>
